@@ -1,17 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import LogoWhite from "../../assets/Logo-white.png";
-import LogoDark from "../../assets/Logo-black.png";
 import "./Sidebar.css";
 
 export default function Sidebar() {
-	const [dark, setDark] = useState(false);
 	const [close, setClose] = useState(false);
-
-	const darkMode = () => {
-		setDark(!dark);
-		document.body.classList.toggle("dark");
-	};
 
 	const toggleMenu = () => {
 		setClose(!close);
@@ -28,11 +21,7 @@ export default function Sidebar() {
 			<header>
 				<div className='image-text'>
 					<span className='image'>
-						{dark ? (
-							<img src={LogoDark} alt='logo' />
-						) : (
-							<img src={LogoWhite} alt='logo' />
-						)}
+						<img src={LogoWhite} alt='logo' />
 					</span>
 				</div>
 			</header>
@@ -79,25 +68,6 @@ export default function Sidebar() {
 							</NavLink>
 						</li>
 					</ul>
-				</div>
-
-				<div className='bottom-content'>
-					<li className='mode'>
-						<div className='moon-sun'>
-							{dark ? (
-								<i className='bx bx-sun icon sun'></i>
-							) : (
-								<i className='bx bx-moon icon moon'></i>
-							)}
-						</div>
-						<span className='mode-text text'>
-							{dark ? "Light Mode" : "Dark Mode"}
-						</span>
-
-						<div className='toggle-switch' onClick={darkMode}>
-							<span className='switch'></span>
-						</div>
-					</li>
 				</div>
 			</div>
 		</nav>
