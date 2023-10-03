@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Colors */
+	--body-color: #fff;
+	--sidebar-color: #020203d8;
+	--primary-color: #ffffffbf;
+	--primary-color-light: #f6f5ff;
+	--toggle-color: #ddd;
+	--text-color: #707070;
+	--logo-color: #020203d8;
+
+	/* Transition */
+	--tran-02: all 0.2s ease;
+	--tran-03: all 0.3s ease;
+	--tran-04: all 0.4s ease;
+	--tran-05: all 0.5s ease;
+
+	overflow-x: hidden;
+}
+
+/* ---------------------------- Factorisation css --------------------------- */
+.home,
+.notfound,
+.presentation,
+.confiance,
+.contact,
+.portfolio,
+.skills {
+	position: relative;
+	left: 350px;
+	height: 100vh;
+	width: 100%;
+	transition: var(--tran-05);
+}
+
+.sidebar.close ~ .home,
+.sidebar.close ~ .notfound,
+.sidebar.close ~ .presentation,
+.sidebar.close ~ .confiance,
+.sidebar.close ~ .contact,
+.sidebar.close ~ .portfolio,
+.sidebar.close ~ .skills {
+	left: 75px;
+	width: calc(100% - 75px);
+}
+
+.home .text,
+.notfound .text,
+.presentation .text,
+.confiance .text,
+.contact .text,
+.portfolio .text,
+.skills .text {
+	font-size: 30px;
+	font-weight: 500;
+	color: var(--text-color);
+	padding: 8px 40px;
+}
+
+.text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+body.dark {
+	color: #fff;
+}
