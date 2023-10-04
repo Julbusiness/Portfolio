@@ -48,7 +48,7 @@ export default function Sidebar() {
 							</NavLink>
 						</li>
 						<li className='nav-link'>
-							<NavLink to='/portfolio'>
+							<NavLink to='/projets'>
 								<i className='bx bx-code-alt icon'></i>
 								<span className='text nav-text'>Portfolio</span>
 							</NavLink>

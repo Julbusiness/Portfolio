@@ -1,0 +1,28 @@
+.title-container {
+  width: 100%;
+  font-size: 45px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title {
+  margin-left: 70px;
+}
+
+.line {
+  position: absolute;
+  top: 70px;
+  left: 75px;
+  width: 30%;
+  height: 1px;
+  background: #BBBBBB;
+}
+
+.fat {
+  position: absolute;
+  top: 67px;
+  left: 75px;
+  width: 150px;
+  height: 3px;
+  background: #BBBBBB;
+}

@@ -31,7 +31,7 @@ body {
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 350px;
+	width: 310px;
 	padding: 15px 5px;
 	background: var(--sidebar-color);
 	transition: var(--tran-05);
@@ -54,21 +54,15 @@ body {
 	margin-bottom: 20px;
 }
 
-.header-text .name {
-	font-weight: 600;
-	font-size: 24px;
-}
-
 .sidebar li {
 	height: 50px;
-	margin-top: 10px;
 	list-style: none;
 	display: flex;
 	align-items: center;
 }
 
 .sidebar li .icon {
-	font-size: 27px;
+	font-size: 25px;
 	min-width: 60px;
 	display: flex;
 	align-items: center;
@@ -82,7 +76,7 @@ body {
 .sidebar li .text {
 	color: var(--text-color);
 	transition: var(--tran-02);
-	font-size: 21px;
+	font-size: 18px;
 	font-weight: 300;
 }
 

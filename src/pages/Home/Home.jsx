@@ -1,6 +1,13 @@
-import desktop from "../../assets/desktop.jpeg";
+import desktop from "../../assets/images/desktop1.jpg";
+import accueil from "../../assets/images/accueil.jpg";
+import presentation from "../../assets/images/presentation.jpg";
+import skills from "../../assets/images/skills.jpg";
+import projet from "../../assets/images/projet.jpg";
+import confiance from "../../assets/images/confiance.jpg";
+import contact from "../../assets/images/contact.jpg";
 
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 	return (
@@ -24,39 +31,40 @@ export default function Home() {
 				<div className='fat'></div>
 				<div className='scroll-container'>
 					<div className='slide'>
-						<img src={desktop} alt='' />
-						<p className='title-card'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-							voluptatum.
-						</p>
+						<Link to='/' className='link'>
+							<img src={accueil} alt='' />
+							<p className='title-card'>Accueil</p>
+						</Link>
 					</div>
 					<div className='slide'>
-						<img src={desktop} alt='' />
-						<p className='title-card'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-							voluptatum.
-						</p>
+						<Link to='/presentation' className='link'>
+							<img src={presentation} alt='' />
+							<p className='title-card'>Présentation</p>
+						</Link>
 					</div>
 					<div className='slide'>
-						<img src={desktop} alt='' />
-						<p className='title-card'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-							voluptatum.
-						</p>
+						<Link to='/skills' className='link'>
+							<img src={skills} alt='' />
+							<p className='title-card'>Skills</p>
+						</Link>
 					</div>
 					<div className='slide'>
-						<img src={desktop} alt='' />
-						<p className='title-card'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-							voluptatum.
-						</p>
+						<Link to='/projets' className='link'>
+							<img src={projet} alt='' />
+							<p className='title-card'>Projets</p>
+						</Link>
 					</div>
 					<div className='slide'>
-						<img src={desktop} alt='' />
-						<p className='title-card'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-							voluptatum.
-						</p>
+						<Link to='/confiance' className='link'>
+							<img src={confiance} alt='' />
+							<p className='title-card'>Confiance</p>
+						</Link>
+					</div>
+					<div className='slide'>
+						<Link to='/contact' className='link'>
+							<img src={contact} alt='' />
+							<p className='title-card'>Contact</p>
+						</Link>
 					</div>
 				</div>
 			</div>

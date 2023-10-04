@@ -1,4 +1,4 @@
-import image from "../../assets/desktop.jpeg";
+import image from "../../assets/images/desktop1.jpg";
 import left from "../../assets/left-arrow.png";
 import right from "../../assets/right-arrow.png";
 import "./Slider2.css";

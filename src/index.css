@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
 * {
 	font-family: "Roboto", sans-serif;
 	margin: 0;
@@ -24,19 +22,20 @@
 	--tran-04: all 0.4s ease;
 	--tran-05: all 0.5s ease;
 
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 }
+
 
 /* ---------------------------- Factorisation css --------------------------- */
 .home,
 .notfound,
-.presentation,
+.about,
 .confiance,
 .contact,
-.portfolio,
+.projets,
 .skills {
 	position: relative;
-	left: 350px;
+	left: 310px;
 	height: 100vh;
 	width: 100%;
 	transition: var(--tran-05);
@@ -44,10 +43,10 @@
 
 .sidebar.close ~ .home,
 .sidebar.close ~ .notfound,
-.sidebar.close ~ .presentation,
+.sidebar.close ~ .about,
 .sidebar.close ~ .confiance,
 .sidebar.close ~ .contact,
-.sidebar.close ~ .portfolio,
+.sidebar.close ~ .projets,
 .sidebar.close ~ .skills {
 	left: 75px;
 	width: calc(100% - 75px);
@@ -55,10 +54,10 @@
 
 .home .text,
 .notfound .text,
-.presentation .text,
+.about .text,
 .confiance .text,
 .contact .text,
-.portfolio .text,
+.projets .text,
 .skills .text {
 	font-size: 30px;
 	font-weight: 500;
@@ -73,9 +72,9 @@
 	margin: 20px 0;
 }
 
-.scrollbar {
+/* .scrollbar {
   height: 320px;
   overflow-x: scroll;
   scrollbar-color: black #c3bebe;
   scrollbar-width: thin;
-}
+} */
