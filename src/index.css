@@ -1,11 +1,38 @@
 * {
-	font-family: "Roboto", sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+}
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
 :root {
+
+	/* Colors */
+	--bg-color: rgba(255, 255, 255, 1);
+	--bg-menu: rgba(34,34,34,1);
+	--bg-dark: rgba(39,39,39,1);
+	--border-grey: rgba(187,187,187,1);
+
+	/* Opacity */
+	--bg-opacity: 1;
+	--text-opacity: 1;
+
+	/* Animation */
+	--animation-duration : .5s;
+
+	/* Font size */
+	--font-size-normal: 16px;
+	--font-size-huge: 42px; 
+
+
 	/* Colors */
 	--body-color: #fff;
 	--sidebar-color: #020203d8;
@@ -21,8 +48,6 @@
 	--tran-03: all 0.3s ease;
 	--tran-04: all 0.4s ease;
 	--tran-05: all 0.5s ease;
-
-	overflow-x: hidden;
 }
 
 

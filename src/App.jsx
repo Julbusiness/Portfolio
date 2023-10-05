@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
-import Presentation from "./pages/Presentation/Presentation";
+import Apropos from "./pages/Apropos/Apropos";
 import Skills from "./pages/Skills/Skills";
 import Projets from "./pages/Projets/Projets";
 import Contact from "./pages/Contact/Contact";
@@ -17,7 +17,7 @@ function App() {
 				<Sidebar />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/presentation' element={<Presentation />} />
+					<Route path='/apropos' element={<Apropos />} />
 					<Route path='/skills' element={<Skills />} />
 					<Route path='/projets' element={<Projets />} />
 					<Route path='/confiance' element={<Confiance />} />

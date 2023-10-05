@@ -1,4 +1,4 @@
-import image from "../../assets/images/skills.jpg";
+import image from "../../assets/images/bg-skills1.jpg";
 import Title from "../../components/Title/Title";
 
 import "./Skills.css";
