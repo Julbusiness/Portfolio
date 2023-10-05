@@ -1,21 +1,25 @@
-body {
-	height: 100vh;
-	background: var(--body-color);
-	transition: var(--tran-05);
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 310px;
+	padding: 15px 0;
+	background: var(--bg-color);
+	transition: var(--transition-width);
+	z-index: 100;
 }
-
 
 .sidebar .text {
 	font-size: 18px;
 	font-weight: 400;
-	color: var(--text-color);
-	transition: var(--tran-03);
+	color: var(--text-menu-initial);
+	transition: var(--transition-width);
 	white-space: nowrap;
-	opacity: 1;
 }
 
 .sidebar.close .text {
-	opacity: 0;
+	display: none;
 }
 
 .sidebar .image {
@@ -25,20 +29,8 @@ body {
 	justify-content: center;
 }
 
-.sidebar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 310px;
-	padding: 15px 5px;
-	background: var(--sidebar-color);
-	transition: var(--tran-05);
-	z-index: 100;
-}
-
 .sidebar.close {
-	width: 75px;
+	width: 60px;
 }
 
 .sidebar .image-text img {
@@ -47,20 +39,20 @@ body {
 	margin-left: 5px;
 }
 
-.sidebar header .image-text {
+.sidebar .image-text {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-.sidebar li {
+.sidebar ul li {
 	height: 50px;
 	list-style: none;
 	display: flex;
 	align-items: center;
 }
 
-.sidebar li .icon {
+.sidebar ul li .icon {
 	font-size: 25px;
 	min-width: 60px;
 	display: flex;
@@ -69,11 +61,11 @@ body {
 }
 
 .sidebar li .icon {
-	color: var(--primary-color);
+	color: var(--text-white);
 }
 
 .sidebar li .text {
-	color: var(--text-color);
+	color: var(--text-menu-initial);
 	transition: var(--tran-02);
 	font-size: 18px;
 	font-weight: 300;
@@ -87,22 +79,15 @@ body {
 }
 
 .sidebar li a:hover {
-	color: var(--primary-color);
+	color: var(--text-white);
 }
 
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
-	color: var(--primary-color);
+	color: var(--text-white);
 }
 
-.sidebar .menu-bar {
-	height: calc(100% - 100px);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.sidebar .menu-bar a.active span {
-	color: var(--primary-color);
+.sidebar a.active span {
+	color: var(--text-white);
 	font-weight: 500;
 }

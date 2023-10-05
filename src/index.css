@@ -1,55 +1,30 @@
 * {
+	font-family: "Poppins", sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html {
-	overflow-x: hidden;
-}
-
-
-body {
-	font-family: 'Poppins', sans-serif;
-}
-
 :root {
-
 	/* Colors */
-	--bg-color: rgba(255, 255, 255, 1);
-	--bg-menu: rgba(34,34,34,1);
-	--bg-dark: rgba(39,39,39,1);
-	--border-grey: rgba(187,187,187,1);
+	--bg-color: rgba(34, 34, 34, 1);
+	--bg-white: rgba(255, 255, 255, 1);
+	--text-white: rgba(255, 255, 255, 1);
+	--text-black: rgba(34, 34, 34, 1);
+	--border-grey: rgba(187, 187, 187, 1);
+	--text-menu-initial: rgba(151, 151, 151, 1);
+	--subheading: rgba(102, 102, 102, 1);
 
-	/* Opacity */
-	--bg-opacity: 1;
-	--text-opacity: 1;
-
-	/* Animation */
-	--animation-duration : .5s;
-
-	/* Font size */
-	--font-size-normal: 16px;
-	--font-size-huge: 42px; 
-
-
-	/* Colors */
-	--body-color: #fff;
-	--sidebar-color: #020203d8;
-	--primary-color: #ffffffbf;
-	--primary-color-light: #f6f5ff;
-	--toggle-color: #ddd;
-	--text-color: #707070;
-	--logo-color: #020203d8;
-	--footer-color: #020203d8;
 
 	/* Transition */
-	--tran-02: all 0.2s ease;
+	--tran-02: width cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 	--tran-03: all 0.3s ease;
 	--tran-04: all 0.4s ease;
-	--tran-05: all 0.5s ease;
-}
+	--transition-width: width cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+	--transition-all: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 
+	overflow-x: hidden;
+}
 
 /* ---------------------------- Factorisation css --------------------------- */
 .home,
@@ -63,7 +38,7 @@ body {
 	left: 310px;
 	height: 100vh;
 	width: 100%;
-	transition: var(--tran-05);
+	/* transition: var(----transition-width); */
 }
 
 .sidebar.close ~ .home,
@@ -73,8 +48,9 @@ body {
 .sidebar.close ~ .contact,
 .sidebar.close ~ .projets,
 .sidebar.close ~ .skills {
-	left: 75px;
-	width: calc(100% - 75px);
+	left: 60px;
+	width: calc(100% - 60px);
+	transition: var(--transition-width);
 }
 
 .home .text,
@@ -86,7 +62,7 @@ body {
 .skills .text {
 	font-size: 30px;
 	font-weight: 500;
-	color: var(--text-color);
+	color: var(--text-black);
 	padding: 8px 40px;
 }
 

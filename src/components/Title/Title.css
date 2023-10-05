@@ -1,15 +1,16 @@
 .title-container {
-  width: 100%;
-  font-size: 45px;
-  margin-bottom: 50px;
   position: relative;
+  margin-bottom: 20px;
 }
 
-.title {
+.title-container .title-props {
   margin-left: 70px;
+  font-size: 2.5rem;
+  font-weight: 700px;
+  color: var(--text-black);
 }
 
-.line {
+.title-container .line {
   position: absolute;
   top: 70px;
   left: 75px;
@@ -18,7 +19,7 @@
   background: #BBBBBB;
 }
 
-.fat {
+.title-container .fat {
   position: absolute;
   top: 67px;
   left: 75px;
