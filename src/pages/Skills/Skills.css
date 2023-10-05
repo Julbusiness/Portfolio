@@ -27,8 +27,8 @@
 }
 
 .title-name {
-  background: black;
-  color: var(--body-color);
+  background: var(--bg-dark);
+  color: var(--text-white);
   width: 150px;
   padding: 10px 15px;
   border-radius: 7px;
@@ -41,8 +41,8 @@
 
 .title-content ul li {
   margin-bottom: 15px;
-  background: var(--sidebar-color);
-  color: var(--body-color);
+  background: var(--bg-dark);
+  color: var(--text-white);
   padding: 15px;
   border-radius: 7px;
   margin-right: 25px;
@@ -61,11 +61,11 @@
 }
 
 .title-content .ecole {
-  color: var(--primary-color);
+  color: var(--text-white);
 }
 
 .title-content .lieu {
-  color: var(--primary-color);
+  color: var(--text-white);
 }
 
 

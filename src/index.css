@@ -7,7 +7,7 @@
 
 :root {
 	/* Colors */
-	--bg-color: rgba(34, 34, 34, 1);
+	--bg-dark: rgba(34, 34, 34, 1);
 	--bg-white: rgba(255, 255, 255, 1);
 	--text-white: rgba(255, 255, 255, 1);
 	--text-black: rgba(34, 34, 34, 1);
@@ -17,13 +17,13 @@
 
 
 	/* Transition */
-	--tran-02: all 0.2s ease;
-	--tran-03: all 0.3s ease;
-	--tran-04: all 0.4s ease;
-	--tran-05: all 0.5s ease;
-	--transition-width: width cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
-	--transition-margin: margin cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
-	--transition-all: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+	--trans-01: all: 0.15s ease;
+	--trans-02: all 0.2s ease;
+	--trans-03: all 0.3s ease;
+	--trans-04: all 0.4s ease;
+	--trans-05: all 0.5s ease;
+
+	--trans-all: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 
 	overflow-x: hidden;
 
@@ -41,7 +41,7 @@
 	position: relative;
 	left: 60px;
 	width: calc(100vw - 60px);
-	transition: var(--tran-05);
+	transition: var(--trans-05);
 }
 
 .sidebar.open ~ .home,
@@ -53,7 +53,7 @@
 .sidebar.open ~ .skills {
 	left: 310px;
 	width: calc(100vw - 310px);
-	transition: var(--tran-05);
+	transition: var(--trans-05);
 }
 
 .home .text,
@@ -76,9 +76,32 @@
 	margin: 20px 0;
 }
 
-/* .scrollbar {
-  height: 320px;
-  overflow-x: scroll;
-  scrollbar-color: black #c3bebe;
-  scrollbar-width: thin;
-} */
+.sidebar.open .text {
+	display: block;
+	transition: var(--trans-05);
+}
+
+.sidebar.open {
+	width: 310px;
+	transition: var(--trans-05);
+}
+
+.sidebar.active .image-text img {
+	visibility: visible;
+	transition: var(--trans-05)
+}
+
+.sidebar.active ul li .icon {
+	transform: translateY(0);
+	transition: var(--trans-05);
+}
+
+.sidebar.active li .text {
+	transform: translateY(0);
+	transition: var(--trans-02);
+}
+
+.sidebar a.active span {
+	color: var(--text-white);
+	font-weight: 500;
+}

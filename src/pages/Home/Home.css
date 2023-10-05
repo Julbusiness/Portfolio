@@ -8,7 +8,7 @@
 	width: calc(100vw - 60px);
 	max-height: 760px;
 	object-fit: cover;
-	transition: var(--tran-05);
+	transition: var(--trans-05);
 }
 
 .home .title {

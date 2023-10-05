@@ -5,6 +5,7 @@ import "./Sidebar.css";
 
 export default function Sidebar() {
 	const [open, setOpen] = useState(false);
+	const [showLogo, setShowLogo] = useState(false);
 
 	const toggleMenu = () => {
 		setOpen(!open);
@@ -12,9 +13,20 @@ export default function Sidebar() {
 		toggle.classList.toggle("open");
 	};
 
+	const showLogoOnScroll = () => {
+		// console.log(window.scrollY);
+		if (window.scrollY >= 80) {
+			setShowLogo(true);
+		} else {
+			setShowLogo(false);
+		}
+	}
+
+		window.addEventListener("scroll", showLogoOnScroll);
+
 	return (
 		<nav
-			className='sidebar'
+			className={showLogo ? "sidebar active" : "sidebar"}
 			onMouseOver={toggleMenu}
 			onMouseOut={toggleMenu}
 		>
