@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import desktop from "../../assets/images/desktop1.jpg";
 import accueil from "../../assets/images/accueil.jpg";
 import presentation from "../../assets/images/presentation.jpg";
@@ -6,9 +7,7 @@ import projet from "../../assets/images/projet.jpg";
 import confiance from "../../assets/images/confiance.jpg";
 import contact from "../../assets/images/contact.jpg";
 import Title from "../../components/Title/Title";
-
 import "./Home.css";
-import { Link } from "react-router-dom";
 
 export default function Home() {
 	return (

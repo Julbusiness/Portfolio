@@ -17,13 +17,17 @@
 
 
 	/* Transition */
-	--tran-02: width cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+	--tran-02: all 0.2s ease;
 	--tran-03: all 0.3s ease;
 	--tran-04: all 0.4s ease;
+	--tran-05: all 0.5s ease;
 	--transition-width: width cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+	--transition-margin: margin cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 	--transition-all: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 
 	overflow-x: hidden;
+
+	height: 100vh;
 }
 
 /* ---------------------------- Factorisation css --------------------------- */
@@ -35,22 +39,21 @@
 .projets,
 .skills {
 	position: relative;
-	left: 310px;
-	height: 100vh;
-	width: 100%;
-	/* transition: var(----transition-width); */
+	left: 60px;
+	width: calc(100vw - 60px);
+	transition: var(--tran-05);
 }
 
-.sidebar.close ~ .home,
-.sidebar.close ~ .notfound,
-.sidebar.close ~ .about,
-.sidebar.close ~ .confiance,
-.sidebar.close ~ .contact,
-.sidebar.close ~ .projets,
-.sidebar.close ~ .skills {
-	left: 60px;
-	width: calc(100% - 60px);
-	transition: var(--transition-width);
+.sidebar.open ~ .home,
+.sidebar.open ~ .notfound,
+.sidebar.open ~ .about,
+.sidebar.open ~ .confiance,
+.sidebar.open ~ .contact,
+.sidebar.open ~ .projets,
+.sidebar.open ~ .skills {
+	left: 310px;
+	width: calc(100vw - 310px);
+	transition: var(--tran-05);
 }
 
 .home .text,

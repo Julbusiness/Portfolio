@@ -4,17 +4,17 @@ import LogoWhite from "../../assets/Logo-white.png";
 import "./Sidebar.css";
 
 export default function Sidebar() {
-	const [close, setClose] = useState(false);
+	const [open, setOpen] = useState(false);
 
 	const toggleMenu = () => {
-		setClose(!close);
+		setOpen(!open);
 		const toggle = document.querySelector(".sidebar");
-		toggle.classList.toggle("close");
+		toggle.classList.toggle("open");
 	};
 
 	return (
 		<nav
-			className='sidebar close'
+			className='sidebar'
 			onMouseOver={toggleMenu}
 			onMouseOut={toggleMenu}
 		>

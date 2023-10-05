@@ -6,7 +6,7 @@
 /* bandeau image */
 .about-container {
   position: relative;
-  width: 100%;
+  width: calc(100vw - 60px);
   height: 20rem;
   margin-bottom: 100px;
 }
@@ -20,7 +20,7 @@
 
 /* stats title */
 .explain-container {
-  width: 100%;
+  width: calc(100vw - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;

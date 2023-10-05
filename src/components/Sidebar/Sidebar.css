@@ -3,10 +3,10 @@
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 310px;
+	width: 60px;
 	padding: 15px 0;
 	background: var(--bg-color);
-	transition: var(--transition-width);
+	transition: var(--tran-05);
 	z-index: 100;
 }
 
@@ -14,12 +14,14 @@
 	font-size: 18px;
 	font-weight: 400;
 	color: var(--text-menu-initial);
-	transition: var(--transition-width);
 	white-space: nowrap;
+	display: none;
+	/* transition: var(--tran-05); */
+	transition: display 2s ease-in-out ;
 }
 
-.sidebar.close .text {
-	display: none;
+.sidebar.open .text {
+	display: block;
 }
 
 .sidebar .image {
@@ -29,8 +31,8 @@
 	justify-content: center;
 }
 
-.sidebar.close {
-	width: 60px;
+.sidebar.open {
+	width: 310px;
 }
 
 .sidebar .image-text img {

@@ -5,10 +5,10 @@
 
 /* image-container = Image de fond + titre et profession */
 .home .image-home img {
-	width: 100%;
+	width: calc(100vw - 60px);
 	max-height: 760px;
 	object-fit: cover;
-	transition: var(--transition-width);
+	transition: var(--tran-05);
 }
 
 .home .title {
@@ -47,7 +47,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 25px;
-	width: 100%;
+	width: calc(100vw - 60px);
 	padding-left: 70px;
 }
 
