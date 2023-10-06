@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import desktop from "../../assets/images/desktop1.jpg";
-import accueil from "../../assets/images/accueil.jpg";
-import presentation from "../../assets/images/presentation.jpg";
-import skills from "../../assets/images/skills.jpg";
-import projet from "../../assets/images/projet.jpg";
-import confiance from "../../assets/images/confiance.jpg";
-import contact from "../../assets/images/contact.jpg";
+import desktop from "../../assets/images/accueil/desktop1.jpg";
+import accueil from "../../assets/images/accueil/accueil.jpg";
+import apropos from "../../assets/images/accueil/apropos.jpg";
+import skills from "../../assets/images/accueil/skills.jpg";
+import projet from "../../assets/images/accueil/projet.jpg";
+import confiance from "../../assets/images/accueil/confiance.jpg";
+import contact from "../../assets/images/accueil/contact.jpg";
 import Title from "../../components/Title/Title";
 import "./Home.css";
 
@@ -22,7 +22,9 @@ export default function Home() {
 				<div className='profession'>Développeur Front-End</div>
 			</div>
 			<div className='card-container'>
+			<div className="home-title-start">
 				<Title title="Transformez vos idées en réalités digitales"/>
+			</div>
 				<div className='home-card-container'>
 					<div className='home-card'>
 						<Link to='/' className='link'>
@@ -32,7 +34,7 @@ export default function Home() {
 					</div>
 					<div className='home-card'>
 						<Link to='/apropos' className='link'>
-							<img src={presentation} alt='' />
+							<img src={apropos} alt='' />
 							<h3 className='title-card'>À propos</h3>
 						</Link>
 					</div>

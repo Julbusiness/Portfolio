@@ -1,4 +1,7 @@
-import image from "../../assets/images/bg-skills1.jpg";
+import image from "../../assets/images/bandeaux-sticky/bandeau-sticky1.png";
+import card from "../../assets/images/accueil/Card1.png";
+import Bandeau from "../../components/Bandeau/Bandeau";
+import CardTwo from "../../components/Cards/LeftCard/LeftCard";
 import Title from "../../components/Title/Title";
 
 import "./Skills.css";
@@ -6,169 +9,177 @@ import "./Skills.css";
 export default function Skills() {
 	return (
 		<section className='skills'>
-			<div className='skills-image'>
-				<img src={image} alt='' />
-				{/* <div className='text-container'>
-					<h1>Du code à la création.. façonnant le web, pixel par pixel.</h1>
-				</div> */}
-			</div>
-			<div className='skills-content'>
-				<Title title='Apprentissage et compétences' />
+			<Bandeau image={image} />
+			<div className='skills-container'>
+				<div className='title-start'>
+					<Title title='Apprentissage et compétences' />
+				</div>
 				<div className='categories-container'>
 					<div className='category formation-content'>
-						<div className='title-name'>
-							<h2>Formations</h2>
-						</div>
 						<div className='title-content'>
 							<ul>
 								<li>
-									<p className='annee'>2023</p>
-									<p className='titre'>
-										Titre de concepteur et développeur logiciels et applications
-										web Javascript-React
-									</p>
-									<p className='ecole'>OpenClassrooms</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Formations'
+										title='Titre de concepteur - développeur logiciels'
+										text='2023 - OpenClassrooms - Bordeaux'
+									/>
 								</li>
 								<li>
-									<p className='annee'>2021</p>
-									<p className='titre'>
-										Titre professionel de développeur web et mobile (PHP, JS,
-										REACT)
-									</p>
-									<p className='ecole'>O'Clock</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Formations'
+										title='Titre professionnel de développeur web et web mobile'
+										text="2021 - O'Clock - Bordeaux"
+									/>
 								</li>
 								<li>
-									<p className='annee'>Avant 2021</p>
-									<p className='titre'>BTS Action Commercial</p>
-									<p className='ecole'>ICFA</p>
-									<p className='lieu'>Bordeaux</p>
+									<CardTwo
+										image={card}
+										tag='Formations'
+										title='BTS Action Commercial'
+										text='< 2021 - ICFA - Bordeaux'
+									/>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div className='category skill-content'>
-						<div className='title-name'>
-							<h2>Skills</h2>
-						</div>
 						<div className='title-content'>
 							<ul>
 								<li>
-									<p className='annee'>2023</p>
-									<p className='titre'>
-										Titre de concepteur et développeur logiciels et applications
-										web Javascript-React
-									</p>
-									<p className='ecole'>OpenClassrooms</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Hard Skills'
+										title='HTML'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
 								</li>
 								<li>
-									<p className='annee'>2021</p>
-									<p className='titre'>
-										Titre professionel de développeur web et mobile (PHP, JS,
-										REACT)
-									</p>
-									<p className='ecole'>O'Clock</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Hard Skills'
+										title='CSS'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
 								</li>
 								<li>
-									<p className='annee'>Avant 2021</p>
-									<p className='titre'>BTS Action Commercial</p>
-									<p className='ecole'>ICFA</p>
-									<p className='lieu'>Bordeaux</p>
+									<CardTwo
+										image={card}
+										tag='Hard Skills'
+										title='JACASCRIPT'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
+								</li>
+								<li>
+									<CardTwo
+										image={card}
+										tag='Hard Skills'
+										title='REACT'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
+								</li>
+								<li>
+									<CardTwo
+										image={card}
+										tag='Hard Skills'
+										title='PHP'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
+								</li>
+								<li>
+									<CardTwo
+										image={card}
+										tag='Hard Skills'
+										title='DIVERS'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div className='category technique-content'>
-						<div className='title-name'>
-							<h2>Techniques</h2>
-						</div>
 						<div className='title-content'>
 							<ul>
 								<li>
-									<p className='annee'>2023</p>
-									<p className='titre'>
-										Titre de concepteur et développeur logiciels et applications
-										web Javascript-React
-									</p>
-									<p className='ecole'>OpenClassrooms</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Techniques'
+										title='Javascript / React'
+										text='Réalisation de 14 projets avec cahiers des charges. Utilisation de html, css, javascript, react et quelques libraires'
+									/>
 								</li>
 								<li>
-									<p className='annee'>2021</p>
-									<p className='titre'>
-										Titre professionel de développeur web et mobile (PHP, JS,
-										REACT)
-									</p>
-									<p className='ecole'>O'Clock</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Techniques'
+										title='PHP'
+										text='Réalisations de petits projets lors de ma formation'
+									/>
 								</li>
 								<li>
-									<p className='annee'>Avant 2021</p>
-									<p className='titre'>BTS Action Commercial</p>
-									<p className='ecole'>ICFA</p>
-									<p className='lieu'>Bordeaux</p>
+									<CardTwo
+										image={card}
+										tag='Techniques'
+										title='Compétences administratives et commerciales'
+										text="J'ai acquis des compétences en vente et en gestion de la relation client"
+									/>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className='skills-content'>
-				<Title title='Travail et expériences' />
+			<div className='skills-container'>
+				<div className='title-start'>
+					<Title title='Expériences professionnelles' />
+				</div>
 				<div className='categories-container'>
-					<div className='category formation-content'>
-						<div className='title-name'>
-							<h2>Formations</h2>
-						</div>
+					<div className='category experience-content'>
 						<div className='title-content'>
 							<ul>
 								<li>
-									<p className='titre'>Développeur Front-end</p>
-									<p className='societe'>Projets OpenClassrooms</p>
-									<p className='duree'>2023 - 2022</p>
-									<div className='title-name'>
-										<h2>Front JS - REACT</h2>
-									</div>
-									<p>J'ai concu et développé des services pour des clients divers, photographes, banques,écoles etc..</p>
+									<CardTwo
+										image={card}
+										tag='Expériences professionelles'
+										title='Qui suis-je ?'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
 								</li>
-							</ul>
-						</div>
-					</div>
-					<div className='category skill-content'>
-						<div className='title-name'>
-							<h2>Skills</h2>
-						</div>
-						<div className='title-content'>
-							<ul>
 								<li>
-									<p className='annee'>2023</p>
-									<p className='titre'>
-										Titre de concepteur et développeur logiciels et applications
-										web Javascript-React
-									</p>
-									<p className='ecole'>OpenClassrooms</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Expériences professionelles'
+										title='Qui suis-je ?'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
 								</li>
-							</ul>
-						</div>
-					</div>
-					<div className='category technique-content'>
-						<div className='title-name'>
-							<h2>Techniques</h2>
-						</div>
-						<div className='title-content'>
-							<ul>
 								<li>
-									<p className='annee'>2023</p>
-									<p className='titre'>
-										Titre de concepteur et développeur logiciels et applications
-										web Javascript-React
-									</p>
-									<p className='ecole'>OpenClassrooms</p>
-									<p className='lieu'>Bordeaux, remote</p>
+									<CardTwo
+										image={card}
+										tag='Expériences professionelles'
+										title='Qui suis-je ?'
+										text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'
+									/>
 								</li>
 							</ul>
 						</div>
@@ -177,4 +188,10 @@ export default function Skills() {
 			</div>
 		</section>
 	);
+}
+
+{
+	/* <div className='text-container'>
+					<h1>Du code à la création.. façonnant le web, pixel par pixel.</h1>
+				</div> */
 }

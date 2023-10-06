@@ -1,13 +1,13 @@
-import image from "../../assets/images/desktop4.jpg";
+import Bandeau from "../../components/Bandeau/Bandeau";
+import image from "../../assets/images/bandeaux-sticky/bandeau-sticky1.png";
 import "./Apropos.css";
+import CardOne from "../../components/Cards/RightCardThin/RightCardThin";
 
 export default function Apropos() {
 	return (
 		<section className='about'>
+			<Bandeau image={image} />
 			<div className='about-container'>
-				<img src={image} alt='' />
-			</div>
-			<div className='explain-container'>
 				<div className='about-title-container'>
 					<h1>À propos</h1>
 					<p>
@@ -37,45 +37,15 @@ export default function Apropos() {
 					</ul>
 				</div>
 				<div className='cards'>
-					<div className='card'>
-						<div className='card-text'>
-							<h2>Qui suis-je ?</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-								recusandae molestiae mollitia magni dicta et hic quas natus
-								accusamus culpa.
-							</p>
-						</div>
-						<div className='card-image'>
-							<img src={image} alt='' />
-						</div>
-					</div>
-					<div className='card'>
-						<div className='card-text'>
-							<h2>Qu'est-ce que je fais ?</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-								recusandae molestiae mollitia magni dicta et hic quas natus
-								accusamus culpa.
-							</p>
-						</div>
-						<div className='card-image'>
-							<img src={image} alt='' />
-						</div>
-					</div>
-					<div className='card'>
-						<div className='card-text'>
-							<h2>Qu'est-ce que je recherche ?</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-								recusandae molestiae mollitia magni dicta et hic quas natus
-								accusamus culpa.
-							</p>
-						</div>
-						<div className='card-image'>
-							<img src={image} alt='' />
-						</div>
-					</div>
+				<CardOne image={image} title='Qui suis-je ?' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'/>
+				<CardOne image={image} title="Qu'est ce que je fais ?" text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'/>
+				<CardOne image={image} title="Qu'est ce que je recherche ?" text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+        recusandae molestiae mollitia magni dicta et hic quas natus
+        accusamus culpa.'/>
 				</div>
 			</div>
 		</section>

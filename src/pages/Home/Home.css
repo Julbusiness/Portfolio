@@ -32,6 +32,12 @@
 	font-size: 16px;
 }
 
+/* title */
+
+.home-title-start {
+	margin-left: 70px;
+}
+
 /* slide-container = Composant Title + home-card-container */
 
 .card-container {

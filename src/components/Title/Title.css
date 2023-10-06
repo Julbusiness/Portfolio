@@ -3,8 +3,8 @@
   margin-bottom: 20px;
 }
 
-.title-container .title-props {
-  margin-left: 70px;
+.title-container .title-content {
+  /* margin-left: 70px; */
   font-size: 2.5rem;
   font-weight: 700px;
   color: var(--text-black);
@@ -13,8 +13,8 @@
 .title-container .line {
   position: absolute;
   top: 70px;
-  left: 75px;
-  width: 30%;
+  left: 5px;
+  width: 40%;
   height: 1px;
   background: #BBBBBB;
 }
@@ -22,8 +22,8 @@
 .title-container .fat {
   position: absolute;
   top: 67px;
-  left: 75px;
-  width: 150px;
+  left: 5px;
+  width: 125px;
   height: 3px;
   background: #BBBBBB;
 }
