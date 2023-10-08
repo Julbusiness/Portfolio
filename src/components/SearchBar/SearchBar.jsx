@@ -6,7 +6,7 @@ export default function SearchBar() {
       <div className="inputSearch">
         <input type="text" name="" id="search" placeholder='Ex : Javascript, React ...'/>
         <button>
-          <span><i class='bx bx-search'></i></span>
+          <span><i className='bx bx-search'></i></span>
         </button>
       </div>
 		</div>

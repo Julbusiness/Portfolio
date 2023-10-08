@@ -5,8 +5,27 @@ import imageCard from "/assets/images/cards/card1.png";
 import Title from "../../components/Title/Title";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import LeftCard from "../../components/Cards/LeftCard/LeftCard";
+import data from "../../data/data.json";
 
 export default function Portfolio() {
+
+	const portfolioData = data.map((item) => item.portfolioData);
+	console.log(portfolioData);
+
+	let content;
+	content = portfolioData.map((item, index) =>
+		item.map((card, index) => (
+			<li key={card.id}>
+				<LeftCard
+					image={`/assets/images/cards/${card.image}`}
+					tag={card.tag}
+					title={card.title}
+					text={card.text}
+				/>
+			</li>
+		))
+	);
+
 	return (
 		<section className='portfolio'>
 			<Bandeau image={imageBandeau} />
@@ -19,76 +38,7 @@ export default function Portfolio() {
 				</div>
 				<div className="portfolio-cards">
 					<ul>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
-						<li>
-							<LeftCard 
-								image={imageCard}
-								title="Projet 1"
-								text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae"
-							/>
-						</li>
+						{content}
 					</ul>
 				</div>
 			</div>
