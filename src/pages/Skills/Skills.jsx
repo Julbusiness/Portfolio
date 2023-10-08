@@ -1,7 +1,7 @@
 import image from "../../assets/images/bandeaux-sticky/bandeau-sticky1.png";
 import card from "../../assets/images/accueil/Card1.png";
 import Bandeau from "../../components/Bandeau/Bandeau";
-import CardTwo from "../../components/Cards/LeftCard/LeftCard";
+import LeftCard from "../../components/Cards/LeftCard/LeftCard";
 import Title from "../../components/Title/Title";
 
 import "./Skills.css";
@@ -19,15 +19,15 @@ export default function Skills() {
 						<div className='title-content'>
 							<ul>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Formations'
 										title='Titre de concepteur - développeur logiciels'
-										text='2023 - OpenClassrooms - Bordeaux'
+										text='2023 - OpenClassrooms - Bordeaux lorem ipsum dolor sit amet consectetur adipisicing elit. Quae'
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Formations'
 										title='Titre professionnel de développeur web et web mobile'
@@ -35,7 +35,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Formations'
 										title='BTS Action Commercial'
@@ -49,7 +49,7 @@ export default function Skills() {
 						<div className='title-content'>
 							<ul>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Hard Skills'
 										title='HTML'
@@ -59,7 +59,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Hard Skills'
 										title='CSS'
@@ -69,7 +69,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Hard Skills'
 										title='JACASCRIPT'
@@ -79,7 +79,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Hard Skills'
 										title='REACT'
@@ -89,7 +89,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Hard Skills'
 										title='PHP'
@@ -99,7 +99,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Hard Skills'
 										title='DIVERS'
@@ -115,7 +115,7 @@ export default function Skills() {
 						<div className='title-content'>
 							<ul>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Techniques'
 										title='Javascript / React'
@@ -123,7 +123,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Techniques'
 										title='PHP'
@@ -131,7 +131,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Techniques'
 										title='Compétences administratives et commerciales'
@@ -152,7 +152,7 @@ export default function Skills() {
 						<div className='title-content'>
 							<ul>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Expériences professionelles'
 										title='Qui suis-je ?'
@@ -162,7 +162,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Expériences professionelles'
 										title='Qui suis-je ?'
@@ -172,7 +172,7 @@ export default function Skills() {
 									/>
 								</li>
 								<li>
-									<CardTwo
+									<LeftCard
 										image={card}
 										tag='Expériences professionelles'
 										title='Qui suis-je ?'

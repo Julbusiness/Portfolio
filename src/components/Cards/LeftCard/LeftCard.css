@@ -9,8 +9,8 @@
   border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
   display: flex;
-  overflow: hidden;
   transition: var(--trans-05);
+  width: 100%;
 }
 
 .left-card:hover {
@@ -23,9 +23,10 @@
 
 .left-card .left-card-image {
   position: relative;
-  width: 23%;
+  width: 22%;
   border-radius: 10px 0 0 10px;
   transition: var(--trans-05);
+  overflow: hidden;
 }
 
 .left-card:hover .left-card-image {
@@ -52,8 +53,8 @@
 /* LEFT-CARD TEXT */
 
 .left-card .left-card-text {
-  padding: 40px 60px;
-  width: 77%;
+  padding: 40px 50px;
+  width: 78%;
   position: relative;
 }
 

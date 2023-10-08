@@ -17,16 +17,16 @@
   width: 70%;
 }
 
-.categories-container {
+.skills-container .categories-container {
   width: 70%;
 }
 
-.category {
+.skills-container .category {
   margin-top: 60px;
   display: flex;
 }
 
-.category li {
+.skills-container .category li {
   list-style: none;
   margin-bottom: 20px;
 }

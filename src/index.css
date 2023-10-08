@@ -12,18 +12,16 @@
 	--text-white: rgba(255, 255, 255, 1);
 	--text-black: rgba(34, 34, 34, 1);
 	--border-grey: rgba(187, 187, 187, 1);
+	--border-black: rgba(34, 34, 34, 0.6);
 	--text-menu-initial: rgba(151, 151, 151, 1);
 	--subheading: rgba(102, 102, 102, 1);
 
 
 	/* Transition */
-	--trans-01: all: 0.15s ease;
 	--trans-02: all 0.2s ease;
 	--trans-03: all 0.3s ease;
 	--trans-04: all 0.4s ease;
 	--trans-05: all 0.5s ease;
-
-	--trans-all: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 
 	overflow-x: hidden;
 
@@ -32,37 +30,42 @@
 
 /* ---------------------------- Factorisation css --------------------------- */
 .home,
-.notfound,
 .about,
+.skills,
+.portfolio,
 .confiance,
 .contact,
-.projets,
-.skills {
+.notfound
+ {
 	position: relative;
 	left: 60px;
 	width: calc(100vw - 60px);
 	transition: var(--trans-05);
+	z-index: 101;
+	background: #FFFFFF;
 }
 
 .sidebar.open ~ .home,
-.sidebar.open ~ .notfound,
 .sidebar.open ~ .about,
+.sidebar.open ~ .skills, 
+.sidebar.open ~ .portfolio,
 .sidebar.open ~ .confiance,
 .sidebar.open ~ .contact,
-.sidebar.open ~ .projets,
-.sidebar.open ~ .skills {
+.sidebar.open ~ .notfound
+{
 	left: 310px;
 	width: calc(100vw - 310px);
 	transition: var(--trans-05);
 }
 
 .home .text,
-.notfound .text,
 .about .text,
+.skills .text, 
+.portfolio .text,
 .confiance .text,
 .contact .text,
-.projets .text,
-.skills .text {
+.notfound .text
+{
 	font-size: 30px;
 	font-weight: 500;
 	color: var(--text-black);
