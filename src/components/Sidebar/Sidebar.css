@@ -56,7 +56,7 @@
 }
 
 .sidebar li .icon {
-	color: var(--text-white);
+	color: var(--icons);
 }
 
 .sidebar li .text {
