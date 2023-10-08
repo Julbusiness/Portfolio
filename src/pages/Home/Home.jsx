@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../data/data.json";
 import { Link } from "react-router-dom";
-import desktop from "../../assets/images/accueil/desktop1.jpg";
+import desktop from "/assets/images/accueil/desktop1.jpg";
 import Title from "../../components/Title/Title";
 import "./Home.css";
 
@@ -12,7 +12,6 @@ export default function Home() {
 
 	content = currentData.map(
 		(item, index) => (
-			console.log(item),
 			item.map((link, index) => (
 				<div className='home-card' key={link.id}>
 					<Link to={link.route} className='link'>

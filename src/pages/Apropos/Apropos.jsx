@@ -1,9 +1,25 @@
 import Bandeau from "../../components/Bandeau/Bandeau";
-import image from "../../assets/images/bandeaux-sticky/bandeau-sticky1.png";
+import data from "../../data/data.json";
+import image from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
 import "./Apropos.css";
 import CardOne from "../../components/Cards/RightCardThin/RightCardThin";
 
 export default function Apropos() {
+	const currentData = data.map((item) => item.aboutData);
+	console.log(currentData);
+	let content;
+
+	content = currentData.map((item, index) =>
+		item.map((card, index) => (
+			<CardOne
+				image={`/assets/images/cards/${card.image}`}
+				title={card.title}
+				text={card.content}
+				key={card.id}
+			/>
+		))
+	);
+
 	return (
 		<section className='about'>
 			<Bandeau image={image} />
@@ -36,17 +52,7 @@ export default function Apropos() {
 						</li>
 					</ul>
 				</div>
-				<div className='cards'>
-				<CardOne image={image} title='Qui suis-je ?' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-        recusandae molestiae mollitia magni dicta et hic quas natus
-        accusamus culpa.'/>
-				<CardOne image={image} title="Qu'est ce que je fais ?" text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-        recusandae molestiae mollitia magni dicta et hic quas natus
-        accusamus culpa.'/>
-				<CardOne image={image} title="Qu'est ce que je recherche ?" text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-        recusandae molestiae mollitia magni dicta et hic quas natus
-        accusamus culpa.'/>
-				</div>
+				<div className='cards'>{content}</div>
 			</div>
 		</section>
 	);

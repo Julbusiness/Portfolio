@@ -40,6 +40,144 @@
 					"title": "Contact"
 				}
 			]
-		}
+		},
+		"aboutData": [
+			{
+				"id": 1,
+				"image": "card1.png",
+				"title": "Qui suis-je ?",
+				"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+			},
+			{
+				"id": 2,
+				"image": "card2.png",
+				"title": "Qu'est ce que je fais ?",
+				"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+			},
+			{
+				"id": 3,
+				"image": "card3.png",
+				"title": "Qu'est ce que je recherche ?",
+				"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+			}
+		],
+		"skillsData": [
+			{
+				"formations": [
+					{
+						"id": 1,
+						"image": "card1.png",
+						"tag": "Formations",
+						"title": "Titre de concepteur - développeur logiciels",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 2,
+						"image": "card2.png",
+						"tag": "Formations",
+						"title": "Titre professionnel de développeur web et web mobile",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 3,
+						"image": "card3.png",
+						"tag": "Formations",
+						"title": "BTS Action Commercial",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					}
+				],
+				"hardSkills": [
+					{
+						"id": 1,
+						"image": "card1.png",
+						"tag": "Hard Skills",
+						"title": "HTML",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 2,
+						"image": "card2.png",
+						"tag": "Hard Skills",
+						"title": "CSS",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 3,
+						"image": "card3.png",
+						"tag": "Hard Skills",
+						"title": "JAVASCRIPT",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 4,
+						"image": "card4.png",
+						"tag": "Hard Skills",
+						"title": "REACT",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 5,
+						"image": "card5.png",
+						"tag": "Hard Skills",
+						"title": "PHP",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 6,
+						"image": "card6.png",
+						"tag": "Hard Skills",
+						"title": "DIVERS",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					}
+				],
+				"techniques": [
+					{
+						"id": 1,
+						"image": "card1.png",
+						"tag": "Techniques",
+						"title": "Javascript / React",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 2,
+						"image": "card2.png",
+						"tag": "Techniques",
+						"title": "PHP",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 3,
+						"image": "card3.png",
+						"tag": "Techniques",
+						"title": "Compétences administratives et commerciales",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					}
+				],
+				"experiences": [
+					{
+						"id": 1,
+						"image": "card1.png",
+						"tag": "Expériences professionelles",
+						"title": "Boulot 1",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 2,
+						"image": "card2.png",
+						"tag": "Expériences professionelles",
+						"title": "Boulot 2",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					},
+					{
+						"id": 3,
+						"image": "card3.png",
+						"tag": "Expériences professionelles",
+						"title": "Boulot 3",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+					}
+				]
+			} 
+
+		]
 	}
 ]

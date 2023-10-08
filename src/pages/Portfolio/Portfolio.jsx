@@ -1,7 +1,7 @@
 import "./Portfolio.css";
 import Bandeau from "../../components/Bandeau/Bandeau";
-import imageBandeau from "../../assets/images/bandeaux-sticky/bandeau-sticky5.png";
-import imageCard from "../../assets/images/cards/card1.png";
+import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
+import imageCard from "/assets/images/cards/card1.png";
 import Title from "../../components/Title/Title";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import LeftCard from "../../components/Cards/LeftCard/LeftCard";
