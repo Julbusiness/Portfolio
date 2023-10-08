@@ -1,0 +1,45 @@
+[
+	{
+		"homeData": {
+			"title": "Transformez vos idées en réalités digitales",
+			"links": [
+				{
+					"id": 1,
+					"route": "/",
+					"image": "accueil.jpg",
+					"title": "Accueil"
+				},
+				{
+					"id": 2,
+					"route": "/apropos",
+					"image": "apropos.jpg",
+					"title": "À propos"
+				},
+				{
+					"id": 3,
+					"route": "/skills",
+					"image": "skills.jpg",
+					"title": "Skills"
+				},
+				{
+					"id": 4,
+					"route": "/portfolio",
+					"image": "portfolio.jpg",
+					"title": "Portfolio"
+				},
+				{
+					"id": 5,
+					"route": "/confiance",
+					"image": "confiance.jpg",
+					"title": "Confiance"
+				},
+				{
+					"id": 6,
+					"route": "/contact",
+					"image": "contact.jpg",
+					"title": "Contact"
+				}
+			]
+		}
+	}
+]
