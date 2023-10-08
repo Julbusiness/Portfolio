@@ -1,9 +1,9 @@
-.portfolio {
+.web {
   display: flex;
   flex-direction: column;
 }
 
-.portfolio-container {
+.web-container {
   width: calc(100vw - 60px);
   display: flex;
   flex-direction: column;
@@ -12,30 +12,21 @@
   margin-top: 100px;
 }
 
-.portfolio-container .title-start {
+.web-container .title-start {
   justify-content: start;
   width: 70%;
 }
 
-.portfolio-container .search-container {
-  width: 55%;
-  margin-top: 50px;
-}
-
-.portfolio-container .portfolio-cards {
+.web-container .web-cards {
   width: 70%;
   margin-top: 50px;
 }
 
-.portfolio-container .portfolio-cards li:first-child {
+.web-container .web-cards li:first-child {
   list-style: none;
   margin-top: 50px;
 }
 
-.portfolio-container .portfolio-cards li{
+.web-container .web-cards li {
   list-style: none;
-}
-
-.portfolio-links {
-  text-decoration: none;
 }

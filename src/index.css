@@ -34,6 +34,10 @@
 .about,
 .skills,
 .portfolio,
+.logo,
+.visitCard,
+.web,
+.photo,
 .confiance,
 .contact,
 .notfound
@@ -50,6 +54,10 @@
 .sidebar.open ~ .about,
 .sidebar.open ~ .skills, 
 .sidebar.open ~ .portfolio,
+.sidebar.open ~ .logo,
+.sidebar.open ~ .visitCard,
+.sidebar.open ~ .web,
+.sidebar.open ~ .photo,
 .sidebar.open ~ .confiance,
 .sidebar.open ~ .contact,
 .sidebar.open ~ .notfound
@@ -63,6 +71,10 @@
 .about .text,
 .skills .text, 
 .portfolio .text,
+.logo .text,
+.visitCard .text,
+.web .text,
+.photo .text,
 .confiance .text,
 .contact .text,
 .notfound .text

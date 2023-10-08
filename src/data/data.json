@@ -176,75 +176,160 @@
 						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
 					}
 				]
-			} 
+			}
 		],
 		"portfolioData": [
 			{
-				"id": 1,
-				"image": "card1.png",
-				"title": "Projet 1",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-			},
-			{
-				"id": 2,
-				"image": "card2.png",
-				"title": "Projet 2",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-			},
-			{
-				"id": 3,
-				"image": "card3.png",
-				"title": "Projet 3",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 4,
-				"image": "card4.png",
-				"title": "Projet 4",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 5,
-				"image": "card5.png",
-				"title": "Projet 5",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 6,
-				"image": "card6.png",
-				"title": "Projet 6",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 7,
-				"image": "card7.png",
-				"title": "Projet 7",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 8,
-				"image": "card8.png",
-				"title": "Projet 8",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 9,
-				"image": "card9.png",
-				"title": "Projet 9",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
-
-			},
-			{
-				"id": 10,
-				"image": "card10.png",
-				"title": "Projet 10",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusam"
+				"portfolio": [
+					{
+						"id": "1",
+						"image": "card1.png",
+						"title": "Logo",
+						"route": "logo"
+					},
+					{
+						"id": "2",
+						"image": "card2.png",
+						"title": "Carte de visite",
+						"route": "/portfolio/visitcard"
+					},
+					{
+						"id": "3",
+						"image": "card3.png",
+						"title": "Site Web",
+						"route": "/portfolio/web"
+					},
+					{
+						"id": "4",
+						"image": "card4.png",
+						"title": "Photos",
+						"route": "/portfolio/photo"
+					}
+				],
+				"logo": [
+					{
+						"id": "1",
+						"image": "logo1.png"
+					},
+					{
+						"id": "2",
+						"image": "logo2.png"
+					},
+					{
+						"id": "3",
+						"image": "logo3.png"
+					},
+					{
+						"id": "4",
+						"image": "logo4.png"
+					},
+					{
+						"id": "5",
+						"image": "logo5.png"
+					},
+					{
+						"id": "6",
+						"image": "logo6.png"
+					},
+					{
+						"id": "7",
+						"image": "logo7.png"
+					},
+					{
+						"id": "8",
+						"image": "logo8.png"
+					},
+					{
+						"id": "9",
+						"image": "logo9.png"
+					},
+					{
+						"id": "10",
+						"image": "logo10.png"
+					}
+				],
+				"visitCard": [
+					{
+						"id": "1",
+						"image": "visitCard1.png",
+						"title": "Premiere carte de visite",
+						"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+					}
+				],
+				"web": [
+					{
+						"id": "1",
+						"image": "card1.png",
+						"title": "Premier site web",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+					},
+					{
+						"id": "2",
+						"image": "card2.png",
+						"title": "Deuxième site web",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+					},
+					{
+						"id": "3",
+						"image": "card3.png",
+						"title": "Troisième site web",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+					},
+					{
+						"id": "4",
+						"image": "card4.png",
+						"title": "Quatrième site web",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+					},
+					{
+						"id": "5",
+						"image": "card5.png",
+						"title": "Cinquième site web",
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+					}
+				],
+				"photo": [
+					{
+						"id": "1",
+						"image": "photo1.png"
+					},
+					{
+						"id": "2",
+						"image": "photo2.png"
+					},
+					{
+						"id": "3",
+						"image": "photo3.png"
+					},
+					{
+						"id": "4",
+						"image": "photo4.png"
+					},
+					{
+						"id": "5",
+						"image": "photo5.png"
+					},
+					{
+						"id": "6",
+						"image": "photo6.png"
+					},
+					{
+						"id": "7",
+						"image": "photo7.png"
+					},
+					{
+						"id": "8",
+						"image": "photo8.png"
+					},
+					{
+						"id": "9",
+						"image": "photo9.png"
+					},
+					{
+						"id": "10",
+						"image": "photo10.png"
+					}
+				]
 			}
 		]
 	}
