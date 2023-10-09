@@ -1,55 +1,36 @@
-.photo {
-  display: flex;
-  flex-direction: column;
-}
-
-.photo-container {
-  width: calc(100vw - 60px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  position: relative;
-}
-
-.photo-container .title-start {
-  justify-content: start;
-  width: 70%;
-}
-
 .photo-container .photos {
-  width: 70%;
-  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.photo-container .photos img {
+.photo-container .photos .card-image {
   width: 200px;
   height: 200px;
+  margin: 10px 10px 10px 0;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: var(--trans-05);
+}
+
+.photo-container .photos .card-image:hover {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+  border-radius: 0;
+  transition: var(--trans-05);
+}
+
+.photo-container .photos img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  border: 1px solid #ccc;
-  margin: 10px 10px 10px 0;
   cursor: pointer;
+  transition: var(--trans-05);
 }
 
-.photo-container button {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background: #1d1d1b;
-  border: none;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.photo-container button i {
-  font-size: 30px;
+.photo-container .photos img:hover {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+  border-radius: 0;
+  transform: scale(1.2);
+  transition: var(--trans-05);
 }

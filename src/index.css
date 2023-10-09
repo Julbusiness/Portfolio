@@ -48,6 +48,38 @@
 	transition: var(--trans-05);
 	z-index: 101;
 	background: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-container,
+.skills-container,
+.portfolio-container,
+.logo-container,
+.photo-container,
+.visitCard-container,
+.web-container,
+.confiance-container,
+.contact-container {
+  width: calc(100vw - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+	position: relative;
+}
+
+.skills-container .title-start
+.portfolio-container .title-start,
+.logo-container .title-start,
+.photo-container .title-start,
+.visitCard-container .title-start,
+.web-container .title-start,
+.confiance-container .title-start,
+.contact-container .title-start {
+  justify-content: start;
+  width: 70%;
 }
 
 .sidebar.open ~ .home,
@@ -121,3 +153,47 @@
 	color: var(--text-white);
 	font-weight: 500;
 }
+
+.logo-container .logos,
+.photo-container .photos,
+.visitCard-container .visitCard-cards,
+.web-container .web-cards,
+.confiance-container .confiance-cards,
+.contact-container .right-card
+ {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.portfolio-container .portfolio-cards li,
+.visitCard-container .visitCard-cards li,
+.web-container .web-cards li,
+.confiance-container .confiance-cards li {
+  list-style: none;
+}
+
+.logo-container button,
+.photo-container button,
+.visitCard-container button,
+.web-container button {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: #1d1d1b;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-container button i,
+.photo-container button i,
+.visitCard-container button i,
+.web-container button i	{
+  font-size: 30px;
+}
+

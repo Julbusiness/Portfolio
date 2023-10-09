@@ -2,16 +2,15 @@ import Bandeau from "../../components/Bandeau/Bandeau";
 import data from "../../data/data.json";
 import image from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
 import "./Apropos.css";
-import CardOne from "../../components/Cards/RightCardThin/RightCardThin";
+import RightCard from "../../components/Cards/RightCard/RightCard";
 
 export default function Apropos() {
 	const currentData = data.map((item) => item.aboutData);
-	console.log(currentData);
 	let content;
 
 	content = currentData.map((item, index) =>
 		item.map((card, index) => (
-			<CardOne
+			<RightCard
 				image={`/assets/images/cards/${card.image}`}
 				title={card.title}
 				text={card.content}

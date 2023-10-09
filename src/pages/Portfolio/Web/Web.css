@@ -1,32 +1,4 @@
-.web {
-  display: flex;
-  flex-direction: column;
-}
-
-.web-container {
-  width: calc(100vw - 60px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.web-container .title-start {
-  justify-content: start;
-  width: 70%;
-}
-
-.web-container .web-cards {
-  width: 70%;
-  margin-top: 50px;
-}
-
 .web-container .web-cards li:first-child {
   list-style: none;
   margin-top: 50px;
-}
-
-.web-container .web-cards li {
-  list-style: none;
 }

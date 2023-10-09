@@ -6,13 +6,14 @@ import data from "../../../data/data.json";
 import { Link } from "react-router-dom";
 
 export default function Photo() {
-
-  const photoData = data.map((item) => item.portfolioData[0].photo);
+	const photoData = data.map((item) => item.portfolioData[0].photo);
 
 	let content;
 	content = photoData.map((item, index) =>
 		item.map((card, index) => (
-			<img src={`/assets/images/photos/${card.image}`} alt='' key={card.id} />
+			<div className='card-image' key={card.id}>
+				<img src={`/assets/images/photos/${card.image}`} alt=''  />
+			</div>
 		))
 	);
 
@@ -20,7 +21,7 @@ export default function Photo() {
 		<section className='photo'>
 			<Bandeau image={imageBandeau} />
 			<div className='photo-container'>
-				<Link to="/portfolio">
+				<Link to='/portfolio'>
 					<button>
 						<i className='bx bx-left-arrow-alt'></i>
 					</button>

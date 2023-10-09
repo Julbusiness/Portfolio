@@ -11,8 +11,8 @@ export default function Logo() {
 	let content;
 	content = logoData.map((item, index) =>
 		item.map((card, index) => (
-			<div className='card-image'>
-				<img src={`/assets/images/logos/${card.image}`} alt='' key={card.id} />
+			<div className='card-image' key={card.id}>
+				<img src={`/assets/images/logos/${card.image}`} alt='' />
 			</div>
 		))
 	);

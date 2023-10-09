@@ -405,7 +405,7 @@
 						"id": "1",
 						"image": "visitCard1.png",
 						"title": "Premiere carte de visite",
-						"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+						"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 					}
 				],
 				"web": [
@@ -482,6 +482,14 @@
 						"image": "photo10.jpg"
 					}
 				]
+			}
+		],
+		"confianceData": [
+			{
+				"id": 1,
+				"image": "confiance1.jpg",
+				"title": "Confiance 1",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 			}
 		]
 	}
