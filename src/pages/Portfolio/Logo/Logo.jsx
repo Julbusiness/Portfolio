@@ -11,7 +11,9 @@ export default function Logo() {
 	let content;
 	content = logoData.map((item, index) =>
 		item.map((card, index) => (
-			<img src={`/assets/images/logos/${card.image}`} alt='' key={card.id} />
+			<div className='card-image'>
+				<img src={`/assets/images/logos/${card.image}`} alt='' key={card.id} />
+			</div>
 		))
 	);
 
@@ -19,7 +21,7 @@ export default function Logo() {
 		<section className='logo'>
 			<Bandeau image={imageBandeau} />
 			<div className='logo-container'>
-				<Link to="/portfolio">
+				<Link to='/portfolio'>
 					<button>
 						<i className='bx bx-left-arrow-alt'></i>
 					</button>

@@ -37,7 +37,6 @@
 .left-card .left-card-image img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
   object-position: center;
   border-radius: 10px 0 0 10px;
   transform: scale(1);

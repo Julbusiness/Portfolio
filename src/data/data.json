@@ -202,7 +202,7 @@
 					{
 						"id": "4",
 						"image": "card4.png",
-						"title": "Photos",
+						"title": "Photo",
 						"route": "/portfolio/photo"
 					}
 				],
@@ -443,43 +443,43 @@
 				"photo": [
 					{
 						"id": "1",
-						"image": "photo1.png"
+						"image": "photo1.jpg"
 					},
 					{
 						"id": "2",
-						"image": "photo2.png"
+						"image": "photo2.jpg"
 					},
 					{
 						"id": "3",
-						"image": "photo3.png"
+						"image": "photo3.jpg"
 					},
 					{
 						"id": "4",
-						"image": "photo4.png"
+						"image": "photo4.jpg"
 					},
 					{
 						"id": "5",
-						"image": "photo5.png"
+						"image": "photo5.jpg"
 					},
 					{
 						"id": "6",
-						"image": "photo6.png"
+						"image": "photo6.jpg"
 					},
 					{
 						"id": "7",
-						"image": "photo7.png"
+						"image": "photo7.jpg"
 					},
 					{
 						"id": "8",
-						"image": "photo8.png"
+						"image": "photo8.jpg"
 					},
 					{
 						"id": "9",
-						"image": "photo9.png"
+						"image": "photo9.jpg"
 					},
 					{
 						"id": "10",
-						"image": "photo10.png"
+						"image": "photo10.jpg"
 					}
 				]
 			}
