@@ -7,21 +7,19 @@ import LeftCard from "../../components/Cards/LeftCard/LeftCard";
 import data from "../../data/data.json";
 
 export default function Portfolio() {
-	const portfolioData = data.map((item) => item.portfolioData[0].portfolio);
+	const portfolioData = data.portfolioData.portfolio;
 
 	let content;
-	content = portfolioData.map((item, index) =>
-		item.map((card, index) => (
-			<li key={card.id}>
-				<Link to={card.route} className='portfolio-links'>
-					<LeftCard
-						image={`/assets/images/cards/${card.image}`}
-						title={card.title}
-					/>
-				</Link>
-			</li>
-		))
-	);
+	content = portfolioData.map((card, index) => (
+		<li key={card.id}>
+			<Link to={card.route} className='portfolio-links'>
+				<LeftCard
+					image={`/assets/images/cards/${card.image}`}
+					title={card.title}
+				/>
+			</Link>
+		</li>
+	));
 
 	return (
 		<section className='portfolio'>

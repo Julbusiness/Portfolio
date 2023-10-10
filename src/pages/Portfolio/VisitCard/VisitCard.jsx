@@ -7,29 +7,27 @@ import { Link } from "react-router-dom";
 import "./VisitCard.css";
 
 export default function VisitCard() {
-	const visitCardData = data.map((item) => item.portfolioData[0].visitCard);
+	const visitCardData = data.portfolioData.visitCard;
 
 	let content;
-	content = visitCardData.map((item, index) =>
-		item.map((card, index) => (
-			<Link to="#" className="link" key={card.id}>
-				<li>
-					<RightCard
-						image={`/assets/images/visitCard/${card.image}`}
-						title={card.title}
-						text={card.text}
-					/>
-				</li>
-			</Link>
-		))
-	);
+	content = visitCardData.map((card, index) => (
+		<Link to='#' className='link' key={card.id}>
+			<li>
+				<RightCard
+					image={`/assets/images/visitCard/${card.image}`}
+					title={card.title}
+					text={card.text}
+				/>
+			</li>
+		</Link>
+	));
 
 	return (
 		<section className='visitCard'>
 			<Bandeau image={imageBandeau} />
 			<div className='visitCard-container'>
 				<Link to='/portfolio'>
-					<button>
+					<button className='btnPrev'>
 						<i className='bx bx-left-arrow-alt'></i>
 					</button>
 				</Link>

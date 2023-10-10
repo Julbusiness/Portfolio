@@ -6,7 +6,7 @@ import RightCard from "../../components/Cards/RightCard/RightCard";
 import "./Confiance.css";
 
 export default function Confiance() {
-	const confianceData = data.map((item) => item.confianceData[0]);
+	const confianceData = data.confianceData;
 
 	let content;
 	content = confianceData.map((item, index) => (

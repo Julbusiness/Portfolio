@@ -7,29 +7,27 @@ import "./Web.css";
 import { Link } from "react-router-dom";
 
 export default function Web() {
-	const webData = data.map((item) => item.portfolioData[0].web);
+	const webData = data.portfolioData.web;
 
 	let content;
-	content = webData.map((item, index) =>
-		item.map((card, index) => (
-			<li key={card.id}>
-				<LeftCard
-					image={`/assets/images/cards/${card.image}`}
-					tag={card.tag}
-					title={card.title}
-					text={card.text}
-					className
-				/>
-			</li>
-		))
-	);
+	content = webData.map((card, index) => (
+		<li key={card.id}>
+			<LeftCard
+				image={`/assets/images/cards/${card.image}`}
+				tag={card.tag}
+				title={card.title}
+				text={card.text}
+				className
+			/>
+		</li>
+	));
 
 	return (
 		<section className='web'>
 			<Bandeau image={imageBandeau} />
 			<div className='web-container'>
 				<Link to='/portfolio'>
-					<button>
+					<button className='btnPrev'>
 						<i className='bx bx-left-arrow-alt'></i>
 					</button>
 				</Link>

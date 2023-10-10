@@ -6,22 +6,17 @@ import Title from "../../components/Title/Title";
 import "./Home.css";
 
 export default function Home() {
-	const currentData = data.map((item) => item.homeData.links);
-
+	const homeData = data.homeData.links;
 	let content;
 
-	content = currentData.map(
-		(item, index) => (
-			item.map((link, index) => (
-				<div className='home-card' key={link.id}>
-					<Link to={link.route} className='link'>
-						<img src={`/assets/images/accueil/${link.image}`} alt='' />
-						<h3 className='title-card'>{link.title}</h3>
-					</Link>
-				</div>
-			))
-		)
-	);
+	content = homeData.map((link, index) => (
+		<div className='home-card' key={link.id}>
+			<Link to={link.route} className='link'>
+				<img src={`/assets/images/accueil/${link.image}`} alt='' />
+				<h3 className='title-card'>{link.title}</h3>
+			</Link>
+		</div>
+	));
 
 	return (
 		<section className='home'>

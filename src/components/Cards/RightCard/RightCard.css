@@ -5,18 +5,20 @@
   margin-bottom: 20px;
   box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
   display: flex;
+  border-radius: 10px;
 }
 
 .right-card:hover {
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
   border-radius: 0;
-  cursor: pointer;
   transition: var(--trans-05);
 }
 
 .right-card .right-card-text {
   padding: 40px 60px;
   width: 60%;
+  /* border-radius: 10px 0 0 10px; */
+  /* background: red; */
 }
 
 .right-card .right-card-text h2 {
@@ -52,7 +54,7 @@
   transition: var(--trans-05);
 }
 
-.right-card .right-card-image img:hover {
+.right-card:hover .right-card-image img {
   border-radius: 0;
   transform: scale(1.1);
   transition: var(--trans-05);

@@ -5,19 +5,17 @@ import "./Apropos.css";
 import RightCard from "../../components/Cards/RightCard/RightCard";
 
 export default function Apropos() {
-	const currentData = data.map((item) => item.aboutData);
+	const aboutData = data.aboutData
 	let content;
 
-	content = currentData.map((item, index) =>
-		item.map((card, index) => (
-			<RightCard
-				image={`/assets/images/cards/${card.image}`}
-				title={card.title}
-				text={card.content}
-				key={card.id}
-			/>
-		))
-	);
+	content = aboutData.map((card, index) => (
+		<RightCard
+			image={`/assets/images/cards/${card.image}`}
+			title={card.title}
+			text={card.content}
+			key={card.id}
+		/>
+	));
 
 	return (
 		<section className='about'>

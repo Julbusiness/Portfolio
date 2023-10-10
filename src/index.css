@@ -70,7 +70,7 @@
 	position: relative;
 }
 
-.skills-container .title-start
+.skills-container .title-start,
 .portfolio-container .title-start,
 .logo-container .title-start,
 .photo-container .title-start,
@@ -172,10 +172,10 @@
   list-style: none;
 }
 
-.logo-container button,
-.photo-container button,
-.visitCard-container button,
-.web-container button {
+.logo-container .btnPrev,
+.photo-container .btnPrev,
+.visitCard-container .btnPrev,
+.web-container .btnPrev {
   position: absolute;
   top: -100px;
   left: 0;

@@ -8,66 +8,58 @@ import data from "../../data/data.json";
 import "./Skills.css";
 
 export default function Skills() {
-	const formationsData = data.map((item) => item.skillsData[0].formations);
-	const hardSlikksData = data.map((item) => item.skillsData[0].hardSkills);
-	const techniquesData = data.map((item) => item.skillsData[0].techniques);
-	const experiencesData = data.map((item) => item.skillsData[0].experiences);
+	const formationsData = data.skillsData.formations;
+	const hardSlikksData = data.skillsData.hardSkills;
+	const techniquesData = data.skillsData.techniques;
+	const experiencesData = data.skillsData.experiences;
 
 	let formationsContent;
-	formationsContent = formationsData.map((item, index) =>
-		item.map((card, index) => (
-			<li key={card.id}>
-				<LeftCard
-					image={`/assets/images/cards/${card.image}`}
-					tag={card.tag}
-					title={card.title}
-					text={card.text}
-				/>
-			</li>
-		))
-	);
+	formationsContent = formationsData.map((card, index) => (
+		<li key={card.id}>
+			<LeftCard
+				image={`/assets/images/cards/${card.image}`}
+				tag={card.tag}
+				title={card.title}
+				text={card.text}
+			/>
+		</li>
+	));
 
 	let hardSkillsContent;
-	hardSkillsContent = hardSlikksData.map((item, index) =>
-		item.map((card, index) => (
-			<li key={card.id}>
-				<LeftCard
-					image={`/assets/images/cards/${card.image}`}
-					tag={card.tag}
-					title={card.title}
-					text={card.text}
-				/>
-			</li>
-		))
-	);
+	hardSkillsContent = hardSlikksData.map((card, index) => (
+		<li key={card.id}>
+			<LeftCard
+				image={`/assets/images/cards/${card.image}`}
+				tag={card.tag}
+				title={card.title}
+				text={card.text}
+			/>
+		</li>
+	));
 
 	let techniquesContent;
-	techniquesContent = techniquesData.map((item, index) =>
-		item.map((card, index) => (
-			<li key={card.id}>
-				<LeftCard
-					image={`/assets/images/cards/${card.image}`}
-					tag={card.tag}
-					title={card.title}
-					text={card.text}
-				/>
-			</li>
-		))
-	);
+	techniquesContent = techniquesData.map((card, index) => (
+		<li key={card.id}>
+			<LeftCard
+				image={`/assets/images/cards/${card.image}`}
+				tag={card.tag}
+				title={card.title}
+				text={card.text}
+			/>
+		</li>
+	));
 
 	let experiencesContent;
-	experiencesContent = experiencesData.map((item, index) =>
-		item.map((card, index) => (
-			<li key={card.id}>
-				<LeftCard
-					image={`/assets/images/cards/${card.image}`}
-					tag={card.tag}
-					title={card.title}
-					text={card.text}
-				/>
-			</li>
-		))
-	);
+	experiencesContent = experiencesData.map((card, index) => (
+		<li key={card.id}>
+			<LeftCard
+				image={`/assets/images/cards/${card.image}`}
+				tag={card.tag}
+				title={card.title}
+				text={card.text}
+			/>
+		</li>
+	));
 
 	return (
 		<section className='skills'>

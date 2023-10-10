@@ -6,23 +6,21 @@ import data from "../../../data/data.json";
 import { Link } from "react-router-dom";
 
 export default function Photo() {
-	const photoData = data.map((item) => item.portfolioData[0].photo);
+	const photoData = data.portfolioData.photo;
 
 	let content;
-	content = photoData.map((item, index) =>
-		item.map((card, index) => (
-			<div className='card-image' key={card.id}>
-				<img src={`/assets/images/photos/${card.image}`} alt=''  />
-			</div>
-		))
-	);
+	content = photoData.map((card, index) => (
+		<div className='card-image' key={card.id}>
+			<img src={`/assets/images/photos/${card.image}`} alt='' />
+		</div>
+	));
 
 	return (
 		<section className='photo'>
 			<Bandeau image={imageBandeau} />
 			<div className='photo-container'>
 				<Link to='/portfolio'>
-					<button>
+					<button className='btnPrev'>
 						<i className='bx bx-left-arrow-alt'></i>
 					</button>
 				</Link>
