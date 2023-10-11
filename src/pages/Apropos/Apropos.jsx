@@ -10,7 +10,7 @@ export default function Apropos() {
 
 	content = aboutData.map((card, index) => (
 		<RightCard
-			image={`/assets/images/cards/${card.image}`}
+			image={`/assets/images/apropos/${card.image}`}
 			title={card.title}
 			text={card.content}
 			key={card.id}
@@ -24,9 +24,7 @@ export default function Apropos() {
 				<div className='about-title-container'>
 					<h1>À propos</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-						recusandae molestiae mollitia magni dicta et hic quas natus
-						accusamus culpa.
+					Plongez dans mon univers de code, où passion pour le design et expertise en React s'entremêlent pour donner vie à des expériences digitales mémorables.
 					</p>
 				</div>
 				<div className='stats'>

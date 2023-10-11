@@ -44,21 +44,21 @@
 	"aboutData": [
 		{
 			"id": 1,
-			"image": "card1.svg",
+			"image": "apropos1.svg",
 			"title": "Qui suis-je ?",
-			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+			"content": "Passionné par l'art de créer des expériences utilisateur fluides et captivantes, je transforme les idées en réalités digitales avec l'élégance de React."
 		},
 		{
 			"id": 2,
-			"image": "card2.svg",
+			"image": "apropos2.svg",
 			"title": "Qu'est ce que je fais ?",
-			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+			"content": "Je conçois et développe des interfaces web réactives et intuitives, en utilisant le pouvoir et la flexibilité de React, pour offrir aux utilisateurs une expérience numérique inoubliable."
 		},
 		{
 			"id": 3,
-			"image": "card3.svg",
+			"image": "apropos3.svg",
 			"title": "Qu'est ce que je recherche ?",
-			"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+			"content": "Je recherche un poste de développeur front-end pour mettre en œuvre ma maîtrise de React et co-créer des expériences web avant-gardistes qui impactent positivement l'expérience utilisateur."
 		}
 	],
 

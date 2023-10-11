@@ -1,6 +1,5 @@
 .right-card{
   min-height: 250px;
-  display: inline-block;
   background-color: var(--bg-white);
   margin-bottom: 20px;
   box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
@@ -17,8 +16,6 @@
 .right-card .right-card-text {
   padding: 40px 60px;
   width: 60%;
-  /* border-radius: 10px 0 0 10px; */
-  /* background: red; */
 }
 
 .right-card .right-card-text h2 {
@@ -36,6 +33,7 @@
 
 .right-card .right-card-image {
   width: 40%;
+  max-height: 300px;
   border-radius: 0 10px 10px 0;
   overflow: hidden;
   transition: var(--trans-05);
