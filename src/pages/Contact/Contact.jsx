@@ -41,7 +41,7 @@ export default function Contact() {
 							<p className='email'>devprojules@gmail.com</p>
 						</div>
 					</div>
-					<div className='right-card-image'>
+					<div className='right-card-pics'>
 						<img src={contactImage} alt='' />
 					</div>
 				</div>
