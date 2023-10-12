@@ -1,51 +1,32 @@
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { openModal } from "../../../features/modal";
+import { slideNumber } from "../../../features/slide";
+
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky6.png";
-import "./Logo.css";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
-import { Link } from "react-router-dom";
 import Modal from "../../../components/Modal/Modal";
+import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
+
+import "./Logo.css";
 
 export default function Logo() {
-	// State et Constante pour la modal
+	const modal = useSelector((state) => state.modal);
+	const slide = useSelector((state) => state.slide.value);
+	const dispatch = useDispatch();
 
-	const [slideNumber, setSlideNumber] = useState(0);
-	const [openModal, setOpenModal] = useState(false);
 	const logoData = data.portfolioData.logo;
 
-	// Fonctions pour la modal
-
-	const handleOpenModal = (index) => {
-		console.log(index);
-		setSlideNumber(index);
-		setOpenModal(true);
-	};
-
-	const handleCloseModal = () => {
-		setOpenModal(false);
-	};
-
-	const prevSlide = () => {
-		slideNumber === 0
-			? setSlideNumber(logoData.length - 1)
-			: setSlideNumber(slideNumber - 1);
-	};
-
-	const nextSlide = () => {
-		slideNumber === logoData.length - 1
-			? setSlideNumber(0)
-			: setSlideNumber(slideNumber + 1);
-	};
-
-	// Contenu pour la modal
-
-	let contentWithoutModal;
-	contentWithoutModal = logoData.map((card, index) => (
+	let content;
+	content = logoData.map((card, index) => (
 		<div
 			className='card-image'
 			key={index}
-			onClick={() => handleOpenModal(index)}
+			onClick={() => {
+				dispatch(openModal());
+				dispatch(slideNumber(index));
+			}}
 		>
 			<img
 				src={`/assets/images/logos/${card.image}`}
@@ -55,12 +36,12 @@ export default function Logo() {
 		</div>
 	));
 
-	let contentWithModal;
-	contentWithModal = (
+	let contentModal;
+	contentModal = (
 		<img
-			src={`/assets/images/logos/${logoData[slideNumber].image}`}
+			src={`/assets/images/logos/${logoData[slide].image}`}
 			alt=''
-			key={logoData[slideNumber].id}
+			key={logoData[slide].id}
 			className='image-modal'
 		/>
 	);
@@ -69,21 +50,13 @@ export default function Logo() {
 		<section className='logo'>
 			<Bandeau image={imageBandeau} />
 			<div className='logo-container'>
-				<Link to='/portfolio'>
-					<button className='btnPrev'>
-						<i className='bx bx-left-arrow-alt'></i>
-					</button>
-				</Link>
+				<BackBtn />
 				<div className='title-start'>
 					<Title title='Logo' />
 				</div>
 				<div className='logos'>
-					{openModal && (
-						<Modal close={handleCloseModal} left={prevSlide} right={nextSlide}>
-							{contentWithModal}
-						</Modal>
-					)}
-					<div className='galleryImages'>{logoData && contentWithoutModal}</div>
+					{modal.value && <Modal data={logoData} content={contentModal} />}
+					<div className='galleryImages'>{logoData && content}</div>
 				</div>
 			</div>
 		</section>

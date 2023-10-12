@@ -3,7 +3,7 @@ import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky6.png";
 import "./Photo.css";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
-import { Link } from "react-router-dom";
+import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
 
 export default function Photo() {
 	const photoData = data.portfolioData.photo;
@@ -19,11 +19,7 @@ export default function Photo() {
 		<section className='photo'>
 			<Bandeau image={imageBandeau} />
 			<div className='photo-container'>
-				<Link to='/portfolio'>
-					<button className='btnPrev'>
-						<i className='bx bx-left-arrow-alt'></i>
-					</button>
-				</Link>
+				<BackBtn />
 				<div className='title-start'>
 					<Title title='Photo' />
 				</div>

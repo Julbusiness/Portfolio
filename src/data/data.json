@@ -400,7 +400,41 @@
 				"id": "1",
 				"image": "visitCard1.png",
 				"title": "Premiere carte de visite",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "visitCard1.png"
+					},
+					{
+						"id": "2",
+						"image": "visitCard2.png"
+					},
+					{
+						"id": "3",
+						"image": "visitCard3.png"
+					},
+					{
+						"id": "4",
+						"image": "visitCard4.png"
+					},
+					{
+						"id": "5",
+						"image": "visitCard5.png"
+					},
+					{
+						"id": "6",
+						"image": "visitCard6.png"
+					},
+					{
+						"id": "7",
+						"image": "visitCard7.png"
+					},
+					{
+						"id": "8",
+						"image": "visitCard8.png"
+					}
+				]
 			}
 		],
 		"web": [

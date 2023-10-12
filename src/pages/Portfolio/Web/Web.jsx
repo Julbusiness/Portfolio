@@ -4,7 +4,7 @@ import Title from "../../../components/Title/Title";
 import LeftCard from "../../../components/Cards/LeftCard/LeftCard";
 import data from "../../../data/data.json";
 import "./Web.css";
-import { Link } from "react-router-dom";
+import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
 
 export default function Web() {
 	const webData = data.portfolioData.web;
@@ -26,11 +26,7 @@ export default function Web() {
 		<section className='web'>
 			<Bandeau image={imageBandeau} />
 			<div className='web-container'>
-				<Link to='/portfolio'>
-					<button className='btnPrev'>
-						<i className='bx bx-left-arrow-alt'></i>
-					</button>
-				</Link>
+				<BackBtn />
 				<div className='title-start'>
 					<Title title='Sites Web' />
 				</div>
