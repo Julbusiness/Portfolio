@@ -26,13 +26,20 @@
 .modal-content .slide {
 	width: 100%;
 	height: 100%;
-	/* position: absolute; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .modal-content .slide img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.modal-content .slide video {
+	width: 85%;
+	height: 100%;
 }
 
 .modal-content .modal-btn-close button {

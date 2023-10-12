@@ -441,31 +441,85 @@
 			{
 				"id": "1",
 				"image": "card1.svg",
-				"title": "Premier site web",
+				"video": "project1.mp4",
+				"title": "Prenez en main votre formation front-end",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 			},
 			{
 				"id": "2",
 				"image": "card2.svg",
-				"title": "Deuxième site web",
+				"video": "project2.mp4",
+				"title": "Transformez une maquette en site web avec HTML & CSS",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 			},
 			{
 				"id": "3",
 				"image": "card3.svg",
-				"title": "Troisième site web",
+				"video": "project3.mp4",
+				"title": "Dynamiser une page web avec des animations CSS",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 			},
 			{
 				"id": "4",
 				"image": "card4.svg",
-				"title": "Quatrième site web",
+				"video": "project4.mp4",
+				"title": "Créez une landing page avec javascript",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 			},
 			{
 				"id": "5",
 				"image": "card5.svg",
-				"title": "Cinquième site web",
+				"video": "project5.mp4",
+				"title": "Créez un site accessible pour une plateforme de photographes",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "6",
+				"image": "card6.svg",
+				"video": "project6.mp4",
+				"title": "Développer un algorithme de recherche en javascript",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "7",
+				"image": "card7.svg",
+				"video": "project7.mp4",
+				"title": "Débuggez et testez un SaaS RH",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "8",
+				"image": "card8.svg",
+				"video": "project8.mp4",
+				"title": "App soutient scolaire",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "9",
+				"image": "card9.svg",
+				"video": "project9.mp4",
+				"title": "Développer une application web react et react router",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "10",
+				"image": "card10.svg",
+				"video": "project10.mp4",
+				"title": "Développez un tableau de bord d'analytics avec React",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "11",
+				"image": "card11.svg",
+				"video": "project11.mp4",
+				"title": "Utilisez une API pour un compte utilisateur bancaire avec React",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+			},
+			{
+				"id": "12",
+				"image": "card12.svg",
+				"video": "project12.mp4",
+				"title": "Faites passer une librairie jQuery vers React",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
 			}
 		],

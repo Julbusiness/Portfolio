@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
 import { slideNumber } from "../../../features/slide";
-import { Link } from "react-router-dom";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
@@ -23,23 +22,19 @@ export default function VisitCard() {
 
 	let content;
 	content = visitCardData.map((card, index) => (
-		<Link
-			to='#'
-			className='link'
+		<li
 			key={card.id}
 			onClick={() => {
 				dispatch(openModal());
 				dispatch(slideNumber(index));
 			}}
 		>
-			<li>
-				<RightCard
-					image={`/assets/images/visitCard/${card.image}`}
-					title={card.title}
-					text={card.text}
-				/>
-			</li>
-		</Link>
+			<RightCard
+				image={`/assets/images/visitCard/${card.image}`}
+				title={card.title}
+				text={card.text}
+			/>
+		</li>
 	));
 
 	let contentModal;

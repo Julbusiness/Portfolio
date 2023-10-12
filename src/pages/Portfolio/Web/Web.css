@@ -1,4 +1,20 @@
+.web-container .web-cards .galleryImages {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 .web-container .web-cards li:first-child {
   list-style: none;
   margin-top: 50px;
+}
+
+.web-container .web-cards li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-container .web-cards .title-video {
+  padding-top: 25px;
 }

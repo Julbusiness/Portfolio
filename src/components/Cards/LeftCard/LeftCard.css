@@ -11,6 +11,7 @@
   display: flex;
   transition: var(--trans-05);
   width: 100%;
+  cursor: pointer;
 }
 
 .left-card:hover {
