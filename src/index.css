@@ -45,11 +45,13 @@
 	position: relative;
 	left: 60px;
 	width: calc(100vw - 60px);
+	min-height: calc(100vh - 125px);
 	transition: var(--trans-05);
 	z-index: 101;
 	background: #FFFFFF;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 50px;
 }
 
 .about-container,
