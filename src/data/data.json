@@ -441,86 +441,271 @@
 			{
 				"id": "1",
 				"image": "card1.svg",
-				"video": "project1.mp4",
-				"title": "Prenez en main votre formation front-end",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "booki",
+				"text": "Transformez une maquette en site web avec HTML & CSS",
+				"tags": "html, css, figma",
+				"link" : "https://julbusiness.github.io/booki/",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					}
+				]
 			},
 			{
 				"id": "2",
 				"image": "card2.svg",
-				"video": "project2.mp4",
-				"title": "Transformez une maquette en site web avec HTML & CSS",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "ohmyfood",
+				"text": "Dynamiser une page web avec des animations CSS",
+				"link" : "https://julbusiness.github.io/ohmyfood/",
+				"tags": "html, css",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "ohmyfood1.png"
+					},
+					{
+						"id": "2",
+						"image": "ohmyfood2.png"
+					},
+					{
+						"id": "3",
+						"image": "ohmyfood3.png"
+					},
+					{
+						"id": "4",
+						"image": "ohmyfood4.png"
+					}
+				]
 			},
 			{
 				"id": "3",
 				"image": "card3.svg",
-				"video": "project3.mp4",
-				"title": "Dynamiser une page web avec des animations CSS",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Créez une landing page avec javascript",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "javascript",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "4",
 				"image": "card4.svg",
-				"video": "project4.mp4",
-				"title": "Créez une landing page avec javascript",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Créez un site accessible pour une plateforme de photographes",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "javascript",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "5",
 				"image": "card5.svg",
-				"video": "project5.mp4",
-				"title": "Créez un site accessible pour une plateforme de photographes",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Développer un algorithme de recherche en javascript",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "javascript",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "6",
 				"image": "card6.svg",
-				"video": "project6.mp4",
-				"title": "Développer un algorithme de recherche en javascript",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Débuggez et testez un SaaS RH",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "javascript",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "7",
 				"image": "card7.svg",
-				"video": "project7.mp4",
-				"title": "Débuggez et testez un SaaS RH",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "App soutient scolaire",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "react",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "8",
 				"image": "card8.svg",
-				"video": "project8.mp4",
-				"title": "App soutient scolaire",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Développer une application web react et react router",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "react",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "9",
 				"image": "card9.svg",
-				"video": "project9.mp4",
-				"title": "Développer une application web react et react router",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Développez un tableau de bord d'analytics avec React",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "react",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "10",
 				"image": "card10.svg",
-				"video": "project10.mp4",
-				"title": "Développez un tableau de bord d'analytics avec React",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"title": "Utilisez une API pour un compte utilisateur bancaire avec React",
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "react",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			},
 			{
 				"id": "11",
 				"image": "card11.svg",
-				"video": "project11.mp4",
-				"title": "Utilisez une API pour un compte utilisateur bancaire avec React",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
-			},
-			{
-				"id": "12",
-				"image": "card12.svg",
-				"video": "project12.mp4",
 				"title": "Faites passer une librairie jQuery vers React",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus."
+				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
+				"tags": "react",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "booki1.png"
+					},
+					{
+						"id": "2",
+						"image": "booki2.png"
+					},
+					{
+						"id": "3",
+						"image": "booki3.png"
+					},
+					{
+						"id": "4",
+						"image": "booki4.png"
+					}
+				]
 			}
 		],
 		"photo": [

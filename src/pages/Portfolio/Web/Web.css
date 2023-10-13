@@ -13,8 +13,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* position: relative; */
 }
+
+/* .web-container .web-cards li i {
+position: absolute;
+top: 50%;
+right: 50px;
+transform: translateY(-55%);
+font-size: 25px;
+} */
 
 .web-container .web-cards .title-video {
   padding-top: 25px;
+}
+
+.web-container .title-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.web-container .title-wrapper {
+width: 50%;
+}
+
+.web-container .title-wrapper .title-container .line{
+width: 85%;
+}
+
+.web-container .search-container {
+  width: 50%;
 }

@@ -11,6 +11,7 @@ export const slide = createSlice({
   initialState,
   reducers: {
     slideNumber: (state, action) => {
+      console.log(action.payload);
       state.value = action.payload;
     },
     prevSlide: (state, action) => {

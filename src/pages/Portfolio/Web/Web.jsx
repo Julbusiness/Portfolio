@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
 import { slideNumber } from "../../../features/slide";
+import { searchTerm } from "../../../features/search";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
@@ -9,46 +10,60 @@ import data from "../../../data/data.json";
 import LeftCard from "../../../components/Cards/LeftCard/LeftCard";
 import Modal from "../../../components/Modal/Modal";
 import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
+import SearchBar from "../../../components/SearchBar/SearchBar";
+import { Link } from "react-router-dom";
 
 import "./Web.css";
 
 export default function Web() {
 	const modal = useSelector((state) => state.modal);
 	const slide = useSelector((state) => state.slide.value);
+	const search = useSelector((state) => state.search);
 	const dispatch = useDispatch();
 
 	const webData = data.portfolioData.web;
+	const modalData = webData[slide].modalImage;
+	console.log(webData[slide].modalImage);
 
 	let content;
-	content = webData.map((card, index) => (
-		<li
-			key={card.id}
-			onClick={() => {
-				dispatch(openModal());
-				dispatch(slideNumber(index));
-			}}
-		>
-			<LeftCard
-				image={`/assets/images/cards/${card.image}`}
-				title={card.title}
-				text={card.text}
-				className
-			/>
-		</li>
-	));
+	content = webData
+		.filter((website) =>
+			website.tags.toLowerCase().includes(search.value.toLowerCase())
+		)
+		.map((card, index) => {
+			return (
+				<li
+					key={card.id}
+					onClick={() => {
+						dispatch(openModal());
+						dispatch(slideNumber(index));
+					}}
+				>
+					<LeftCard
+						image={`/assets/images/cards/${card.image}`}
+						title={card.title}
+						text={card.text}
+					/>
+					<Link to={card.link}>
+						<i className='bx bx-link-external'></i>
+					</Link>
+				</li>
+			);
+		});
 
 	let contentModal;
-	contentModal = (
-		<li key={webData[slide].id}>
-			<video
-				src={`/assets/videos/${webData[slide].video}`}
-				type="video/mp4"
-				className='video-modal'
-				controls
-			/>
-			<h2 className="title-video">{webData[slide].title}</h2>
-		</li>
-	);
+	contentModal =
+		modalData &&
+		modalData.map((card, index) => {
+			console.log(card.image);
+			<li key={card.id}>
+				<img
+					src={`/assets/images/web/${card.image}`}
+					className='image-modal'
+				/>
+				{/* <h2 className='title-image'>{modalData[slide].title}</h2> */}
+			</li>;
+		});
 
 	return (
 		<section className='web'>
@@ -56,11 +71,16 @@ export default function Web() {
 			<div className='web-container'>
 				<BackBtn />
 				<div className='title-start'>
-					<Title title='Sites Web' />
+					<div className='title-wrapper'>
+						<Title title='Sites Web' />
+					</div>
+					<div className='search-container'>
+						<SearchBar />
+					</div>
 				</div>
 				<div className='web-cards'>
 					<ul>
-					{modal.value && <Modal data={webData} content={contentModal} />}
+						{modal.value && <Modal data={modalData} content={contentModal} />}
 						<div className='galleryImages'>{webData && content}</div>
 					</ul>
 				</div>

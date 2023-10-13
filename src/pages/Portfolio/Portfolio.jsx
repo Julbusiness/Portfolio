@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import "./Portfolio.css";
 import Bandeau from "../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
-import SearchBar from "../../components/SearchBar/SearchBar";
 import LeftCard from "../../components/Cards/LeftCard/LeftCard";
 import data from "../../data/data.json";
+import Title from "../../components/Title/Title";
+
+import "./Portfolio.css";
 
 export default function Portfolio() {
 	const portfolioData = data.portfolioData.portfolio;
@@ -25,8 +26,8 @@ export default function Portfolio() {
 		<section className='portfolio'>
 			<Bandeau image={imageBandeau} />
 			<div className='portfolio-container'>
-				<div className='search-container'>
-					<SearchBar />
+				<div className='title-start'>
+					<Title title='Portfolio' />
 				</div>
 				<div className='portfolio-cards'>
 					<ul>{content}</ul>
