@@ -441,10 +441,10 @@
 			{
 				"id": "1",
 				"image": "card1.svg",
-				"title": "Booki",
+				"logo": "booki-logo.png",
 				"text": "Transformez une maquette en site web avec HTML & CSS",
 				"tags": "html, css, figma",
-				"link": "https://julbusiness.github.io/booki/",
+				"link": "https://julbusiness.github.io/Booki/",
 				"modalImage": [
 					{
 						"id": "1",
@@ -459,9 +459,9 @@
 			{
 				"id": "2",
 				"image": "card2.svg",
-				"title": "OhMyFood",
+				"logo": "ohmyfood-logo.png",
 				"text": "Dynamiser une page web avec des animations CSS",
-				"link": "https://julbusiness.github.io/ohmyfood/",
+				"link": "https://julbusiness.github.io/OhMyFood/",
 				"tags": "html, css",
 				"modalImage": [
 					{
@@ -485,7 +485,7 @@
 			{
 				"id": "3",
 				"image": "card3.svg",
-				"title": "GameOn",
+				"logo": "gameon-logo.png",
 				"text": "Créez une landing page avec javascript",
 				"link": "https://julbusiness.github.io/GameOn/",
 				"tags": "javascript",
@@ -519,9 +519,9 @@
 			{
 				"id": "4",
 				"image": "card4.svg",
-				"title": "FishEye",
+				"logo": "fisheye-logo.png",
 				"text": "Créez un site accessible pour une plateforme de photographes",
-				"link": "",
+				"link": "https://julbusiness.github.io/FishEye/",
 				"tags": "javascript",
 				"modalImage": [
 					{
@@ -549,9 +549,9 @@
 			{
 				"id": "5",
 				"image": "card5.svg",
-				"title": "Les petits plats",
+				"logo": "lespetitsplats-logo.png",
 				"text": "Développer un algorithme de recherche en javascript",
-				"link": "",
+				"link": "https://julbusiness.github.io/LesPetitsPlats/",
 				"tags": "javascript",
 				"modalImage": [
 					{
@@ -567,9 +567,9 @@
 			{
 				"id": "6",
 				"image": "card6.svg",
-				"title": "Billed",
+				"logo": "billed-logo.png",
 				"text": "Débuggez et testez un SaaS RH",
-				"link": "",
+				"link": "https://julbusiness.github.io/Billed/",
 				"tags": "javascript",
 				"modalImage": [
 					{
@@ -585,9 +585,9 @@
 			{
 				"id": "7",
 				"image": "card7.svg",
-				"title": "Learn@Home",
+				"logo": "learn@home-logo.png",
 				"text": "App soutient scolaire",
-				"link": "",
+				"link": "https://julbusiness.github.io/Learn@Home/",
 				"tags": "react",
 				"modalImage": [
 					{
@@ -603,9 +603,9 @@
 			{
 				"id": "8",
 				"image": "card8.svg",
-				"title": "Kasa",
+				"logo": "kasa-logo.png",
 				"text": "Développer une application web react et react router",
-				"link": "",
+				"link": "https://julbusiness.github.io/Kasa/",
 				"tags": "react",
 				"modalImage": [
 					{
@@ -621,9 +621,9 @@
 			{
 				"id": "9",
 				"image": "card9.svg",
-				"title": "SportSee",
+				"logo": "sportsee-logo.png",
 				"text": "Développez un tableau de bord d'analytics avec React",
-				"link": "",
+				"link": "https://julbusiness.github.io/SportSee/",
 				"tags": "react",
 				"modalImage": [
 					{
@@ -639,9 +639,9 @@
 			{
 				"id": "10",
 				"image": "card10.svg",
-				"title": "ArgentBank",
+				"logo": "argentbank-logo.png",
 				"text": "Utilisez une API pour un compte utilisateur bancaire avec React",
-				"link": "",
+				"link": "https://julbusiness.github.io/ArgentBank/",
 				"tags": "react",
 				"modalImage": [
 					{
@@ -657,9 +657,9 @@
 			{
 				"id": "11",
 				"image": "card11.svg",
-				"title": "Wealth Health",
+				"logo": "wealthhealth-logo.png",
 				"text": "Faites passer une librairie jQuery vers React",
-				"link": "",
+				"link": "https://julbusiness.github.io/WealthHealth/",
 				"tags": "react",
 				"modalImage": [
 					{
