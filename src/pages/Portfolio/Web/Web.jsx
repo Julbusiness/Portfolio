@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
 import { slideNumber } from "../../../features/slide";
-import { searchTerm } from "../../../features/search";
+import { cardNumber } from "../../../features/card";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
@@ -17,13 +17,17 @@ import "./Web.css";
 
 export default function Web() {
 	const modal = useSelector((state) => state.modal);
+	const card = useSelector((state) => state.card.value);
 	const slide = useSelector((state) => state.slide.value);
 	const search = useSelector((state) => state.search);
 	const dispatch = useDispatch();
 
 	const webData = data.portfolioData.web;
-	const modalData = webData[slide].modalImage;
-	console.log(webData[slide].modalImage);
+	const modalData = webData[card].modalImage;
+
+	// console.log("modalData : " + modalData);
+	// console.log("state de card : " + card);
+	// console.log("state de slide : " + slide);
 
 	let content;
 	content = webData
@@ -36,34 +40,34 @@ export default function Web() {
 					key={card.id}
 					onClick={() => {
 						dispatch(openModal());
-						dispatch(slideNumber(index));
+						dispatch(cardNumber(index));
+						dispatch(slideNumber(0));
 					}}
 				>
 					<LeftCard
 						image={`/assets/images/cards/${card.image}`}
 						title={card.title}
 						text={card.text}
+						link={card.link}
+						nameLink={"Visiter le site"}
 					/>
-					<Link to={card.link}>
-						<i className='bx bx-link-external'></i>
-					</Link>
+					{/* <Link to={card.link} className="web-link">
+						Visiter le site
+					</Link> */}
 				</li>
 			);
 		});
 
 	let contentModal;
-	contentModal =
-		modalData &&
-		modalData.map((card, index) => {
-			console.log(card.image);
-			<li key={card.id}>
-				<img
-					src={`/assets/images/web/${card.image}`}
-					className='image-modal'
-				/>
-				{/* <h2 className='title-image'>{modalData[slide].title}</h2> */}
-			</li>;
-		});
+	contentModal = (
+		<li key={modalData[slide].id}>
+			<img
+				src={`/assets/images/sites/${modalData[slide].image}`}
+				className='image-modal'
+			/>
+			{/* <h2 className='title-image'>{modalData[slide].title}</h2> */}
+		</li>
+	);
 
 	return (
 		<section className='web'>

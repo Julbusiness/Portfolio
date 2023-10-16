@@ -13,16 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
 }
-
-/* .web-container .web-cards li i {
-position: absolute;
-top: 50%;
-right: 50px;
-transform: translateY(-55%);
-font-size: 25px;
-} */
 
 .web-container .web-cards .title-video {
   padding-top: 25px;
@@ -44,4 +35,13 @@ width: 85%;
 
 .web-container .search-container {
   width: 50%;
+}
+
+.web-container .web-cards .web-link {
+  position: absolute;
+  left: 50px;
+  bottom: 15%;
+  text-decoration: none;
+  color: #117dba;
+  z-index: 5;
 }

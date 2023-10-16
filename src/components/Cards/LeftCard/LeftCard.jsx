@@ -1,4 +1,5 @@
 import "./LeftCard.css";
+import { Link } from "react-router-dom";
 
 export default function LeftCard(props) {
 	return (
@@ -10,6 +11,9 @@ export default function LeftCard(props) {
 				<div className='tag'>{props.tag}</div>
 				<h2>{props.title}</h2>
 				<p>{props.text}</p>
+				<Link to={props.link} className="web-link">
+						{props.nameLink}
+					</Link>
 			</div>
 		</div>
 	);

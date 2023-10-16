@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
 import { slideNumber } from "../../../features/slide";
+import { cardNumber } from "../../../features/card";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
@@ -14,11 +15,13 @@ import "./VisitCard.css";
 
 export default function VisitCard() {
 	const modal = useSelector((state) => state.modal);
+	const card = useSelector((state) => state.card.value);
 	const slide = useSelector((state) => state.slide.value);
+
 	const dispatch = useDispatch();
 
 	const visitCardData = data.portfolioData.visitCard;
-	const modalData = visitCardData[0].modalImage;
+	const modalData = visitCardData[card].modalImage;
 
 	let content;
 	content = visitCardData.map((card, index) => (
@@ -26,7 +29,8 @@ export default function VisitCard() {
 			key={card.id}
 			onClick={() => {
 				dispatch(openModal());
-				dispatch(slideNumber(index));
+				dispatch(cardNumber(index));
+				dispatch(slideNumber(0));
 			}}
 		>
 			<RightCard
