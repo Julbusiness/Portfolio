@@ -10,11 +10,11 @@ export default function LeftCard(props) {
 			<div className='left-card-text'>
 				<div className='tag'>{props.tag}</div>
 				<h2>{props.title}</h2>
-				<img src={props.logo} alt="" className="web-logo"/>
-				<p>{props.text}</p>
-				<Link to={props.link} className='web-link'>
-					{props.nameLink}
-				</Link>
+				<p className='leftCard-text'>{props.text}</p>
+				<p className='leftCard-projet'>
+					<span>Projet : </span>
+					{props.projet}
+				</p>
 			</div>
 		</div>
 	);

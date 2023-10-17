@@ -29,7 +29,7 @@
 width: 50%;
 }
 
-.web-container .title-wrapper .title-container .line{
+.web-container .title-wrapper .title-container .line {
 width: 85%;
 }
 
@@ -37,22 +37,25 @@ width: 85%;
   width: 50%;
 }
 
-.web-container .web-cards .web-link {
-  position: absolute;
-  left: 50px;
-  bottom: 10%;
-  text-decoration: none;
-  color: #117dba;
-  z-index: 5;
-}
-
 .web-container .web-cards .left-card .left-card-text {
   padding: 15px 50px;
   margin: 0;
 }
 
-.web-container .web-cards .web-logo {
-  width: 80px;
-  padding: 0;
-  margin: 0;
+.web-container .web-cards .left-card .left-card-text h2 {
+  margin-top: 0;
+}
+
+.web-container .web-cards .left-card .left-card-text p {
+  margin-top: 0;
+}
+
+.web-container .web-cards .left-card .left-card-text .leftCard-text {
+  margin-bottom: 15px;
+}
+
+.web-container .web-cards .left-card .left-card-text .leftCard-projet span {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-black);
 }

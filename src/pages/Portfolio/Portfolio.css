@@ -11,3 +11,7 @@
 .portfolio-links {
   text-decoration: none;
 }
+
+.portfolio-container .portfolio-cards .left-card .left-card-text .leftCard-projet {
+  display: none;
+}

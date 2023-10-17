@@ -46,8 +46,9 @@ export default function Web() {
 				>
 					<LeftCard
 						image={`/assets/images/cards/${card.image}`}
-						logo={`/assets/images/sites/${card.logo}`}
+						title={card.title}
 						text={card.text}
+						projet={card.projet}
 						link={card.link}
 						nameLink={"Visiter le site"}
 					/>
