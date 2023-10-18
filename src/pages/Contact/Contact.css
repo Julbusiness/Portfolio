@@ -70,3 +70,14 @@
 	font-weight: 400;
 	color: var(--subheading);
 }
+
+.contact-container .right-card .right-card-text .pics-text .reseaux {
+	font-size: 2.5rem;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+.contact-container .right-card .right-card-text .pics-text .reseaux i {
+	padding: 7px;
+	color: var(--text-black);
+}

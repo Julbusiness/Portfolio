@@ -41,7 +41,7 @@ export default function Web() {
 					onClick={() => {
 						dispatch(openModal());
 						dispatch(cardNumber(index));
-						dispatch(slideNumber(0));
+						// dispatch(slideNumber(0));
 					}}
 				>
 					<LeftCard
@@ -49,12 +49,7 @@ export default function Web() {
 						title={card.title}
 						text={card.text}
 						projet={card.projet}
-						link={card.link}
-						nameLink={"Visiter le site"}
 					/>
-					{/* <Link to={card.link} className="web-link">
-						Visiter le site
-					</Link> */}
 				</li>
 			);
 		});
@@ -66,7 +61,6 @@ export default function Web() {
 				src={`/assets/images/sites/${modalData[slide].image}`}
 				className='image-modal'
 			/>
-			{/* <h2 className='title-image'>{modalData[slide].title}</h2> */}
 		</li>
 	);
 

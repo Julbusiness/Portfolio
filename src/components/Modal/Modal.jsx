@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { closeModal } from "../../features/modal";
-import { nextSlide, prevSlide } from "../../features/slide";
+import { slideNumber, nextSlide, prevSlide, goToSlide } from "../../features/slide";
 import SlideBtn from "../Buttons/SlideBtn/SlideBtn";
 
 import "./Modal.css";
@@ -8,6 +8,7 @@ import "./Modal.css";
 export default function Modal({ data, content }) {
 	const dispatch = useDispatch();
 	const slide = useSelector((state) => state.slide.value);
+	// console.log(slide);
 
 	const length = data.length;
 
@@ -21,7 +22,12 @@ export default function Modal({ data, content }) {
 					length={length}
 				/>
 
-				<div className='slide'>{content}</div>
+				<div className='slide'>
+					{content}
+					<div className='dots-container'>
+						<div className="dot">{`${slide + 1} / ${data.length}`}</div>
+					</div>
+				</div>
 
 				<SlideBtn
 					moveSlide={nextSlide}
@@ -30,7 +36,10 @@ export default function Modal({ data, content }) {
 					length={length}
 				/>
 
-				<div className='modal-btn-close' onClick={() => dispatch(closeModal())}>
+				<div
+					className='modal-btn-close'
+					onClick={() => dispatch(closeModal(), dispatch(slideNumber(0)))}
+				>
 					<button>
 						<i className='bx bx-x'></i>
 					</button>

@@ -61,3 +61,16 @@
 	top: 10px;
 	right: 10px;
 }
+
+.modal-content .dots-container {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10px;
+	background: #1d1d1b;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 8px;
+}

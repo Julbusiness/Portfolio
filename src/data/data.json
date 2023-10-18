@@ -398,41 +398,41 @@
 		"visitCard": [
 			{
 				"id": "1",
-				"image": "visitCard1.png",
-				"title": "Premiere carte de visite",
+				"image": "LaFemmeAuQuotidien1.png",
+				"title": "La Femme au Quotidien",
 				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus.",
 				"modalImage": [
 					{
 						"id": "1",
-						"image": "visitCard1.png"
+						"image": "LaFemmeAuQuotidien1.png"
 					},
 					{
 						"id": "2",
-						"image": "visitCard2.png"
+						"image": "LaFemmeAuQuotidien2.png"
 					},
 					{
 						"id": "3",
-						"image": "visitCard3.png"
+						"image": "LaFemmeAuQuotidien3.png"
 					},
 					{
 						"id": "4",
-						"image": "visitCard4.png"
+						"image": "LaFemmeAuQuotidien4.png"
 					},
 					{
 						"id": "5",
-						"image": "visitCard5.png"
+						"image": "LaFemmeAuQuotidien5.png"
 					},
 					{
 						"id": "6",
-						"image": "visitCard6.png"
+						"image": "LaFemmeAuQuotidien6.png"
 					},
 					{
 						"id": "7",
-						"image": "visitCard7.png"
+						"image": "LaFemmeAuQuotidien7.png"
 					},
 					{
 						"id": "8",
-						"image": "visitCard8.png"
+						"image": "LaFemmeAuQuotidien8.png"
 					}
 				]
 			}
@@ -712,43 +712,563 @@
 		"photo": [
 			{
 				"id": "1",
-				"image": "photo1.jpg"
+				"image": "photo1.png"
 			},
 			{
 				"id": "2",
-				"image": "photo2.jpg"
+				"image": "photo2.png"
 			},
 			{
 				"id": "3",
-				"image": "photo3.jpg"
+				"image": "photo3.png"
 			},
 			{
 				"id": "4",
-				"image": "photo4.jpg"
+				"image": "photo4.png"
 			},
 			{
 				"id": "5",
-				"image": "photo5.jpg"
+				"image": "photo5.png"
 			},
 			{
 				"id": "6",
-				"image": "photo6.jpg"
+				"image": "photo6.png"
 			},
 			{
 				"id": "7",
-				"image": "photo7.jpg"
+				"image": "photo7.png"
 			},
 			{
 				"id": "8",
-				"image": "photo8.jpg"
+				"image": "photo8.png"
 			},
 			{
 				"id": "9",
-				"image": "photo9.jpg"
+				"image": "photo9.png"
 			},
 			{
 				"id": "10",
-				"image": "photo10.jpg"
+				"image": "photo10.png"
+			},
+			{
+				"id": "11",
+				"image": "photo11.png"
+			},
+			{
+				"id": "12",
+				"image": "photo12.png"
+			},
+			{
+				"id": "13",
+				"image": "photo13.png"
+			},
+			{
+				"id": "14",
+				"image": "photo14.png"
+			},
+			{
+				"id": "15",
+				"image": "photo15.png"
+			},
+			{
+				"id": "16",
+				"image": "photo16.png"
+			},
+			{
+				"id": "17",
+				"image": "photo17.png"
+			},
+			{
+				"id": "18",
+				"image": "photo18.png"
+			},
+			{
+				"id": "19",
+				"image": "photo19.png"
+			},
+			{
+				"id": "20",
+				"image": "photo20.png"
+			},
+			{
+				"id": "21",
+				"image": "photo21.png"
+			},
+			{
+				"id": "22",
+				"image": "photo22.png"
+			},
+			{
+				"id": "23",
+				"image": "photo23.png"
+			},
+			{
+				"id": "24",
+				"image": "photo24.png"
+			},
+			{
+				"id": "25",
+				"image": "photo25.png"
+			},
+			{
+				"id": "26",
+				"image": "photo26.png"
+			},
+			{
+				"id": "27",
+				"image": "photo27.png"
+			},
+			{
+				"id": "28",
+				"image": "photo28.png"
+			},
+			{
+				"id": "29",
+				"image": "photo29.png"
+			},
+			{
+				"id": "30",
+				"image": "photo30.png"
+			},
+			{
+				"id": "31",
+				"image": "photo31.png"
+			},
+			{
+				"id": "32",
+				"image": "photo32.png"
+			},
+			{
+				"id": "33",
+				"image": "photo33.png"
+			},
+			{
+				"id": "34",
+				"image": "photo34.png"
+			},
+			{
+				"id": "35",
+				"image": "photo35.png"
+			},
+			{
+				"id": "36",
+				"image": "photo36.png"
+			},
+			{
+				"id": "37",
+				"image": "photo37.png"
+			},
+			{
+				"id": "38",
+				"image": "photo38.png"
+			},
+			{
+				"id": "39",
+				"image": "photo39.png"
+			},
+			{
+				"id": "40",
+				"image": "photo40.png"
+			},
+			{
+				"id": "41",
+				"image": "photo41.png"
+			},
+			{
+				"id": "42",
+				"image": "photo42.png"
+			},
+			{
+				"id": "43",
+				"image": "photo43.png"
+			},
+			{
+				"id": "44",
+				"image": "photo44.png"
+			},
+			{
+				"id": "45",
+				"image": "photo45.png"
+			},
+			{
+				"id": "46",
+				"image": "photo46.png"
+			},
+			{
+				"id": "47",
+				"image": "photo47.png"
+			},
+			{
+				"id": "48",
+				"image": "photo48.png"
+			},
+			{
+				"id": "49",
+				"image": "photo49.png"
+			},
+			{
+				"id": "50",
+				"image": "photo50.png"
+			},
+			{
+				"id": "51",
+				"image": "photo51.png"
+			},
+			{
+				"id": "52",
+				"image": "photo52.png"
+			},
+			{
+				"id": "53",
+				"image": "photo53.png"
+			},
+			{
+				"id": "54",
+				"image": "photo54.png"
+			},
+			{
+				"id": "55",
+				"image": "photo55.png"
+			},
+			{
+				"id": "56",
+				"image": "photo56.png"
+			},
+			{
+				"id": "57",
+				"image": "photo57.png"
+			},
+			{
+				"id": "58",
+				"image": "photo58.png"
+			},
+			{
+				"id": "59",
+				"image": "photo59.png"
+			},
+			{
+				"id": "60",
+				"image": "photo60.png"
+			},
+			{
+				"id": "61",
+				"image": "photo61.png"
+			},
+			{
+				"id": "62",
+				"image": "photo62.png"
+			},
+			{
+				"id": "63",
+				"image": "photo63.png"
+			},
+			{
+				"id": "64",
+				"image": "photo64.png"
+			},
+			{
+				"id": "65",
+				"image": "photo65.png"
+			},
+			{
+				"id": "66",
+				"image": "photo66.png"
+			},
+			{
+				"id": "67",
+				"image": "photo67.png"
+			},
+			{
+				"id": "68",
+				"image": "photo68.png"
+			},
+			{
+				"id": "69",
+				"image": "photo69.png"
+			},
+			{
+				"id": "70",
+				"image": "photo70.png"
+			},
+			{
+				"id": "71",
+				"image": "photo71.png"
+			},
+			{
+				"id": "72",
+				"image": "photo72.png"
+			},
+			{
+				"id": "73",
+				"image": "photo73.png"
+			},
+			{
+				"id": "74",
+				"image": "photo74.png"
+			},
+			{
+				"id": "75",
+				"image": "photo75.png"
+			},
+			{
+				"id": "76",
+				"image": "photo76.png"
+			},
+			{
+				"id": "77",
+				"image": "photo77.png"
+			},
+			{
+				"id": "78",
+				"image": "photo78.png"
+			},
+			{
+				"id": "79",
+				"image": "photo79.png"
+			},
+			{
+				"id": "80",
+				"image": "photo80.png"
+			},
+			{
+				"id": "81",
+				"image": "photo81.png"
+			},
+			{
+				"id": "82",
+				"image": "photo82.png"
+			},
+			{
+				"id": "83",
+				"image": "photo83.png"
+			},
+			{
+				"id": "84",
+				"image": "photo84.png"
+			},
+			{
+				"id": "85",
+				"image": "photo85.png"
+			},
+			{
+				"id": "86",
+				"image": "photo86.png"
+			},
+			{
+				"id": "87",
+				"image": "photo87.png"
+			},
+			{
+				"id": "88",
+				"image": "photo88.png"
+			},
+			{
+				"id": "89",
+				"image": "photo89.png"
+			},
+			{
+				"id": "90",
+				"image": "photo90.png"
+			},
+			{
+				"id": "91",
+				"image": "photo91.png"
+			},
+			{
+				"id": "92",
+				"image": "photo92.png"
+			},
+			{
+				"id": "93",
+				"image": "photo93.png"
+			},
+			{
+				"id": "94",
+				"image": "photo94.png"
+			},
+			{
+				"id": "95",
+				"image": "photo95.png"
+			},
+			{
+				"id": "96",
+				"image": "photo96.png"
+			},
+			{
+				"id": "97",
+				"image": "photo97.png"
+			},
+			{
+				"id": "98",
+				"image": "photo98.png"
+			},
+			{
+				"id": "99",
+				"image": "photo99.png"
+			},
+			{
+				"id": "100",
+				"image": "photo100.png"
+			},
+			{
+				"id": "101",
+				"image": "photo101.png"
+			},
+			{
+				"id": "102",
+				"image": "photo102.png"
+			},
+			{
+				"id": "103",
+				"image": "photo103.png"
+			},
+			{
+				"id": "104",
+				"image": "photo104.png"
+			},
+			{
+				"id": "105",
+				"image": "photo105.png"
+			},
+			{
+				"id": "106",
+				"image": "photo106.png"
+			},
+			{
+				"id": "107",
+				"image": "photo107.png"
+			},
+			{
+				"id": "108",
+				"image": "photo108.png"
+			},
+			{
+				"id": "109",
+				"image": "photo109.png"
+			},
+			{
+				"id": "110",
+				"image": "photo110.png"
+			},
+			{
+				"id": "111",
+				"image": "photo111.png"
+			},
+			{
+				"id": "112",
+				"image": "photo112.png"
+			},
+			{
+				"id": "113",
+				"image": "photo113.png"
+			},
+			{
+				"id": "114",
+				"image": "photo114.png"
+			},
+			{
+				"id": "115",
+				"image": "photo115.png"
+			},
+			{
+				"id": "116",
+				"image": "photo116.png"
+			},
+			{
+				"id": "117",
+				"image": "photo117.png"
+			},
+			{
+				"id": "118",
+				"image": "photo118.png"
+			},
+			{
+				"id": "119",
+				"image": "photo119.png"
+			},
+			{
+				"id": "120",
+				"image": "photo120.png"
+			},
+			{
+				"id": "121",
+				"image": "photo121.png"
+			},
+			{
+				"id": "122",
+				"image": "photo122.png"
+			},
+			{
+				"id": "123",
+				"image": "photo123.png"
+			},
+			{
+				"id": "124",
+				"image": "photo124.png"
+			},
+			{
+				"id": "125",
+				"image": "photo125.png"
+			},
+			{
+				"id": "126",
+				"image": "photo126.png"
+			},
+			{
+				"id": "127",
+				"image": "photo127.png"
+			},
+			{
+				"id": "128",
+				"image": "photo128.png"
+			},
+			{
+				"id": "129",
+				"image": "photo129.png"
+			},
+			{
+				"id": "130",
+				"image": "photo130.png"
+			},
+			{
+				"id": "131",
+				"image": "photo131.png"
+			},
+			{
+				"id": "132",
+				"image": "photo132.png"
+			},
+			{
+				"id": "133",
+				"image": "photo133.png"
+			},
+			{
+				"id": "134",
+				"image": "photo134.png"
+			},
+			{
+				"id": "135",
+				"image": "photo135.png"
+			},
+			{
+				"id": "136",
+				"image": "photo136.png"
+			},
+			{
+				"id": "137",
+				"image": "photo137.png"
+			},
+			{
+				"id": "138",
+				"image": "photo138.png"
+			},
+			{
+				"id": "139",
+				"image": "photo139.png"
+			},
+			{
+				"id": "140",
+				"image": "photo140.png"
 			}
 		]
 	},

@@ -9,6 +9,7 @@ export const slide = createSlice({
 	initialState,
 	reducers: {
 		slideNumber: (state, action) => {
+			// console.log(action.payload);
 			state.value = action.payload;
 		},
 		prevSlide: (state, action) => {
@@ -17,9 +18,12 @@ export const slide = createSlice({
 		nextSlide: (state, action) => {
 			state.value === action.payload - 1 ? (state.value = 0) : state.value++;
 		},
+		goToSlide: (state, action) => {
+			state.value = action.payload;
+		},
 	},
 });
 
 // console.log(modal);
-export const { slideNumber, prevSlide, nextSlide } = slide.actions;
+export const { slideNumber, prevSlide, nextSlide, goToSlide } = slide.actions;
 export default slide.reducer;

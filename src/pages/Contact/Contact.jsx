@@ -5,6 +5,7 @@ import contactImage from "/assets/images/accueil/contact.jpg";
 import profilImage from "/assets/images/accueil/moi.jpg";
 import Title from "../../components/Title/Title";
 import "./Contact.css";
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 	const [data, setData] = useState({
@@ -39,6 +40,11 @@ export default function Contact() {
 							<h2>Julien DUTRUCH</h2>
 							<p className='tel'>06.76.13.88.26</p>
 							<p className='email'>devprojules@gmail.com</p>
+							<div className="reseaux">
+								<Link to='https://www.linkedin.com/in/juliendutruch/'><i className='bx bxl-linkedin-square'></i></Link>
+								<Link to='https://github.com/Julbusiness'><i className='bx bxl-github'></i></Link>
+								<Link to='https://twitter.com/devprojules33'><i className='bx bxl-twitter'></i></Link>
+							</div>
 						</div>
 					</div>
 					<div className='right-card-pics'>
