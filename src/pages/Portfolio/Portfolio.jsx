@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Bandeau from "../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
-import LeftCard from "../../components/Cards/LeftCard/LeftCard";
+import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-portfolio.png";
+// import LeftCard from "../../components/Cards/LeftCard/LeftCard";
+import BackCard from "../../components/Cards/BackCard/BackCard";
 import data from "../../data/data.json";
 import Title from "../../components/Title/Title";
 
@@ -14,8 +15,8 @@ export default function Portfolio() {
 	content = portfolioData.map((card, index) => (
 		<li key={card.id}>
 			<Link to={card.route} className='portfolio-links'>
-				<LeftCard
-					image={`/assets/images/cards/${card.image}`}
+				<BackCard
+					image={`/assets/images/portfolio/${card.image}`}
 					title={card.title}
 				/>
 			</Link>

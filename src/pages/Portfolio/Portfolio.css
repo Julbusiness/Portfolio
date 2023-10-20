@@ -1,11 +1,12 @@
 .portfolio-container .portfolio-cards {
   width: 70%;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
-.portfolio-container .portfolio-cards li:first-child {
-  list-style: none;
-  margin-top: 50px;
+.portfolio-container .portfolio-cards ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
 }
 
 .portfolio-links {

@@ -1,6 +1,6 @@
 import Bandeau from "../../components/Bandeau/Bandeau";
 import data from "../../data/data.json";
-import image from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
+import image from "/assets/images/bandeaux-sticky/bandeau-sticky-apropos.png";
 import "./Apropos.css";
 import RightCard from "../../components/Cards/RightCard/RightCard";
 

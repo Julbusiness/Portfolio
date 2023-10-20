@@ -46,14 +46,14 @@
 
 .home-card-container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 25px;
-	width: calc(100vw - 60px);
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 0px;
+	width: calc(98vw - 60px);
 	padding-left: 70px;
 }
 
 .home-card-container .home-card {
-  width: 20.625rem;
+  width: 220px;
 	border-radius: 10px;
 }
 

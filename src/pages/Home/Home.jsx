@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import data from "../../data/data.json";
 import { Link } from "react-router-dom";
 import desktop from "/assets/images/accueil/desktop1.jpg";

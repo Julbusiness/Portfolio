@@ -4,7 +4,7 @@ import { slideNumber } from "../../../features/slide";
 import { cardNumber } from "../../../features/card";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
+import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-visitCard.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import RightCard from "../../../components/Cards/RightCard/RightCard";

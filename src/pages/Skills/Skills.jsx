@@ -1,5 +1,5 @@
-import image from "/assets/images/bandeaux-sticky/bandeau-sticky1.png";
-import card from "/assets/images/accueil/Card1.png";
+import image from "/assets/images/bandeaux-sticky/bandeau-sticky-skills.png";
+// import card from "/assets/images/cards/Card1.svg";
 import Bandeau from "../../components/Bandeau/Bandeau";
 import LeftCard from "../../components/Cards/LeftCard/LeftCard";
 import Title from "../../components/Title/Title";
@@ -9,8 +9,7 @@ import "./Skills.css";
 
 export default function Skills() {
 	const formationsData = data.skillsData.formations;
-	const hardSlikksData = data.skillsData.hardSkills;
-	const techniquesData = data.skillsData.techniques;
+	const hardSkillsData = data.skillsData.hardSkills;
 	const experiencesData = data.skillsData.experiences;
 
 	let formationsContent;
@@ -26,19 +25,7 @@ export default function Skills() {
 	));
 
 	let hardSkillsContent;
-	hardSkillsContent = hardSlikksData.map((card, index) => (
-		<li key={card.id}>
-			<LeftCard
-				image={`/assets/images/cards/${card.image}`}
-				tag={card.tag}
-				title={card.title}
-				text={card.text}
-			/>
-		</li>
-	));
-
-	let techniquesContent;
-	techniquesContent = techniquesData.map((card, index) => (
+	hardSkillsContent = hardSkillsData.map((card, index) => (
 		<li key={card.id}>
 			<LeftCard
 				image={`/assets/images/cards/${card.image}`}
@@ -65,32 +52,26 @@ export default function Skills() {
 		<section className='skills'>
 			<Bandeau image={image} />
 			<div className='skills-container'>
-				<div className='title-start'>
-					<Title title='Apprentissage et compétences' />
-				</div>
 				<div className='categories-container'>
+					<div className='title-start'>
+						<Title title='Formations' />
+					</div>
 					<div className='category formation-content'>
 						<div className='title-content'>
 							<ul>{formationsContent}</ul>
 						</div>
+					</div>
+					<div className='title-start'>
+						<Title title='Compétences' />
 					</div>
 					<div className='category skill-content'>
 						<div className='title-content'>
 							<ul>{hardSkillsContent}</ul>
 						</div>
 					</div>
-					<div className='category technique-content'>
-						<div className='title-content'>
-							<ul>{techniquesContent}</ul>
-						</div>
+					<div className='title-start'>
+						<Title title='Expériences' />
 					</div>
-				</div>
-			</div>
-			<div className='skills-container'>
-				<div className='title-start'>
-					<Title title='Expériences professionnelles' />
-				</div>
-				<div className='categories-container'>
 					<div className='category experience-content'>
 						<div className='title-content'>
 							<ul>{experiencesContent}</ul>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Bandeau from "../../components/Bandeau/Bandeau";
-import image from "/assets/images/bandeaux-sticky/bandeau-sticky7.png";
+import image from "/assets/images/bandeaux-sticky/bandeau-sticky-contact.png";
 import contactImage from "/assets/images/accueil/contact.jpg";
 import profilImage from "/assets/images/accueil/moi.jpg";
 import Title from "../../components/Title/Title";

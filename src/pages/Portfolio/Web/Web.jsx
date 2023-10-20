@@ -1,17 +1,16 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
-import { slideNumber } from "../../../features/slide";
+// import { slideNumber } from "../../../features/slide";
 import { cardNumber } from "../../../features/card";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky5.png";
+import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-web.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import LeftCard from "../../../components/Cards/LeftCard/LeftCard";
 import Modal from "../../../components/Modal/Modal";
 import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
 import SearchBar from "../../../components/SearchBar/SearchBar";
-import { Link } from "react-router-dom";
 
 import "./Web.css";
 

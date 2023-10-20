@@ -7,11 +7,38 @@
   display: flex;
 }
 
+.skills-container .formation-content .left-card-text,
+.skills-container .experience-content .left-card-text{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.skills-container .formation-content .left-card-text h2 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.skills-container .formation-content .left-card-text .leftCard-text,
+.skills-container .experience-content .left-card-text .leftCard-text {
+margin-top: 0;
+}
+
+.skills-container .left-card {
+  cursor: default;
+}
+
 .skills-container .category li {
   list-style: none;
   margin-bottom: 20px;
 }
 
+.skills-container .categories-container .left-card .left-card-text .leftCard-projet {
+  display: none;
+}
 
+.skills-container .title-content {
+  margin-bottom: 70px;
+}
 
 
