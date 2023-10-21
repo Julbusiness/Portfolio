@@ -27,12 +27,6 @@
 	font-size: 16px;
 }
 
-/* title */
-
-.home-title-start {
-	margin-left: 70px;
-}
-
 /* slide-container = Composant Title + home-card-container */
 
 .card-container {
@@ -48,8 +42,9 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 0px;
-	width: calc(98vw - 60px);
-	padding-left: 70px;
+	width: calc(100vw - 60px);
+	max-width: 1200px;
+	/* padding-left: 70px; */
 }
 
 .home-card-container .home-card {

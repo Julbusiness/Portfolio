@@ -1,5 +1,4 @@
-import image from "/assets/images/bandeaux-sticky/bandeau-sticky-skills.png";
-// import card from "/assets/images/cards/Card1.svg";
+import image from "/assets/images/bandeaux/skills.png";
 import Bandeau from "../../components/Bandeau/Bandeau";
 import LeftCard from "../../components/Cards/LeftCard/LeftCard";
 import Title from "../../components/Title/Title";
@@ -54,6 +53,14 @@ export default function Skills() {
 			<div className='skills-container'>
 				<div className='categories-container'>
 					<div className='title-start'>
+						<Title title='Expériences' />
+					</div>
+					<div className='category experience-content'>
+						<div className='title-content'>
+							<ul>{experiencesContent}</ul>
+						</div>
+					</div>
+					<div className='title-start'>
 						<Title title='Formations' />
 					</div>
 					<div className='category formation-content'>
@@ -67,14 +74,6 @@ export default function Skills() {
 					<div className='category skill-content'>
 						<div className='title-content'>
 							<ul>{hardSkillsContent}</ul>
-						</div>
-					</div>
-					<div className='title-start'>
-						<Title title='Expériences' />
-					</div>
-					<div className='category experience-content'>
-						<div className='title-content'>
-							<ul>{experiencesContent}</ul>
 						</div>
 					</div>
 				</div>

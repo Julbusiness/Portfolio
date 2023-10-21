@@ -3,7 +3,7 @@ import { openModal } from "../../../features/modal";
 import { slideNumber } from "../../../features/slide";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-logo.png";
+import imageBandeau from "/assets/images/bandeaux/logo.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import Modal from "../../../components/Modal/Modal";

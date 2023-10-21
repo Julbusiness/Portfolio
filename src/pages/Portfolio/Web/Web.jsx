@@ -4,7 +4,7 @@ import { openModal } from "../../../features/modal";
 import { cardNumber } from "../../../features/card";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-web.png";
+import imageBandeau from "/assets/images/bandeaux/web.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import LeftCard from "../../../components/Cards/LeftCard/LeftCard";

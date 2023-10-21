@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Bandeau from "../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-portfolio.png";
-// import LeftCard from "../../components/Cards/LeftCard/LeftCard";
+import imageBandeau from "/assets/images/bandeaux/portfolio.png";
 import BackCard from "../../components/Cards/BackCard/BackCard";
 import data from "../../data/data.json";
 import Title from "../../components/Title/Title";

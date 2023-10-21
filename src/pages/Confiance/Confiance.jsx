@@ -1,5 +1,5 @@
 import Bandeau from "../../components/Bandeau/Bandeau";
-import imageBandeau from "/assets/images/bandeaux-sticky/bandeau-sticky-confiance.png";
+import imageBandeau from "/assets/images/bandeaux/confiance.png";
 import Title from "../../components/Title/Title";
 import data from "../../data/data.json";
 import RightCard from "../../components/Cards/RightCard/RightCard";

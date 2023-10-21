@@ -51,6 +51,7 @@
 	background: #FFFFFF;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	margin-bottom: 50px;
 }
 
@@ -64,6 +65,7 @@
 .confiance-container,
 .contact-container {
   width: calc(100vw - 60px);
+	max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +83,7 @@
 .confiance-container .title-start,
 .contact-container .title-start {
   justify-content: start;
-  width: 70%;
+  width: 80%;
 }
 
 .sidebar.open ~ .home,
@@ -160,10 +162,9 @@
 .photo-container .photos,
 .visitCard-container .visitCard-cards,
 .web-container .web-cards,
-.confiance-container .confiance-cards,
-.contact-container .right-card
+.confiance-container .confiance-cards
  {
-  width: 70%;
+  width: 80%;
   margin-top: 50px;
 }
 
@@ -180,7 +181,7 @@
 .web-container .btnPrev {
   position: absolute;
   top: -100px;
-  left: 0;
+  left: -180px;
   width: 60px;
   height: 60px;
   background: #1d1d1b;

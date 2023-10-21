@@ -1,12 +1,13 @@
 .portfolio-container .portfolio-cards {
-  width: 70%;
+  width: 80%;
   margin-top: 70px;
 }
 
 .portfolio-container .portfolio-cards ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  grid-gap: 50px;
+  max-width: 800px;
 }
 
 .portfolio-links {
@@ -15,4 +16,8 @@
 
 .portfolio-container .portfolio-cards .left-card .left-card-text .leftCard-projet {
   display: none;
+}
+
+.portfolio-container .portfolio-cards li {
+  max-width: 450px;
 }
