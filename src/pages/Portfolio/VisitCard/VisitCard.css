@@ -10,11 +10,16 @@
   width: 100%;
 }
 
+.visitCard-container .visitCard-cards {
+  margin-top: 80px;
+}
+
 .visitCard-container .visitCard-cards .galleryImages {
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
+
 
 /* -------------------------------------------------------------------------- */
 /* -------------------- Responsive en dessous de 1440 px -------------------- */
@@ -23,12 +28,5 @@
 @media screen and (max-width: 1440px ) {
   .visitCard-wrapper {
     width: 75%;
-  }
-  .hardskill-content ul {
-    gap: 27px;
-  }  
-  .hardskill-content li .card {
-    width: 197px;
-    height: 197px;
   }
 }

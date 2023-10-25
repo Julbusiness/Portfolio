@@ -24,3 +24,7 @@
 	transform: translateY(-50%);
 	right: 10px;
 }
+
+.btn-slide i {
+	font-size: 25px;
+}

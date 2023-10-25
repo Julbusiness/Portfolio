@@ -10,6 +10,10 @@
 	width: 100%;
 }
 
+.logos {
+	margin-top: 80px;
+}
+
 .logos-gallery {
 	display: flex;
 	flex-wrap: wrap;

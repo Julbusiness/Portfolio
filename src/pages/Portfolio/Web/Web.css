@@ -14,6 +14,10 @@
   width: 90%;
 }
 
+.web-cards {
+  margin-top: 80px;
+}
+
 .web-gallery {
   width: 100%;
   display: flex;
