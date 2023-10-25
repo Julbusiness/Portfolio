@@ -1,6 +1,8 @@
 /* LEFT-CARD */
 
 .left-card {
+  width: 100%;
+  max-width: 1000px;
   min-height: 180px;
   height: 200px;
   display: inline-block;
@@ -10,8 +12,6 @@
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
   display: flex;
   transition: var(--trans-05);
-  width: 100%;
-  max-width: 1000px;
   cursor: pointer;
 }
 
@@ -58,16 +58,6 @@
   padding: 40px 50px;
   width: 78%;
   position: relative;
-}
-
-.tag {
-  position: absolute;
-  top: 0;
-  background-color: var(--bg-dark);
-  color: var(--text-white);
-  padding: 0 20px;
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 .left-card-text h2 {

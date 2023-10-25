@@ -1,32 +1,47 @@
+.title-container {
+  position: relative;
+  margin-bottom: 20px;
+}
 
+.title-container .title-content {
+  font-size: 30px;
+  font-weight: 700px;
+  color: var(--text-black);
+}
+
+.title-container .line {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 300px;
+  height: 1px;
+  background: #BBBBBB;
+}
+
+.title-container .fat {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #BBBBBB;
+}
 
 @media screen and (min-width: 768px){
-  .title-container {
-    position: relative;
-    margin-bottom: 20px;
-  }
   
   .title-container .title-content {
     font-size: 40px;
-    font-weight: 700px;
-    color: var(--text-black);
   }
   
   .title-container .line {
-    position: absolute;
     top: 70px;
     left: 5px;
     width: 500px;
-    height: 1px;
-    background: #BBBBBB;
   }
   
   .title-container .fat {
-    position: absolute;
     top: 67px;
     left: 5px;
     width: 125px;
-    height: 3px;
-    background: #BBBBBB;
   }
 }
