@@ -4,7 +4,7 @@
 }
 
 .title-container .title-content {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700px;
   color: var(--text-black);
 }
@@ -13,7 +13,7 @@
   position: absolute;
   top: 70px;
   left: 5px;
-  width: 600px;
+  width: 500px;
   height: 1px;
   background: #BBBBBB;
 }

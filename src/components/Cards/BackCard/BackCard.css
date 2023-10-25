@@ -1,6 +1,7 @@
 /* BACK-CARD */
 
 .back-card {
+  width: 450px;
   height: 300px;
   display: inline-block;
   background-color: var(--bg-white);
@@ -9,7 +10,6 @@
   display: flex;
   flex-direction: column;
   transition: var(--trans-05);
-  width: 450px;
   cursor: pointer;
 }
 

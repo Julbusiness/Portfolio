@@ -1,23 +1,55 @@
-.portfolio-container .portfolio-cards {
-  width: 80%;
+.portfolio-container {
+  width: 90%;
+}
+
+.portfolio-wrapper {
+  width: 70%;
+}
+
+.title-start {
+  width: 100%;
+}
+
+.portfolio-cards {
+  width: 100%;
   margin-top: 70px;
 }
 
-.portfolio-container .portfolio-cards ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  max-width: 800px;
+.portfolio-cards ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 35px;
+}
+
+.portfolio-cards li .back-card {
+  width: 530px;
+  height: 340px;
 }
 
 .portfolio-links {
   text-decoration: none;
 }
 
-.portfolio-container .portfolio-cards .left-card .left-card-text .leftCard-projet {
+.leftCard-project {
   display: none;
 }
 
-.portfolio-container .portfolio-cards li {
-  max-width: 450px;
+/* -------------------------------------------------------------------------- */
+/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1440px ) {
+  .portfolio-wrapper {
+    width: 80%;
+  }
+  .portfolio-cards ul {
+    gap: 30px;
+  }
+  .portfolio-cards li .back-card {
+    width: 480px;
+    height: 330px;
+  }
 }

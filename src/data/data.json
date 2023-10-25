@@ -57,6 +57,26 @@
 	],
 
 	"skillsData": {
+		"experiences": [
+			{
+				"id": 1,
+				"image": "experience1.png",
+				"title": "Développeur Front-End",
+				"text": "J'ai conçu et développé des services pour des clients divers, photographes, banques, écoles, salle de sport, etc..."
+			},
+			{
+				"id": 2,
+				"image": "experience2.png",
+				"title": "Agent administratif",
+				"text": "Analyse et traitement de la demande clients. Formations des nouveaux agents."
+			},
+			{
+				"id": 3,
+				"image": "experience3.png",
+				"title": "Commercial",
+				"text": "Vente d'un outil de marketing direct permettant l'envoi d'emails en masse."
+			}
+		],
 		"formations": [
 			{
 				"id": 1,
@@ -80,61 +100,110 @@
 		"hardSkills": [
 			{
 				"id": 1,
-				"image": "hardskills1.png",
-				"title": "HTML",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+				"image": "hardskill1.png"
 			},
 			{
 				"id": 2,
-				"image": "hardskills2.png",
-				"title": "CSS",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+				"image": "hardskill2.png"
 			},
 			{
 				"id": 3,
-				"image": "hardskills3.png",
-				"title": "JAVASCRIPT",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+				"image": "hardskill3.png"
 			},
 			{
 				"id": 4,
-				"image": "hardskills4.png",
-				"title": "REACT",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+				"image": "hardskill4.png"
 			},
 			{
 				"id": 5,
-				"image": "hardskills5.png",
-				"title": "PHP",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+				"image": "hardskill5.png"
 			},
 			{
 				"id": 6,
-				"image": "hardskills6.png",
-				"title": "DIVERS",
-				"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae molestiae mollitia magni dicta et hic quas natus accusamus culpa."
+				"image": "hardskill6.png"
+			},
+			{
+				"id": 7,
+				"image": "hardskill7.png"
+			},
+			{
+				"id": 8,
+				"image": "hardskill8.png"
+			},
+			{
+				"id": 9,
+				"image": "hardskill9.png"
+			},
+			{
+				"id": 10,
+				"image": "hardskill10.png"
+			},
+			{
+				"id": 11,
+				"image": "hardskill11.png"
+			},
+			{
+				"id": 12,
+				"image": "hardskill12.png"
+			},
+			{
+				"id": 13,
+				"image": "hardskill13.png"
+			},
+			{
+				"id": 14,
+				"image": "hardskill14.png"
+			},
+			{
+				"id": 15,
+				"image": "hardskill15.png"
+			},
+			{
+				"id": 16,
+				"image": "hardskill16.png"
+			},
+			{
+				"id": 17,
+				"image": "hardskill17.png"
+			},
+			{
+				"id": 18,
+				"image": "hardskill18.png"
 			}
-		],
-		"experiences": [
+		],		
+		"softSkills": [
 			{
 				"id": 1,
-				"image": "experience1.png",
-				"title": "Développeur Front-End",
-				"text": "J'ai conçu et développé des services pour des clients divers, photographes, banques, écoles, salle de sport, etc..."
+				"image": "softskill1.png",
+				"title": "Adaptabilité",
+				"text": "Étant donné que la technologie et les besoins des clients évoluent constamment, la capacité à m'adapter à de nouvelles situations est cruciale."
 			},
 			{
 				"id": 2,
-				"image": "experience2.png",
-				"title": "Agent administratif",
-				"text": "Analyse et traitement de la demande clients. Formations des nouveaux agents."
+				"image": "softskill2.png",
+				"title": "Capacité à résoudre des problèmes",
+				"text": "Tenace... j'aborde et résous les défis de manière créative et efficace."
 			},
 			{
 				"id": 3,
-				"image": "experience3.png",
-				"title": "Commercial",
-				"text": "Vente d'un outil de marketing direct permettant l'envoi d'emails en masse."
+				"image": "softskill3.png",
+				"title": "Gestion du temps",
+				"text": "Équilibrer efficacement les priorités et respecter les délais, en particulier si l'on travaille sur plusieurs projets à la fois."
+			},
+			{
+				"id": 4,
+				"image": "softskill4.png",
+				"title": "Communication et Esprit d'équipe",
+				"text": "La capacité à exprimer mes idées clairement et à écouter activement les autres est essentielle pour collaborer avec des collègues, clients et autres parties prenantes."
+			},
+			{
+				"id": 5,
+				"image": "softskill5.png",
+				"title": "Esprit d'entraide",
+				"text": "Partager le code et la connaissance, ensemble nous résolvons les défis techniques."
 			}
 		]
+
 	},
 
 	"portfolioData": {
@@ -1237,7 +1306,7 @@
 			"id": 1,
 			"image": "confiance1.png",
 			"title": "La Femme au Quotidien",
-			"text": "Association déclarée, qui propose aux femmes de trouver sa personnalité, découvrir ses talents, trouver sa place et se mettre en valeur."
+			"text": "Association déclarée, qui propose aux femmes de trouver leurs personnalités, découvrir leurs talents, trouver leurs place et se mettre en valeur."
 		}
 	]
 }

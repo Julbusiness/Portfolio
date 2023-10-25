@@ -9,7 +9,6 @@ import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import RightCard from "../../../components/Cards/RightCard/RightCard";
 import Modal from "../../../components/Modal/Modal";
-import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
 
 import "./VisitCard.css";
 
@@ -56,15 +55,16 @@ export default function VisitCard() {
 		<section className='visitCard'>
 			<Bandeau image={imageBandeau} />
 			<div className='visitCard-container'>
-				<BackBtn />
-				<div className='title-start'>
-					<Title title='Carte de visite' />
-				</div>
-				<div className='visitCard-cards'>
-					<ul>
-						{modal.value && <Modal data={modalData} content={contentModal} />}
-						<div className='galleryImages'>{visitCardData && content}</div>
-					</ul>
+				<div className='visitCard-wrapper'>
+					<div className='title-start'>
+						<Title title='Carte de visite' />
+					</div>
+					<div className='visitCard-cards'>
+						<ul>
+							{modal.value && <Modal data={modalData} content={contentModal} />}
+							<div className='galleryImages'>{visitCardData && content}</div>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>

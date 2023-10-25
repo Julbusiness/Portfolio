@@ -7,7 +7,6 @@ import imageBandeau from "/assets/images/bandeaux/photo.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import Modal from "../../../components/Modal/Modal";
-import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
 
 import "./Photo.css";
 
@@ -28,7 +27,11 @@ export default function Photo() {
 				dispatch(slideNumber(index));
 			}}
 		>
-			<img src={`/assets/images/photos/${card.image}`} alt='' className="image-grid"/>
+			<img
+				src={`/assets/images/photos/${card.image}`}
+				alt=''
+				className='image-grid'
+			/>
 		</div>
 	));
 
@@ -45,14 +48,15 @@ export default function Photo() {
 	return (
 		<section className='photo'>
 			<Bandeau image={imageBandeau} />
-			<div className='photo-container'>
-				<BackBtn />
-				<div className='title-start'>
-					<Title title='Photo' />
-				</div>
-				<div className='photos'>
-					{modal.value && <Modal data={photoData} content={contentModal} />}
-					<div className='galleryImages'>{photoData && content}</div>
+			<div className='photos-container'>
+				<div className='photos-wrapper'>
+					<div className='title-start'>
+						<Title title='Photo' />
+					</div>
+					<div className='photos'>
+						{modal.value && <Modal data={photoData} content={contentModal} />}
+						<div className='photos-gallery'>{photoData && content}</div>
+					</div>
 				</div>
 			</div>
 		</section>

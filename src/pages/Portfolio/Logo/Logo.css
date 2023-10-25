@@ -1,25 +1,39 @@
-.logo-container .logos .galleryImages {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+.logos-container {
+	width: 90%;
 }
 
-.logo-container .logos .card-image {
-	width: 200px;
-	height: 200px;
-	margin: 10px 10px 10px 0;
+.logos-wrapper {
+	width: 75%;
+}
+
+.title-start {
+	width: 100%;
+}
+
+.logos-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-items: center;
+	gap: 20px;
+}
+
+.logos-gallery .card-image {
+	width: 218px;
+	height: 218px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 	border-radius: 10px;
 	transition: var(--trans-05);
 }
 
-.logo-container .logos .card-image:hover {
+.logos-gallery .card-image:hover {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	border-radius: 0;
 	transition: var(--trans-05);
 }
 
-.logo-container .logos .image-grid {
+.logos-gallery img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -28,9 +42,26 @@
 	transition: var(--trans-05);
 }
 
-.logo-container .logos .image-grid:hover {
+.logos-gallery .image-grid:hover {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	border-radius: 0;
 	transform: scale(1.4);
 	transition: var(--trans-05);
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1440px ) {
+	.logos-wrapper {
+		width: 80%;
+	}
+	.logos-gallery {
+		gap: 15px;
+	}
+	.logos-gallery .card-image {
+		width: 186px;
+		height: 186px;
+	}
 }

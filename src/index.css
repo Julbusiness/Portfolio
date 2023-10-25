@@ -7,7 +7,7 @@
 
 :root {
 	/* Colors */
-	--bg-dark: rgba(34, 34, 34, 1);
+	--bg-dark: #191d20;
 	--bg-white: rgba(255, 255, 255, 1);
 	--text-white: rgba(255, 255, 255, 1);
 	--text-black: rgba(34, 34, 34, 1);
@@ -16,7 +16,6 @@
 	--text-menu-initial: rgba(151, 151, 151, 1);
 	--subheading: rgba(102, 102, 102, 1);
 	--icons: rgba(255, 255, 255, 0.7);
-
 
 	/* Transition */
 	--trans-02: all 0.2s ease;
@@ -27,6 +26,7 @@
 	overflow-x: hidden;
 
 	height: 100vh;
+	
 }
 
 /* ---------------------------- Factorisation css --------------------------- */
@@ -40,55 +40,42 @@
 .photo,
 .confiance,
 .contact,
-.notfound
- {
+.notfound {
 	position: relative;
 	left: 60px;
 	width: calc(100vw - 60px);
 	min-height: calc(100vh - 125px);
 	transition: var(--trans-05);
 	z-index: 101;
-	background: #FFFFFF;
+	background: #ffffff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 50px;
 }
 
+.home-container,
 .about-container,
 .skills-container,
 .portfolio-container,
-.logo-container,
-.photo-container,
+.logos-container,
+.photos-container,
 .visitCard-container,
 .web-container,
 .confiance-container,
 .contact-container {
-  width: calc(100vw - 60px);
-	max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+	/* width: 80%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
 	position: relative;
-}
-
-.skills-container .title-start,
-.portfolio-container .title-start,
-.logo-container .title-start,
-.photo-container .title-start,
-.visitCard-container .title-start,
-.web-container .title-start,
-.confiance-container .title-start,
-.contact-container .title-start {
-  justify-content: start;
-  width: 80%;
 }
 
 .sidebar.open ~ .home,
 .sidebar.open ~ .about,
-.sidebar.open ~ .skills, 
+.sidebar.open ~ .skills,
 .sidebar.open ~ .portfolio,
 .sidebar.open ~ .logo,
 .sidebar.open ~ .visitCard,
@@ -96,16 +83,16 @@
 .sidebar.open ~ .photo,
 .sidebar.open ~ .confiance,
 .sidebar.open ~ .contact,
-.sidebar.open ~ .notfound
-{
+.sidebar.open ~ .notfound,
+.sidebar.open ~ .footer {
 	left: 310px;
-	width: calc(100vw - 310px);
+	width: 100%;
 	transition: var(--trans-05);
 }
 
 .home .text,
 .about .text,
-.skills .text, 
+.skills .text,
 .portfolio .text,
 .logo .text,
 .visitCard .text,
@@ -113,8 +100,7 @@
 .photo .text,
 .confiance .text,
 .contact .text,
-.notfound .text
-{
+.notfound .text {
 	font-size: 30px;
 	font-weight: 500;
 	color: var(--text-black);
@@ -140,7 +126,7 @@
 
 .sidebar.active .image-text img {
 	visibility: visible;
-	transition: var(--trans-05)
+	transition: var(--trans-05);
 }
 
 .sidebar.active ul li .icon {
@@ -158,46 +144,18 @@
 	font-weight: 500;
 }
 
-.logo-container .logos,
-.photo-container .photos,
-.visitCard-container .visitCard-cards,
-.web-container .web-cards,
-.confiance-container .confiance-cards
- {
-  width: 80%;
-  margin-top: 50px;
-}
-
 .portfolio-container .portfolio-cards li,
 .visitCard-container .visitCard-cards li,
 .web-container .web-cards li,
 .confiance-container .confiance-cards li {
-  list-style: none;
-}
-
-.logo-container .btnPrev,
-.photo-container .btnPrev,
-.visitCard-container .btnPrev,
-.web-container .btnPrev {
-  position: absolute;
-  top: -100px;
-  left: -180px;
-  width: 60px;
-  height: 60px;
-  background: #1d1d1b;
-  border: none;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+	list-style: none;
 }
 
 .logo-container button i,
 .photo-container button i,
 .visitCard-container button i,
-.web-container button i	{
-  font-size: 30px;
+.web-container button i {
+	font-size: 30px;
 }
 
 .logo-container .logos .image-modal,

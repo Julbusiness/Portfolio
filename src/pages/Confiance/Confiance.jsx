@@ -23,11 +23,13 @@ export default function Confiance() {
 		<section className='confiance'>
 			<Bandeau image={imageBandeau} />
 			<div className='confiance-container'>
-				<div className='title-start'>
-					<Title title="Il m'ont fait confiance" />
-				</div>
-				<div className='confiance-cards'>
-					<ul>{content}</ul>
+				<div className='confiance-wrapper'>
+					<div className='title-start'>
+						<Title title="Ils m'ont fait confiance" />
+					</div>
+					<div className='confiance-cards'>
+						<ul>{content}</ul>
+					</div>
 				</div>
 			</div>
 		</section>

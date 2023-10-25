@@ -7,7 +7,6 @@ import imageBandeau from "/assets/images/bandeaux/logo.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import Modal from "../../../components/Modal/Modal";
-import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
 
 import "./Logo.css";
 
@@ -49,14 +48,15 @@ export default function Logo() {
 	return (
 		<section className='logo'>
 			<Bandeau image={imageBandeau} />
-			<div className='logo-container'>
-				<BackBtn />
-				<div className='title-start'>
-					<Title title='Logo' />
-				</div>
-				<div className='logos'>
-					{modal.value && <Modal data={logoData} content={contentModal} />}
-					<div className='galleryImages'>{logoData && content}</div>
+			<div className='logos-container'>
+				<div className='logos-wrapper'>
+					<div className='title-start'>
+						<Title title='Logo' />
+					</div>
+					<div className='logos'>
+						{modal.value && <Modal data={logoData} content={contentModal} />}
+						<div className='logos-gallery'>{logoData && content}</div>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,67 +1,41 @@
-/* image-container = Image de fond + titre et profession */
-.home .image-home img {
-	width: calc(100vw - 60px);
-	max-height: 760px;
-	object-fit: cover;
-	transition: var(--trans-05);
+.home-container {
+	width: 70%;
 }
 
-.home .title {
-	position: absolute;
-	top: 7px;
-	left: 60px;
-	color: var(--text-white);
-	font-size: 42px;
+.home-wrapper {
+	width: 87%;
 }
 
-.home .title span {
-	color: #009acd;
-	font-size: 45px;
-}
-
-.home .profession {
-	position: absolute;
-	top: 65px;
-	left: 105px;
-	color: var(--text-white);
-	font-size: 16px;
-}
-
-/* slide-container = Composant Title + home-card-container */
-
-.card-container {
-	position: relative;
-	margin-top: 50px;
-}
-
-.description {
-	margin-left: 70px;
+.home-container .title-start {
+	width: 100%;
 }
 
 .home-card-container {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 0px;
-	width: calc(100vw - 60px);
-	max-width: 1200px;
-	/* padding-left: 70px; */
-}
-
-.home-card-container .home-card {
-  width: 220px;
-	border-radius: 10px;
-}
-
-.home-card-container .home-card img {
 	width: 100%;
-	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home-card {
+  width: 195px;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.home-card:last-child {
+	margin-right: 0;
+}
+
+.home-card img {
+	width: 100%;
+	height: 180px;
 	border-radius: 10px;
 	object-fit: cover;
 	margin-top: 53px;
 }
 
-.home-card-container .title-card {
-	font-size: 1.25rem;
+.title-card {
+	font-size: 20px;
 	font-weight: 700;
 	padding-left: 7px;
 	margin-top: 5px;
@@ -70,4 +44,14 @@
 .link {
 	text-decoration: none;
 	color: var(--text-black);
+}
+
+
+@media screen and (max-width: 1440px ) {
+	.home-container {
+		width: 80%;
+	}
+	.home-wrapper {
+		width: 96%;
+	}
 }

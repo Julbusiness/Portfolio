@@ -1,6 +1,18 @@
-.contact-container .contact-card {
+.contact-container {
+	width: 90%;
+}
+
+.contact-wrapper {
+	width: 90%;
+}
+
+.title-start {
+	width: 100%;
+}
+
+.contact-card {
 	min-height: 500px;
-	width: 80%;
+	width: 100%;
 	background-color: var(--bg-white);
 	margin-bottom: 20px;
 	margin-top: 50px;
@@ -10,16 +22,7 @@
 	border-radius: 10px;
 }
 
-.contact-container .contact-card:hover {
-	border-radius: 0;
-}
-
-.contact-container .contact-card:hover .contact-card-pics {
-	border-radius: 0;
-}
-
-
-.contact-container .contact-card .contact-card-pics {
+.contact-card-pics {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px 10px 0 0;
@@ -28,69 +31,79 @@
 	display: flex;
 }
 
-.contact-container .contact-card .profil-image,
-.contact-container .contact-card .contact-image {
+.contact-card:hover {
+	border-radius: 0;
+}
+
+.contact-card:hover .contact-card-pics {
+	border-radius: 0;
+}
+
+.profil-image,
+.contact-image {
 	width: 50%;
 	height: 500px;
 }
 
-.contact-container .contact-card .profil-image {
+.profil-image {
 	border-radius: 10px 0 0 0;
+}
+
+.profil-image img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
-.contact-container .contact-card .profil-image img {
-	width: 100%;
-}
-
-.contact-container .contact-card .contact-image {
+.contact-image {
 	border-radius: 0 10px 0 0;
-	object-fit: cover;
 }
 
-.contact-container .contact-card .contact-image img {
+.contact-image img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /** text **/
 
-.contact-container .contact-card .contact-card-text {
+.contact-card-text {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 0;
 }
 
-.contact-container .contact-card .contact-card-text .pics-text {
+.pics-text {
 	width: 100%;
 	text-align: center;
 	padding: 40px;
 }
-.contact-container .contact-card .contact-card-text .pics-text h2 {
+.pics-text h2 {
 	font-size: 1.75rem;
 	font-weight: 700;
 	color: var(--text-black);
 	margin-bottom: 10px;
 }
-.contact-container .contact-card .contact-card-text .pics-text .tel {
+.pics-text .tel {
 	font-size: 1.25rem;
 	font-weight: 400;
 	color: var(--subheading);
 	margin-bottom: 10px;
 }
-.contact-container .contact-card .contact-card-text .pics-text .email {
+.pics-text .email {
 	font-size: 1.25rem;
 	font-weight: 400;
 	color: var(--subheading);
 }
 
-.contact-container .contact-card .contact-card-text .pics-text .reseaux {
+.pics-text .reseaux {
 	font-size: 2.5rem;
 	text-decoration: none;
 	margin-top: 20px;
 }
 
-.contact-container .contact-card .contact-card-text .pics-text .reseaux i {
+.pics-text .reseaux i {
 	padding: 7px;
 	color: var(--text-black);
 }

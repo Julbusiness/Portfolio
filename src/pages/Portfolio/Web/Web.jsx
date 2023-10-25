@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
-// import { slideNumber } from "../../../features/slide";
 import { cardNumber } from "../../../features/card";
 
 import Bandeau from "../../../components/Bandeau/Bandeau";
@@ -9,8 +8,6 @@ import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
 import LeftCard from "../../../components/Cards/LeftCard/LeftCard";
 import Modal from "../../../components/Modal/Modal";
-import BackBtn from "../../../components/Buttons/BackBtn/BackBtn";
-import SearchBar from "../../../components/SearchBar/SearchBar";
 
 import "./Web.css";
 
@@ -24,34 +21,26 @@ export default function Web() {
 	const webData = data.portfolioData.web;
 	const modalData = webData[card].modalImage;
 
-	// console.log("modalData : " + modalData);
-	// console.log("state de card : " + card);
-	// console.log("state de slide : " + slide);
-
 	let content;
-	content = webData
-		.filter((website) =>
-			website.tags.toLowerCase().includes(search.value.toLowerCase())
-		)
-		.map((card, index) => {
-			return (
-				<li
-					key={card.id}
-					onClick={() => {
-						dispatch(openModal());
-						dispatch(cardNumber(index));
-						// dispatch(slideNumber(0));
-					}}
-				>
-					<LeftCard
-						image={`/assets/images/cards/${card.image}`}
-						title={card.title}
-						text={card.text}
-						projet={card.projet}
-					/>
-				</li>
-			);
-		});
+	content = webData.map((card, index) => {
+		return (
+			<li
+				key={card.id}
+				onClick={() => {
+					dispatch(openModal());
+					dispatch(cardNumber(index));
+					// dispatch(slideNumber(0));
+				}}
+			>
+				<LeftCard
+					image={`/assets/images/cards/${card.image}`}
+					title={card.title}
+					text={card.text}
+					projet={card.projet}
+				/>
+			</li>
+		);
+	});
 
 	let contentModal;
 	contentModal = (
@@ -67,20 +56,16 @@ export default function Web() {
 		<section className='web'>
 			<Bandeau image={imageBandeau} />
 			<div className='web-container'>
-				<BackBtn />
-				<div className='title-start'>
-					<div className='title-wrapper'>
+				<div className='web-wrapper'>
+					<div className='title-start'>
 						<Title title='Sites Web' />
 					</div>
-					<div className='search-container'>
-						<SearchBar />
+					<div className='web-cards'>
+						<ul>
+							{modal.value && <Modal data={modalData} content={contentModal} />}
+							<div className='web-gallery'>{webData && content}</div>
+						</ul>
 					</div>
-				</div>
-				<div className='web-cards'>
-					<ul>
-						{modal.value && <Modal data={modalData} content={contentModal} />}
-						<div className='galleryImages'>{webData && content}</div>
-					</ul>
 				</div>
 			</div>
 		</section>

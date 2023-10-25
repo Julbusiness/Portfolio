@@ -64,7 +64,7 @@ export default function Sidebar() {
 				<li className='nav-link'>
 					<NavLink to='/confiance'>
 						<i className='bx bx-heart icon'></i>
-						<span className='text nav-text'>Il m&apos;ont fait confiance</span>
+						<span className='text nav-text'>Ils m&apos;ont fait confiance</span>
 					</NavLink>
 				</li>
 				<li className='nav-link'>

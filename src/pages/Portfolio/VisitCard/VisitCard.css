@@ -1,5 +1,34 @@
+.visitCard-container {
+  width: 90%;
+}
+
+.visitCard-wrapper {
+  width: 70%;
+}
+
+.title-start {
+  width: 100%;
+}
+
 .visitCard-container .visitCard-cards .galleryImages {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1440px ) {
+  .visitCard-wrapper {
+    width: 75%;
+  }
+  .hardskill-content ul {
+    gap: 27px;
+  }  
+  .hardskill-content li .card {
+    width: 197px;
+    height: 197px;
+  }
 }

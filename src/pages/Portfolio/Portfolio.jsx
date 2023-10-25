@@ -26,11 +26,13 @@ export default function Portfolio() {
 		<section className='portfolio'>
 			<Bandeau image={imageBandeau} />
 			<div className='portfolio-container'>
-				<div className='title-start'>
-					<Title title='Portfolio' />
-				</div>
-				<div className='portfolio-cards'>
-					<ul>{content}</ul>
+				<div className='portfolio-wrapper'>
+					<div className='title-start'>
+						<Title title='Portfolio' />
+					</div>
+					<div className='portfolio-cards'>
+						<ul>{content}</ul>
+					</div>
 				</div>
 			</div>
 		</section>

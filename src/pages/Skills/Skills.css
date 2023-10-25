@@ -1,44 +1,87 @@
-.skills-container .categories-container {
+.skills-container {
+  width: 90%;
+}
+
+.skills-wrapper {
   width: 70%;
 }
 
-.skills-container .category {
+.category {
   margin-top: 60px;
   display: flex;
 }
 
-.skills-container .formation-content .left-card-text,
-.skills-container .experience-content .left-card-text{
+.formation-content .left-card-text,
+.experience-content .left-card-text{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
-.skills-container .formation-content .left-card-text h2 {
+.formation-content .left-card-text h2 {
   margin-bottom: 5px;
   margin-top: 0;
 }
 
-.skills-container .formation-content .left-card-text .leftCard-text,
-.skills-container .experience-content .left-card-text .leftCard-text {
+.formation-content .left-card-text .leftCard-text,
+.experience-content .left-card-text .leftCard-text {
 margin-top: 0;
 }
 
-.skills-container .left-card {
+.left-card {
   cursor: default;
 }
 
-.skills-container .category li {
+.category li {
   list-style: none;
   margin-bottom: 20px;
 }
 
-.skills-container .categories-container .left-card .left-card-text .leftCard-projet {
+.hardskill-content li {
+  margin-bottom: 0;
+}
+
+.leftCard-project {
   display: none;
 }
 
 .skills-container .title-content {
+  width: 100%;
   margin-bottom: 70px;
 }
 
+.hardskill-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+}
 
+.hardskill-content li .card {
+  margin-bottom: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.title-content .left-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1440px ) {
+  .skills-wrapper {
+    width: 70%;
+  }
+  .hardskill-content ul {
+    gap: 27px;
+  }  
+  .hardskill-content li .card {
+    width: 197px;
+    height: 197px;
+  }
+}
