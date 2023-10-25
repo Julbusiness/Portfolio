@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import LogoWhite from "../../assets/Logo-white.png";
+import LogoWhite from "../../assets/Logo.png";
 import "./Sidebar.css";
 
 export default function Sidebar() {
@@ -14,7 +14,6 @@ export default function Sidebar() {
 	};
 
 	const showLogoOnScroll = () => {
-		// console.log(window.scrollY);
 		if (window.scrollY >= 80) {
 			setShowLogo(true);
 		} else {
