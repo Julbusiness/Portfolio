@@ -30,6 +30,66 @@
 }
 
 /* ---------------------------- Factorisation css --------------------------- */
+
+.home,
+.about,
+.skills,
+.portfolio,
+.logo,
+.visitCard,
+.web,
+.photo,
+.confiance,
+.contact,
+.notfound {
+	position: relative;
+	bottom: 75px;
+	width: 100%;
+	min-height: calc(100vh - 75px);
+	transition: var(--trans-05);
+	z-index: 101;
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.home-container,
+.about-container,
+.skills-container,
+.portfolio-container,
+.logos-container,
+.photos-container,
+.visitCard-container,
+.web-container,
+.confiance-container,
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+	position: relative;
+}
+
+.sidebar.open .text {
+	display: none;
+	transition: var(--trans-05);
+}
+
+.sidebar ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------- Responsive Mobile-first ------------------------ */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
 .home,
 .about,
 .skills,
@@ -64,7 +124,6 @@
 .web-container,
 .confiance-container,
 .contact-container {
-	/* width: 80%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -129,6 +188,10 @@
 	transition: var(--trans-05);
 }
 
+.sidebar ul {
+	display: block;
+}
+
 .sidebar.active ul li .icon {
 	transform: translateY(0);
 	transition: var(--trans-05);
@@ -165,4 +228,6 @@
 	object-fit: cover;
 	border-radius: 10px;
 	transition: var(--trans-05);
+}
+
 }
