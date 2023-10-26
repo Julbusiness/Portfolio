@@ -42,7 +42,7 @@
 }
 
 .cards {
-  width: 95%;
+  width: 90%;
 }
 
 .cards .right-card .right-card-text {
@@ -51,7 +51,7 @@
 }
 
 .cards .right-card .right-card-text h2 {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .cards .right-card .right-card-text p {
@@ -65,31 +65,21 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .about-container {
-    width: 100%;
-  }
   .about-title-container {
-    width: 90%;
-    border-bottom: 1px solid var(--border-grey);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-  }
-  .about-title-container {
-    width: 60%;
-    /* padding-bottom: 30px; */
+    width: 80%;
     margin-bottom: 50px;
   }
   .about-title-container h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .about-title-container p {
     font-size: 20px;
     margin-bottom: 20px;
   }
   .stats {
-    width: 70%;
-    padding: 64px 112px;
-    margin-bottom: 100px;
+    width: 90%;
+    padding: 64px 70px;
+    margin-bottom: 60px;
     margin-top: 0;
   }
   .stats ul {
@@ -99,19 +89,23 @@
     font-size: 40px;
   }
   .cards {
-    width: 70%;
+    width: 80%;
   }
   .cards .right-card .right-card-text {
-    padding: 20px 50px;
+    padding: 20px 30px;
     width: 60%;
   }
   .cards .right-card .right-card-text h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .cards .right-card .right-card-text p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 
-
+@media screen and (min-width: 1024px) {
+  .stats {
+    width: 80%;
+  }
+}
