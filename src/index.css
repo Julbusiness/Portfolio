@@ -207,12 +207,12 @@
 	font-weight: 500;
 }
 
-.portfolio-container .portfolio-cards li,
+/* .portfolio-container .portfolio-cards li,
 .visitCard-container .visitCard-cards li,
 .web-container .web-cards li,
 .confiance-container .confiance-cards li {
 	list-style: none;
-}
+} */
 
 .logo-container button i,
 .photo-container button i,
@@ -221,13 +221,13 @@
 	font-size: 30px;
 }
 
-.logo-container .logos .image-modal,
+/* .logo-container .logos .image-modal,
 .visitCard-container .visitCard-cards .image-modal {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 10px;
 	transition: var(--trans-05);
-}
+} */
 
 }

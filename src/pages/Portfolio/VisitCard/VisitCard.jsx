@@ -7,7 +7,7 @@ import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux/visitCard.png";
 import Title from "../../../components/Title/Title";
 import data from "../../../data/data.json";
-import RightCard from "../../../components/Cards/RightCard/RightCard";
+import LeftCard from "../../../components/Cards/LeftCard/LeftCard";
 import Modal from "../../../components/Modal/Modal";
 
 import "./VisitCard.css";
@@ -32,7 +32,7 @@ export default function VisitCard() {
 				dispatch(slideNumber(0));
 			}}
 		>
-			<RightCard
+			<LeftCard
 				image={`/assets/images/visitCard/${card.image}`}
 				title={card.title}
 				text={card.text}

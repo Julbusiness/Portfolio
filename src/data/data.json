@@ -462,6 +462,46 @@
 						"image": "LaFemmeAuQuotidien8.png"
 					}
 				]
+			},
+			{
+				"id": "1",
+				"image": "LaFemmeAuQuotidien1.png",
+				"title": "La Femme au Quotidien",
+				"text": "Invité à créer un logo, je suis allé plus loin en réalisant toute la carte de visite. Dessin, Couleurs, Polices, etc...",
+				"modalImage": [
+					{
+						"id": "1",
+						"image": "LaFemmeAuQuotidien1.png"
+					},
+					{
+						"id": "2",
+						"image": "LaFemmeAuQuotidien2.png"
+					},
+					{
+						"id": "3",
+						"image": "LaFemmeAuQuotidien3.png"
+					},
+					{
+						"id": "4",
+						"image": "LaFemmeAuQuotidien4.png"
+					},
+					{
+						"id": "5",
+						"image": "LaFemmeAuQuotidien5.png"
+					},
+					{
+						"id": "6",
+						"image": "LaFemmeAuQuotidien6.png"
+					},
+					{
+						"id": "7",
+						"image": "LaFemmeAuQuotidien7.png"
+					},
+					{
+						"id": "8",
+						"image": "LaFemmeAuQuotidien8.png"
+					}
+				]
 			}
 		],
 		"web": [

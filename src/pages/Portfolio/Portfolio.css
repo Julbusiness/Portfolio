@@ -40,12 +40,12 @@
 /* -------------------- Responsive Mobile-first-------------------- */
 /* -------------------------------------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.portfolio-container {
 		width: 90%;
 	}
 	.portfolio-wrapper {
-		width: 70%;
+		width: 75%;
 	}
 	.portfolio-cards {
 		margin-top: 70px;
