@@ -10,17 +10,26 @@
 	width: 100%;
 }
 
+.home-container .line {
+	top: 150px;
+}
+
+.home-container .fat {
+	top: 147px;
+}
+
 .home-card-container {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .home-card {
 	width: 100%;
 	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
 .home-card:last-child {
@@ -32,7 +41,6 @@
 	height: 250px;
 	border-radius: 10px;
 	object-fit: cover;
-	margin-top: 10px;
 }
 
 .title-card {
@@ -48,77 +56,56 @@
 	color: var(--text-black);
 }
 
-/* @media screen and (max-width: 1440px ) {
-	.home-container {
-		width: 80%;
-	}
-	.home-wrapper {
-		width: 96%;
-	}
-}
-
-
-@media screen and (max-width: 1200px ) {
-	.home-container {
-		width: 90%;
-	}
-	.home-card {
-		width: 160px;
-	}
-	.home-card img {
-		height: 150px;
-	}
-	.home-container .title-start h2 {
-		font-size: 2rem;
-	}
-	.home-card-container {
-		margin-top: 50px;
-	}
-}
-
-
-@media screen and (max-width: 1080px ) {
-	.home-card {
-		width: 150px;
-	}
-	.home-card img {
-		height: 140px;
-	}
-}
-
-
-@media screen and (max-width: 1024px ) {
-	.home-card {
-		width: 140px;
-	}
-	.home-card img {
-		height: 130px;
-	}
-} */
-
 /* ------------------------- Responsive Mobile-first ------------------------ */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
 	.home-container {
 		width: 70%;
 	}
-
+	.title-container .title-content {
+    font-size: 40px;
+  }
+  .title-container .line {
+    top: 70px;
+    left: 5px;
+    width: 500px;
+  }
+  .title-container .fat {
+    top: 67px;
+    left: 5px;
+    width: 125px;
+  }
 	.home-wrapper {
 		width: 87%;
 	}
-
 	.home-card-container {
 		margin-top: 70px;
 	}
-
 	.home-card {
 		width: 195px;
 	}
-
-	.home-card img {
+	.home-card-image {
+		width: 100%;
 		height: 180px;
+		border-radius: 10px;
+		overflow: hidden;
+		transition: var(--trans-05);
 	}
-
+	.home-card-image:hover {
+		border-radius: 0;
+		transition: var(--trans-05);
+	}
+	.home-card-image img {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		transition: var(--trans-05);
+	}
+	.home-card-image:hover img {
+		border-radius: 0;
+		transform: scale(1.1);
+		transition: var(--trans-05);
+	}
 	.title-card {
 		font-size: 20px;
 		margin-top: 5px;

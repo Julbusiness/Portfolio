@@ -3,6 +3,7 @@ import imageBandeau from "/assets/images/bandeaux/confiance.png";
 import Title from "../../components/Title/Title";
 import data from "../../data/data.json";
 import RightCard from "../../components/Cards/RightCard/RightCard";
+import LeftCard from "../../components/Cards/LeftCard/LeftCard";
 import "./Confiance.css";
 
 export default function Confiance() {
@@ -11,7 +12,7 @@ export default function Confiance() {
 	let content;
 	content = confianceData.map((item, index) => (
 		<li key={item.id}>
-			<RightCard
+			<LeftCard
 				image={`/assets/images/confiance/${item.image}`}
 				title={item.title}
 				text={item.text}

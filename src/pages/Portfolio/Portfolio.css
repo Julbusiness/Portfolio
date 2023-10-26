@@ -37,7 +37,7 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------- Responsive Mobile-first-------------------- */
 /* -------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
@@ -57,17 +57,4 @@
   .portfolio-cards li:first-child {
     margin-top: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
-	.portfolio-wrapper {
-		width: 80%;
-	}
-	.portfolio-cards ul {
-		gap: 30px;
-	}
-	.portfolio-cards li .back-card {
-		width: 480px;
-		height: 330px;
-	}
 }

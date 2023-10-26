@@ -170,7 +170,7 @@
 				"id": 18,
 				"image": "hardskill18.png"
 			}
-		],		
+		],
 		"softSkills": [
 			{
 				"id": 1,
@@ -203,7 +203,6 @@
 				"text": "Partager le code et la connaissance, ensemble nous résolvons les défis techniques."
 			}
 		]
-
 	},
 
 	"portfolioData": {
@@ -1307,6 +1306,12 @@
 			"image": "confiance1.png",
 			"title": "La Femme au Quotidien",
 			"text": "Association déclarée, qui propose aux femmes de trouver leurs personnalités, découvrir leurs talents, trouver leurs place et se mettre en valeur."
+		},
+		{
+			"id": 2,
+			"image": "confiance2.png",
+			"title": "Femmes Colibri",
+			"text": "Eleonore et Marie proposent des weekend aux femmes qui veulent se redecouvrir. Atelier yoga, bien-être, échange en groupe, méditation, etc..."
 		}
 	]
 }

@@ -11,7 +11,9 @@ export default function Home() {
 	content = homeData.map((link, index) => (
 		<div className='home-card' key={link.id}>
 			<Link to={link.route} className='link'>
+			<div className="home-card-image">
 				<img src={`/assets/images/accueil/${link.image}`} alt='' />
+			</div>
 				<h3 className='title-card'>{link.title}</h3>
 			</Link>
 		</div>
