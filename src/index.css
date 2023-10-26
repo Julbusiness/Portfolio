@@ -52,7 +52,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 }
 
 .home-container,
@@ -128,7 +128,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	position: relative;
 }
 
@@ -207,27 +207,10 @@
 	font-weight: 500;
 }
 
-/* .portfolio-container .portfolio-cards li,
-.visitCard-container .visitCard-cards li,
-.web-container .web-cards li,
-.confiance-container .confiance-cards li {
-	list-style: none;
-} */
-
 .logo-container button i,
 .photo-container button i,
 .visitCard-container button i,
 .web-container button i {
 	font-size: 30px;
 }
-
-/* .logo-container .logos .image-modal,
-.visitCard-container .visitCard-cards .image-modal {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-	transition: var(--trans-05);
-} */
-
 }

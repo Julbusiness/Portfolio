@@ -1,9 +1,9 @@
 .skills-container {
-	width: 90%;
+	width: 100%;
 }
 
 .skills-wrapper {
-	width: 100%;
+	width: 90%;
 }
 
 .skills .title-start {
@@ -36,7 +36,6 @@
 
 .category li {
 	list-style: none;
-	margin-bottom: 20px;
 }
 
 .formation-content .left-card-text .leftCard-text,
@@ -56,22 +55,20 @@ margin-top: 0px;
 }
 
 .hardskill-content ul {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	flex-wrap: wrap;
-	justify-content: start;
-	align-items: center;
 	gap: 24px;
 }
 
 .hardskill-content li .card {
 	margin-bottom: 0;
-	width: 163px;
-	height: 163px;
+	width: 100%;
+	height: 100%;
 }
 
 .title-content .left-card {
 	width: 100%;
-	max-width: 100%;
 }
 
 .skills .left-card-image {
@@ -95,7 +92,7 @@ margin-top: 0px;
 }
 
 /* -------------------------------------------------------------------------- */
-/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------- Responsive mobile-first -------------------- */
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -105,11 +102,21 @@ margin-top: 0px;
 	.category {
 		margin-top: 60px;
 	}
+	.category li {
+		margin-bottom: 20px;
+	}
 	.hardskill-content li {
 		margin-bottom: 0;
 	}
 	.skills-container .title-content {
 		margin-bottom: 70px;
+	}
+	.hardskill-content ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: start;
+		align-items: center;
+		gap: 24px;
 	}
 	.hardskill-content li .card {
 		width: 200px;

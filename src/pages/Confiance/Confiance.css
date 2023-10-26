@@ -1,9 +1,9 @@
 .confiance-container {
-  width: 90%;
+  width: 100%;
 }
 
 .confiance-wrapper {
-  width: 100%;
+  width: 90%;
 }
 
 .title-start {
@@ -16,10 +16,8 @@
 }
 
 .confiance-cards ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 24px;
   list-style: none;
 }
@@ -62,10 +60,18 @@
 
 @media screen and (min-width: 768px) {  
   .confiance-wrapper {
-    width: 70%;
+    width: 85%;
   }
   .confiance-cards {
     margin-top: 80px;
+  }
+  .confiance-cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
   }
   .confiance .left-card {
     flex-direction: row;

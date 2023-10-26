@@ -65,6 +65,15 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
+  .about-container {
+    width: 100%;
+  }
+  .about-title-container {
+    width: 90%;
+    border-bottom: 1px solid var(--border-grey);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
   .about-title-container {
     width: 60%;
     /* padding-bottom: 30px; */

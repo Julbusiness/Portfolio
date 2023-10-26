@@ -1,8 +1,8 @@
 /* BACK-CARD */
 
 .back-card {
-  width: 450px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   display: inline-block;
   background-color: var(--bg-white);
   border-radius: 10px;
