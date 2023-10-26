@@ -19,7 +19,7 @@ export default function Logo() {
 
 	let content;
 	content = logoData.map((card, index) => (
-		<div
+		<li
 			className='card-image'
 			key={index}
 			onClick={() => {
@@ -32,7 +32,7 @@ export default function Logo() {
 				alt=''
 				className='image-grid'
 			/>
-		</div>
+		</li>
 	));
 
 	let contentModal;
@@ -48,14 +48,16 @@ export default function Logo() {
 	return (
 		<section className='logo'>
 			<Bandeau image={imageBandeau} />
-			<div className='logos-container'>
-				<div className='logos-wrapper'>
+			<div className='logo-container'>
+				<div className='logo-wrapper'>
 					<div className='title-start'>
 						<Title title='Logo' />
 					</div>
-					<div className='logos'>
-						{modal.value && <Modal data={logoData} content={contentModal} />}
-						<div className='logos-gallery'>{logoData && content}</div>
+					<div className='logo-cards'>
+						<ul>
+							{modal.value && <Modal data={logoData} content={contentModal} />}
+							{logoData && content}
+						</ul>
 					</div>
 				</div>
 			</div>

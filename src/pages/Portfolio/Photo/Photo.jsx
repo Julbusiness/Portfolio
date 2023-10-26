@@ -48,14 +48,16 @@ export default function Photo() {
 	return (
 		<section className='photo'>
 			<Bandeau image={imageBandeau} />
-			<div className='photos-container'>
-				<div className='photos-wrapper'>
+			<div className='photo-container'>
+				<div className='photo-wrapper'>
 					<div className='title-start'>
 						<Title title='Photo' />
 					</div>
-					<div className='photos'>
-						{modal.value && <Modal data={photoData} content={contentModal} />}
-						<div className='photos-gallery'>{photoData && content}</div>
+					<div className='photo-cards'>
+						<ul>
+							{modal.value && <Modal data={photoData} content={contentModal} />}
+							{photoData && content}
+						</ul>
 					</div>
 				</div>
 			</div>
