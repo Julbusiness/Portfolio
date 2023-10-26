@@ -510,7 +510,7 @@
 				"image": "cards-logo1.png",
 				"title": "Booki",
 				"text": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
-				"projet": "Intégrer l'interface du site avec du code html et css",
+				"project": "Intégrer l'interface du site avec du code html et css",
 				"tags": "html, css, figma",
 				"modalImage": [
 					{
@@ -528,7 +528,7 @@
 				"image": "cards-logo2.png",
 				"title": "OhMyFood",
 				"text": "Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. ",
-				"projet": "Développer un site 'mobile-first' qui répertorie les menus des restaurants gastronomiques.",
+				"project": "Développer un site 'mobile-first' qui répertorie les menus des restaurants gastronomiques.",
 				"tags": "html, css, figma",
 				"modalImage": [
 					{
@@ -554,7 +554,7 @@
 				"image": "cards-logo3.png",
 				"title": "GameOn",
 				"text": "GameOn est une PME spécialisée dans les conférences et les concours de jeux.",
-				"projet": "Développer les fonctionnalités pour rendre le formulaire pleinement opérationnel.",
+				"project": "Développer les fonctionnalités pour rendre le formulaire pleinement opérationnel.",
 				"tags": "html, css, javascript",
 				"modalImage": [
 					{
@@ -588,7 +588,7 @@
 				"image": "cards-logo4.png",
 				"title": "FishEye",
 				"text": "FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux.",
-				"projet": "Créer le html, css et javascript nécessaires pour créer un prototype",
+				"project": "Créer le html, css et javascript nécessaires pour créer un prototype",
 				"tags": "html, css, javascript, webpack, eslint, api, figma",
 				"modalImage": [
 					{
@@ -617,8 +617,8 @@
 				"id": "5",
 				"image": "cards-logo5.png",
 				"title": "Les Petits Plats",
-				"text": "Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de se lancer dans un nouveau projet : réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.",
-				"projet": "Développer un système de recherche et de filtres performants pour le site.",
+				"text": "Editeur de livres de cuisine, l’entreprise a décidé de se lancer dans un nouveau projet : réaliser son propre site de recettes de cuisine.",
+				"project": "Développer un système de recherche et de filtres performants pour le site.",
 				"tags": "javascript, figma, api",
 				"modalImage": [
 					{
@@ -636,7 +636,7 @@
 				"image": "cards-logo6.png",
 				"title": "Billed",
 				"text": "Billed est une entreprise qui produit des solutions Saas destinées aux équipes de ressources humaines.",
-				"projet": "Tester et débugger les fonctionnalités du site.",
+				"project": "Tester et débugger les fonctionnalités du site.",
 				"tags": "javascript, jest, babel, eslint",
 				"modalImage": [
 					{
@@ -658,7 +658,7 @@
 				"image": "cards-logo7.png",
 				"title": "Learn@Home",
 				"text": "Learn@Home est une association qui met en relation des enfants en difficulté scolaire avec des tuteurs bénévoles en ligne.",
-				"projet": "Créer les diagrammes de cas d'usage, les users stories, les maquettes du site.",
+				"project": "Créer les diagrammes de cas d'usage, les users stories, les maquettes du site.",
 				"tags": "figma, notion, kanban, user stories",
 				"modalImage": [
 					{
@@ -703,8 +703,8 @@
 				"id": "8",
 				"image": "cards-logo8.png",
 				"title": "Kasa",
-				"text": "Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
-				"projet": "Développer l'ensemble de l'application",
+				"text": "Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. Kasa fait partie des leaders de la location d’appartements.",
+				"project": "Développer l'ensemble de l'application",
 				"tags": "react, react-router-dom, jest",
 				"modalImage": [
 					{
@@ -725,8 +725,8 @@
 				"id": "9",
 				"image": "cards-logo9.png",
 				"title": "SportSee",
-				"text": "SportSee est une startup dédiée au coaching sportif. En pleine croissance, l’entreprise lance une nouvelle version de la page profil de l’utilisateur. Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.",
-				"projet": "Création de la page profil de l'utilisateur. Mise en place des graphiques et des données avec Recharts.",
+				"text": "SportSee est une startup dédiée au coaching sportif. En pleine croissance, l’entreprise lance une nouvelle version de la page profil de l’utilisateur.",
+				"project": "Création de la page profil de l'utilisateur. Mise en place des graphiques et des données avec Recharts.",
 				"tags": "react, docker, axios, dotenv, eslint, jsdoc, prop-types, react-router, recharts, yarn, npm",
 				"modalImage": [
 					{
@@ -740,7 +740,7 @@
 				"image": "cards-logo10.png",
 				"title": "ArgentBank",
 				"text": "Il s'agit d'une nouvelle banque qui cherche à s'imposer sur le marché en ligne",
-				"projet": "Créer l’application web complète et responsive avec React.",
+				"project": "Créer l’application web complète et responsive avec React.",
 				"tags": "react, redux-toolkit, react-router, authentification, api",
 				"modalImage": [
 					{
@@ -758,7 +758,7 @@
 				"image": "cards-logo11.png",
 				"title": "Wealth Health",
 				"text": "Cette société utilise une application web interne, appelée HRnet, qui gère les dossiers des employés.",
-				"projet": "Passer une application JQUERY vers REACT",
+				"project": "Passer une application JQUERY vers REACT",
 				"tags": "react, tanstack, datepicker, react-router, select, table, jsdoc",
 				"modalImage": [
 					{

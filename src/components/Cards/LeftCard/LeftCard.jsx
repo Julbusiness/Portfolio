@@ -11,7 +11,7 @@ export default function LeftCard(props) {
 				<p className='leftCard-text'>{props.text}</p>
 				<p className='leftCard-project'>
 					<span>Projet : </span>
-					{props.projet}
+					{props.project}
 				</p>
 			</div>
 		</div>

@@ -3,98 +3,114 @@
 }
 
 .web-wrapper {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.web-wrapper .title-start {
-  width: 90%;
+.title-start {
+  width: 100%;
 }
 
 .web-cards {
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
-.web-gallery {
+.web-cards ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   gap: 20px;
+  list-style: none;
 }
 
-.web-gallery li {
+.web .left-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.web .left-card .left-card-image {
   width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 
-.web-gallery .web-cards li .left-card {
-  cursor: pointer;
+.web .left-card .left-card-image img {
+  border-radius: 10px 10px 0 0;
 }
 
-.web-gallery .line {
-width: 85%;
+.web .left-card .left-card-text {
+  width: 100%;
+  height: 40%;
+  padding: 15px 15px;
 }
 
-.search-wrapper {
-  width: 80%;
+.web .left-card .left-card-text h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.web .left-card .left-card-text p {
   margin-top: 10px;
 }
 
-.web-gallery .left-card {
-  margin-bottom: 0;
-  height: 225px;
-  width: 100%;
-  cursor: pointer;
-}
-
-.web-gallery .left-card-image {
-  width: 25%;
-}
-
-.web-gallery .left-card-text {
-  padding: 15px 50px;
-  margin: 0;
-  width: 75%;
-}
-
-.web-gallery .left-card-text h2 {
-  margin-top: 5px;
-}
-
-.web-gallery .left-card-text p {
-  margin-top: 5px;
-}
-
-.web-gallery .leftCard-text {
-  margin-bottom: 15px;
-}
-
-.web-gallery .leftCard-project span {
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--text-black);
-}
-
-.web-gallery .slide {
-  width: 80%;
-}
 
 /* -------------------------------------------------------------------------- */
-/* -------------------- Responsive en dessous de 1440 px -------------------- */
+/* -------------------- Responsive Mobile-first -------------------- */
 /* -------------------------------------------------------------------------- */
-
-@media screen and (max-width: 1440px ) {
-	.web-wrapper {
-		width: 80%;
-	}
-  .web-gallery .left-card {
-    height: 200px;
+@media screen and (min-width: 768px) {
+  .web-container {
+    width: 90%;
+  } 
+  .web-wrapper {
+    width: 65%;
   }
-  .web-wrapper .title-start {
+  .web-cards {
+    margin-top: 80px;
     width: 100%;
   }
+  .web .left-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+  }
+  .web .left-card .left-card-image {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .web .left-card .left-card-image img {
+    border-radius: 10px 0 0 10px;
+  }
+  .web .left-card .left-card-text {
+    width: 60%;
+    height: 100%;
+    padding: 15px 50px;
+  }
+  .web .left-card .left-card-text h2 {
+    font-size: 25px;
+  }
+  .web .left-card .left-card-text p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .web .left-card .leftCard-project {
+    display: block;
+  }
+.web .leftCard-project span {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-black);
+  }
+  .web-gallery .slide {
+    width: 80%;
+  }
+  
 }

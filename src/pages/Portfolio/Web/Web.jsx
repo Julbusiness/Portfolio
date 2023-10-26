@@ -36,7 +36,7 @@ export default function Web() {
 					image={`/assets/images/cards/${card.image}`}
 					title={card.title}
 					text={card.text}
-					projet={card.projet}
+					project={card.project}
 				/>
 			</li>
 		);
@@ -63,7 +63,7 @@ export default function Web() {
 					<div className='web-cards'>
 						<ul>
 							{modal.value && <Modal data={modalData} content={contentModal} />}
-							<div className='web-gallery'>{webData && content}</div>
+							{webData && content}
 						</ul>
 					</div>
 				</div>
