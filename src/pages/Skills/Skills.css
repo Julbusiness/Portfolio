@@ -94,10 +94,23 @@ margin-top: 0px;
 /* -------------------------------------------------------------------------- */
 /* -------------------- Responsive mobile-first -------------------- */
 /* -------------------------------------------------------------------------- */
+@media screen and (min-width: 450px) {
+	.hardskill-content ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.title-content .left-card {
+		max-height: 120px;
+	}
+}
+@media screen and (min-width: 700px) {
+	.hardskill-content ul {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.skills-wrapper {
-		width: 70%;
+		width: 80%;
 	}
 	.category {
 		margin-top: 60px;
@@ -111,23 +124,12 @@ margin-top: 0px;
 	.skills-container .title-content {
 		margin-bottom: 70px;
 	}
-	.hardskill-content ul {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: start;
-		align-items: center;
-		gap: 24px;
-	}
-	.hardskill-content li .card {
-		width: 200px;
-		height: 200px;
-	}
 	.skills .left-card-image {
-		width: 22%;
+		width: 30%;
 	}
 	.skills .left-card-text {
 		padding: 40px 50px;
-		width: 78%;
+		width: 70%;
 	}
 	.skills .left-card-text h2 {
 		font-size: 20px;
@@ -144,15 +146,23 @@ margin-top: 0px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 	.skills-wrapper {
-		width: 70%;
+		width: 85%;
+	}
+	.title-content .left-card {
+		max-height: 200px;
+	}
+	.skills-container .title-content {
+		margin-bottom: 50px;
 	}
 	.hardskill-content ul {
-		gap: 27px;
+		grid-template-columns: repeat(5, 1fr);
 	}
-	.hardskill-content li .card {
-		width: 197px;
-		height: 197px;
+	
+}
+@media screen and (min-width: 1250px) {
+	.skills-wrapper {
+		width: 80%;
 	}
 }
