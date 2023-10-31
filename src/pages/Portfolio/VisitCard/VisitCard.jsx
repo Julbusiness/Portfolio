@@ -62,7 +62,7 @@ export default function VisitCard() {
 					<div className='visitCard-cards'>
 						<ul>
 							{modal.value && <Modal data={modalData} content={contentModal} />}
-							<div className='galleryImages'>{visitCardData && content}</div>
+							{visitCardData && content}
 						</ul>
 					</div>
 				</div>

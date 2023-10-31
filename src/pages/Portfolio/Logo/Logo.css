@@ -49,6 +49,9 @@
 	.logo-wrapper {
 		width: 95%;
 	}
+	.logo-cards {
+		margin-top: 70px;
+	}
 	.logo-cards .card-image:hover {
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 		border-radius: 0;

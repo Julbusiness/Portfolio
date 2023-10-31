@@ -24,7 +24,7 @@ export default function Apropos() {
 				<div className='about-title-container'>
 					<h1>À propos</h1>
 					<p>
-					Plongez dans mon univers de code, où passion pour le design et expertise en React s'entremêlent pour donner vie à des expériences digitales mémorables.
+					Plongez dans mon univers de code, où passion pour le design et expertise en React s'entremêlent pour donner vie à des expériences digitales.
 					</p>
 				</div>
 				<div className='stats'>
