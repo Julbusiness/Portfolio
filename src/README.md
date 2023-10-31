@@ -6,8 +6,8 @@ npm run dev
 
 # Police
 
-"Poppins"
+"Poppins".
 
 # Icons
 
-Boxicons
+Boxicons.
