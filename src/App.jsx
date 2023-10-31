@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 import Apropos from "./pages/Apropos/Apropos";
@@ -17,7 +17,7 @@ import "./index.css";
 function App() {
 	return (
 		<>
-			<HashRouter>
+			<BrowserRouter>
 				<Sidebar />
 				<Routes>
 					<Route path='/' element={<Home />} />
@@ -33,7 +33,7 @@ function App() {
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 				<Footer />
-			</HashRouter>
+			</BrowserRouter>
 		</>
 	);
 }
