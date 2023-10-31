@@ -5,31 +5,31 @@
 			{
 				"id": 1,
 				"route": "/apropos",
-				"image": "apropos.JPG",
+				"image": "apropos.jpg",
 				"title": "À propos"
 			},
 			{
 				"id": 2,
 				"route": "/skills",
-				"image": "skills.JPG",
+				"image": "skills.jpg",
 				"title": "Skills"
 			},
 			{
 				"id": 3,
 				"route": "/portfolio",
-				"image": "portfolio.JPG",
+				"image": "portfolio.jpg",
 				"title": "Portfolio"
 			},
 			{
 				"id": 4,
 				"route": "/confiance",
-				"image": "confiance.JPG",
+				"image": "confiance.jpg",
 				"title": "Confiance"
 			},
 			{
 				"id": 5,
 				"route": "/contact",
-				"image": "contact.JPG",
+				"image": "contact.jpg",
 				"title": "Contact"
 			}
 		]
