@@ -6,8 +6,9 @@
 
 # Police
 
-"Roboto" en import URL dans le css
+"Poppins"
 
 # Icons
 
-"Boxicons" en lien dans le html
+"Boxicons"
+
