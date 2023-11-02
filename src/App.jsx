@@ -20,7 +20,7 @@ function App() {
 			<BrowserRouter>
 				<Sidebar />
 				<Routes>
-					<Route path='/portfolio' element={<Home />} />
+					<Route path='/' element={<Home />} />
 					<Route path='/apropos' element={<Apropos />} />
 					<Route path='/skills' element={<Skills />} />
 					<Route path='/project' element={<Portfolio />} />

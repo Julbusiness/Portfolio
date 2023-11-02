@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import LogoWhite from "../../assets/Logo.png";
+import LogoWhite from "/assets/Logo.png";
 import "./Sidebar.css";
 
 export default function Sidebar() {
@@ -37,7 +37,7 @@ export default function Sidebar() {
 
 			<ul className='menu-links'>
 				<li className='nav-link'>
-					<NavLink to='/portfolio'>
+					<NavLink to='/'>
 						<i className='bx bx-grid-alt icon'></i>
 						<span className='text nav-text'>Accueil</span>
 					</NavLink>

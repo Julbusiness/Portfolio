@@ -217,19 +217,19 @@
 				"id": "2",
 				"image": "portfolio2.png",
 				"title": "Carte de visite",
-				"route": "/portfolio/visitcard"
+				"route": "visitcard"
 			},
 			{
 				"id": "3",
 				"image": "portfolio3.png",
 				"title": "Site Web",
-				"route": "/portfolio/web"
+				"route": "web"
 			},
 			{
 				"id": "4",
 				"image": "portfolio4.png",
 				"title": "Photo",
-				"route": "/portfolio/photo"
+				"route": "photo"
 			}
 		],
 		"logo": [
