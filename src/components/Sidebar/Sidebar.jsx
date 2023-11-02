@@ -19,9 +19,9 @@ export default function Sidebar() {
 		} else {
 			setShowLogo(false);
 		}
-	}
+	};
 
-		window.addEventListener("scroll", showLogoOnScroll);
+	window.addEventListener("scroll", showLogoOnScroll);
 
 	return (
 		<nav
@@ -37,7 +37,7 @@ export default function Sidebar() {
 
 			<ul className='menu-links'>
 				<li className='nav-link'>
-					<NavLink to='/'>
+					<NavLink to='/portfolio'>
 						<i className='bx bx-grid-alt icon'></i>
 						<span className='text nav-text'>Accueil</span>
 					</NavLink>
@@ -55,7 +55,7 @@ export default function Sidebar() {
 					</NavLink>
 				</li>
 				<li className='nav-link'>
-					<NavLink to='/portfolio'>
+					<NavLink to='/project'>
 						<i className='bx bx-code-alt icon'></i>
 						<span className='text nav-text'>Portfolio</span>
 					</NavLink>

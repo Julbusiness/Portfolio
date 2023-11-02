@@ -16,7 +16,7 @@
 			},
 			{
 				"id": 3,
-				"route": "/portfolio",
+				"route": "/project",
 				"image": "portfolio.jpg",
 				"title": "Portfolio"
 			},

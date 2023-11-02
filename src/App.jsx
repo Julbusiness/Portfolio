@@ -20,14 +20,14 @@ function App() {
 			<BrowserRouter>
 				<Sidebar />
 				<Routes>
-					<Route path='/' element={<Home />} />
+					<Route path='/portfolio' element={<Home />} />
 					<Route path='/apropos' element={<Apropos />} />
 					<Route path='/skills' element={<Skills />} />
-					<Route path='/portfolio' element={<Portfolio />} />
-					<Route path='/portfolio/logo' element={<Logo />} />
-					<Route path='/portfolio/visitcard' element={<VisitCard />} />
-					<Route path='/portfolio/web' element={<Web />} />
-					<Route path='/portfolio/photo' element={<Photo />} />
+					<Route path='/project' element={<Portfolio />} />
+					<Route path='/project/logo' element={<Logo />} />
+					<Route path='/project/visitcard' element={<VisitCard />} />
+					<Route path='/project/web' element={<Web />} />
+					<Route path='/project/photo' element={<Photo />} />
 					<Route path='/confiance' element={<Confiance />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='*' element={<NotFound />} />

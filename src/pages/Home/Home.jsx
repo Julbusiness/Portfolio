@@ -13,7 +13,7 @@ export default function Home() {
 		<li key={card.id}>
 			<Link to={card.route} className='link'>
 				<div className='home-card-image'>
-					<Card image={`assets/images/accueil/${card.image}`} />
+					<Card image={`/assets/images/accueil/${card.image}`} />
 				</div>
 				<h3 className='home-card-title'>{card.title}</h3>
 			</Link>
