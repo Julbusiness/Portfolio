@@ -12,6 +12,7 @@ import Web from "./pages/Portfolio/Web/Web";
 import Photo from "./pages/Portfolio/Photo/Photo";
 import NotFound from "./components/404/404";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./index.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Sidebar />
+				<ScrollToTop />
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/apropos' element={<Apropos />} />
