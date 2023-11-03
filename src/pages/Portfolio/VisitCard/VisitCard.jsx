@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
 import { slideNumber } from "../../../features/slide";
 import { cardNumber } from "../../../features/card";
-
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux/visitCard.png";
 import Title from "../../../components/Title/Title";

@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { openModal } from "../../../features/modal";
 import { cardNumber } from "../../../features/card";
-
 import Bandeau from "../../../components/Bandeau/Bandeau";
 import imageBandeau from "/assets/images/bandeaux/web.png";
 import Title from "../../../components/Title/Title";
@@ -15,7 +14,6 @@ export default function Web() {
 	const modal = useSelector((state) => state.modal);
 	const card = useSelector((state) => state.card.value);
 	const slide = useSelector((state) => state.slide.value);
-	const search = useSelector((state) => state.search);
 	const dispatch = useDispatch();
 
 	const webData = data.portfolioData.web;

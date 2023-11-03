@@ -8,7 +8,6 @@ import "./Modal.css";
 export default function Modal({ data, content }) {
 	const dispatch = useDispatch();
 	const slide = useSelector((state) => state.slide.value);
-	// console.log(slide);
 
 	const length = data.length;
 

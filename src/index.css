@@ -71,6 +71,30 @@
 	align-items: center;
 	margin-top: 25px;
 	position: relative;
+	width: 100%;
+}
+
+.skills-wrapper,
+.portfolio-wrapper,
+.logo-wrapper,
+.photo-wrapper,
+.visitCard-wrapper,
+.web-wrapper,
+.confiance-wrapper,
+.contact-wrapper {
+	width: 90%;
+}
+
+.home .title-start,
+.skills .title-start,
+.portfolio .title-start,
+.logo .title-start,
+.visitCard .title-start,
+.web .title-start,
+.photo .title-start,
+.confiance .title-start,
+.contact .title-start {
+	width: 100%;
 }
 
 .sidebar.open .text {

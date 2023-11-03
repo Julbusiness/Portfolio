@@ -99,7 +99,3 @@ export default function Skills() {
 		</section>
 	);
 }
-
-{
-	/* <h1>Du code à la création.. façonnant le web, pixel par pixel.</h1> */
-}

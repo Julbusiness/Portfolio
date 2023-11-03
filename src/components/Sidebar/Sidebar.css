@@ -25,7 +25,6 @@
 .sidebar ul {
 	display: flex;
 	flex-direction: row;
-	/* justify-content: center; */
 }
 
 .sidebar ul li {
@@ -37,11 +36,10 @@
 
 .sidebar ul li .icon {
 	font-size: 30px;
-	min-width: 60px;
+	min-width: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* transform: translateY(-25px); */
 	transition: var(--trans-05);
 }
 
@@ -70,7 +68,11 @@
 /* ------------------------- Responsive Mobile-first ------------------------ */
 /* -------------------------------------------------------------------------- */
 
-
+@media screen and (min-width: 375px) {
+	.sidebar ul li .icon {
+		min-width: 60px;
+	}
+}
 @media screen and (min-width: 768px) {
 	.sidebar {
 		position: fixed;

@@ -1,23 +1,17 @@
 /* A partir de 375 pixels */
 
-.home-container {
-	width: 100%;
-}
 .home-wrapper {
 	width: 85%;
-}
-.home .title-start {
-	width: 100%;
 }
 .home .title-start .title-content {
 	font-size: 27px;
 	font-weight: 700;
 }
 .home-container .line {
-	top: 100px;
+	top: 130px;
 }
 .home-container .fat {
-	top: 97px;
+	top: 127px;
 }
 .home-cards ul {
 	display: grid;
@@ -40,6 +34,14 @@
 }
 
 /* ------------------------- Responsive Mobile-first ------------------------ */
+@media screen and (min-width: 375px) {
+	.home-container .line {
+		top: 100px;
+	}
+	.home-container .fat {
+		top: 97px;
+	}
+}
 @media screen and (min-width: 500px) {
 	.home-cards ul {
 		grid-template-columns: repeat(3, 1fr);
@@ -57,11 +59,8 @@
 	}
 }
 @media screen and (min-width: 768px) {
-	.home-container {
-		width: 90%;
-	}
 	.home-wrapper {
-		width: 100%;
+		width: 90%;
 	}
 	.title-container .title-content {
     font-size: 40px;
